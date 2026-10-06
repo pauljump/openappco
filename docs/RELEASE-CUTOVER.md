@@ -14,3 +14,9 @@ After approval is verified:
 Redirects should eventually execute at the existing hostname’s edge to remove the Mini dependency for these pages. A Node-only redirect still depends on the Mini. This change does not migrate the Wishlist API.
 
 No automatic approval monitor or redirect job is configured. Approval must be checked before cutover.
+
+## Publication verified October 6, 2026
+
+GitHub Pages is enabled on main:/docs with HTTPS. Support and privacy return 200, and browser navigation between them works. A real operator support-page visit appeared in PostHog with pulse_host=pauljump.github.io, pulse_source=native_browser, pulse_is_operator=true, and no query string in the recorded URL. Replay is disabled by the currently deployed shared loader for these pages.
+
+The original support/privacy endpoints and Wishlist JSON feed still return 200 without redirects. App Store metadata was not edited. Redirect cutover remains pending Apple approval.

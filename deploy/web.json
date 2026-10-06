@@ -1,0 +1,20 @@
+{
+  "surface": "github-pages",
+  "repository": "pauljump/openappco",
+  "source": {
+    "branch": "main",
+    "path": "/docs"
+  },
+  "url": "https://pauljump.github.io/openappco/",
+  "hostnames": [
+    "pauljump.github.io"
+  ],
+  "pathPrefix": "/openappco/",
+  "status": "production",
+  "localService": null,
+  "publication": "Push static docs on main; GitHub Pages deploys from the configured branch.",
+  "healthChecks": [
+    "/openappco/open-piano/support/",
+    "/openappco/open-piano/privacy/"
+  ]
+}
