@@ -1,0 +1,26 @@
+{
+  "included": [
+    {
+      "id": "sorting",
+      "title": "Your counters, your order",
+      "detail": "Sort by name, value, or recently edited. Choose Custom to arrange them yourself."
+    },
+    {
+      "id": "haptics",
+      "title": "A tick you can feel",
+      "detail": "Optional haptic feedback with every count. Turn it on or off in Settings."
+    }
+  ],
+  "ideas": [
+    {
+      "id": "threshold",
+      "title": "Know when you reach a number",
+      "detail": "An optional cue when your count reaches a target."
+    },
+    {
+      "id": "keep-awake",
+      "title": "Keep the screen awake",
+      "detail": "An optional setting for longer counting sessions."
+    }
+  ]
+}
