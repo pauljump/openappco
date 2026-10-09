@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T10:00:13.366Z",
+  "generated": "2026-10-09T10:45:29.573Z",
   "apps": [
     {
       "slug": "open-breath",
@@ -12,6 +12,7 @@
         "url": "https://apps.apple.com/us/app/breathing-exercises-breathe/id1106998959",
         "quote": "now you have to pay for a subscription to use it."
       },
+      "opportunity": "opp-3f70850d6025f5cb2471",
       "issueUrl": "https://github.com/pauljump/openappco/issues/8",
       "label": "status:building",
       "status": "Building",
@@ -20,7 +21,11 @@
       "ascChecked": null,
       "next": "Run haptic, interruption, accessibility, and persistence QA on a signed iPhone",
       "likes": 0,
-      "store": null
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     },
     {
       "slug": "open-fraction",
@@ -33,6 +38,7 @@
         "url": "https://apps.apple.com/us/app/fraction-calculator-plus/id1355361770",
         "quote": "how is the addition function a Pro feature??"
       },
+      "opportunity": "opp-ab4d9516c4e238e0758d",
       "issueUrl": "https://github.com/pauljump/openappco/issues/7",
       "label": "status:building",
       "status": "Building",
@@ -41,7 +47,11 @@
       "ascChecked": null,
       "next": "Run focused device QA, then validate signed archives",
       "likes": 0,
-      "store": null
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     },
     {
       "slug": "open-journal",
@@ -54,6 +64,7 @@
         "url": "https://apps.apple.com/us/app/day-one-daily-journal-diary/id1044867788",
         "quote": "losing 2 whole months of daily journal entry"
       },
+      "opportunity": "opp-deb547947caded1f4777",
       "issueUrl": "https://github.com/pauljump/openappco/issues/9",
       "label": "status:building",
       "status": "Building",
@@ -62,7 +73,11 @@
       "ascChecked": null,
       "next": "Run Face ID, export, accessibility, and Dynamic Type QA on a signed iPhone",
       "likes": 0,
-      "store": null
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     },
     {
       "slug": "open-magnifier",
@@ -75,6 +90,7 @@
         "url": "https://apps.apple.com/us/app/magnifying-glass-with-light/id406048120",
         "quote": "Doesn’t seem to use the cameras focus any longer."
       },
+      "opportunity": "opp-9eb44031fb47b9193b66",
       "issueUrl": "https://github.com/pauljump/openappco/issues/2",
       "label": "status:building",
       "status": "Building",
@@ -83,7 +99,11 @@
       "ascChecked": null,
       "next": "Run the device lane on a signed iPhone",
       "likes": 0,
-      "store": null
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     },
     {
       "slug": "open-noise",
@@ -102,6 +122,7 @@
         "support": "open-noise/support/",
         "privacy": "open-noise/privacy/"
       },
+      "opportunity": "opp-439e9d04dcc2f3543086",
       "issueUrl": "https://github.com/pauljump/openappco/issues/3",
       "label": "status:in-review",
       "status": "In review",
@@ -110,7 +131,11 @@
       "ascChecked": "2026-10-09",
       "next": "Await Apple review of version 1.0.0 (build 7).",
       "likes": 0,
-      "store": null
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     },
     {
       "slug": "open-piano",
@@ -130,6 +155,7 @@
         "support": "https://openforx.polyfeeds.dev/apps/open-piano/support",
         "privacy": "https://openforx.polyfeeds.dev/apps/open-piano/privacy"
       },
+      "opportunity": "opp-5560da664694bafc71b7",
       "issueUrl": "https://github.com/pauljump/openappco/issues/1",
       "label": "status:in-review",
       "status": "In review",
@@ -138,7 +164,11 @@
       "ascChecked": "2026-10-08",
       "next": "Await Apple review of version 1.0.0 (build 9).",
       "likes": 0,
-      "store": null
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     },
     {
       "slug": "open-pressure",
@@ -151,6 +181,7 @@
         "url": "https://apps.apple.com/us/app/blood-pressure-app/id1591935741",
         "quote": "I did an update to the app and it lost my profile and blood pressure history."
       },
+      "opportunity": "opp-e693b91e74c25689ad12",
       "issueUrl": "https://github.com/pauljump/openappco/issues/12",
       "label": "status:building",
       "status": "Building",
@@ -159,7 +190,11 @@
       "ascChecked": null,
       "next": "Install on a signed iPhone; verify Apple Health write/import, reminders, PDF/CSV share, VoiceOver, and large Dynamic Type",
       "likes": 0,
-      "store": null
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     },
     {
       "slug": "open-random",
@@ -172,6 +207,7 @@
         "url": "https://apps.apple.com/us/app/random-number-generator-rng/id1128190780",
         "quote": "Why are there ads in a random number generator of all things??"
       },
+      "opportunity": "opp-56caf947ee85ac6840a2",
       "issueUrl": "https://github.com/pauljump/openappco/issues/10",
       "label": "status:building",
       "status": "Building",
@@ -180,7 +216,11 @@
       "ascChecked": null,
       "next": "Run large-batch, export, VoiceOver, and Dynamic Type QA on a signed iPhone",
       "likes": 0,
-      "store": null
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     },
     {
       "slug": "open-scan",
@@ -193,6 +233,7 @@
         "url": "https://apps.apple.com/us/app/qrafter-qr-code-reader/id416098700",
         "quote": "there’s no obvious easy to even scan without signing up."
       },
+      "opportunity": "opp-26608d780d81628c10cb",
       "issueUrl": "https://github.com/pauljump/openappco/issues/5",
       "label": "status:building",
       "status": "Building",
@@ -201,7 +242,11 @@
       "ascChecked": null,
       "next": "Run QR/barcode decode tests on a signed iPhone",
       "likes": 0,
-      "store": null
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     },
     {
       "slug": "open-tally",
@@ -220,6 +265,7 @@
         "support": "open-tally/support/",
         "privacy": "open-tally/privacy/"
       },
+      "opportunity": "opp-eb3904a28e7b56f86ee4",
       "issueUrl": "https://github.com/pauljump/openappco/issues/6",
       "label": "status:in-review",
       "status": "In review",
@@ -228,7 +274,11 @@
       "ascChecked": "2026-10-08",
       "next": "Await Apple review of version 1.0.0 (build 5).",
       "likes": 0,
-      "store": null
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     },
     {
       "slug": "open-tip",
@@ -241,6 +291,7 @@
         "url": "https://apps.apple.com/us/app/itip-calc-by-palasoftware/id282914454",
         "quote": "Cannot tap on any of the predefined values"
       },
+      "opportunity": "opp-5ba46c720ab402474dd0",
       "issueUrl": "https://github.com/pauljump/openappco/issues/11",
       "label": "status:building",
       "status": "Building",
@@ -249,7 +300,11 @@
       "ascChecked": null,
       "next": "Run currency rounding, split reconciliation, accessibility, and Dynamic Type QA on a signed iPhone",
       "likes": 0,
-      "store": null
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     },
     {
       "slug": "open-tuner",
@@ -262,6 +317,7 @@
         "url": "https://apps.apple.com/us/app/n-track-tuner/id409786458",
         "quote": "We just need a tuner guys, you don't need our personal data!"
       },
+      "opportunity": "opp-435741905e03bf75d6dd",
       "issueUrl": "https://github.com/pauljump/openappco/issues/4",
       "label": "status:building",
       "status": "Building",
@@ -270,51 +326,11 @@
       "ascChecked": null,
       "next": "Run calibrated audio tests on a signed iPhone",
       "likes": 0,
-      "store": null
-    }
-  ],
-  "teasers": [
-    {
-      "name": "Open Shelf",
-      "slug": "open-shelf",
-      "icon": true,
-      "tagline": "Scan the books on your shelf. No 30-book cap, no account, one-tap export.",
-      "hint": "Built. Testing next."
-    },
-    {
-      "name": "Open Tides",
-      "tagline": "High and low tide from public NOAA stations. Tomorrow included, no video first.",
-      "quote": "Just to look at the next day you need to watch an ad or pay.",
-      "apps": 31,
-      "complaints": 96
-    },
-    {
-      "name": "Open Fast",
-      "tagline": "A fasting timer that keeps your history, on your phone, for free.",
-      "quote": "SUBSCRIPTION TO A TIMER? seriously??",
-      "apps": 13,
-      "complaints": 40
-    },
-    {
-      "name": "Open Recorder",
-      "tagline": "Record as long as you need. Export without a Pro upgrade.",
-      "quote": "Can’t export without Pro version",
-      "apps": 8,
-      "complaints": 27
-    },
-    {
-      "name": "Open Level",
-      "tagline": "A bubble level with degrees and percent slope. It opens to the level.",
-      "quote": "every time I attempted it it jumped to ads or games",
-      "apps": 1,
-      "complaints": 4
-    },
-    {
-      "name": "Open Cycle",
-      "tagline": "A private cycle log. Your years of history never go behind a paywall.",
-      "quote": "all my data is behind a paywall with zero warning.",
-      "apps": 1,
-      "complaints": 3
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true,
+      "slot": null,
+      "severity": null
     }
   ]
 }

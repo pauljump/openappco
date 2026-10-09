@@ -1,0 +1,47 @@
+name: Approve lineup
+
+# The owner comments "approve" on a "Lineup review" issue (opened weekly by the
+# Mini's openappco-lineup job). This applies that lineup to apps.config.json,
+# opens tracking issues for new apps, and republishes openappco.com.
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+
+concurrency:
+  group: app-status
+  cancel-in-progress: false
+
+jobs:
+  approve:
+    if: >-
+      contains(github.event.issue.labels.*.name, 'lineup-review') &&
+      github.event.issue.state == 'open' &&
+      github.event.comment.author_association == 'OWNER' &&
+      (startsWith(github.event.comment.body, 'approve') || startsWith(github.event.comment.body, 'Approve'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Apply lineup
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/lineup.mjs approve ${{ github.event.issue.number }}
+          node scripts/sync-apps.mjs --promote
+      - name: Commit and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "openappco-status"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps.config.json docs/apps.json README.md
+          git commit -m "Approve lineup from #${{ github.event.issue.number }}"
+          git push
+          gh api -X POST repos/${{ github.repository }}/pages/builds || true

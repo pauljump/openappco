@@ -10,20 +10,20 @@ names such as Open Piano, Open Noise, and Open Tally.
 ## Apps
 
 <!-- apps:start -->
-| App | Status | Next |
-| --- | --- | --- |
-| [Open Breath](https://github.com/pauljump/openappco/issues/8) | Building | Run haptic, interruption, accessibility, and persistence QA on a signed iPhone |
-| [Open Fraction](https://github.com/pauljump/openappco/issues/7) | Building | Run focused device QA, then validate signed archives |
-| [Open Journal](https://github.com/pauljump/openappco/issues/9) | Building | Run Face ID, export, accessibility, and Dynamic Type QA on a signed iPhone |
-| [Open Magnifier](https://github.com/pauljump/openappco/issues/2) | Building | Run the device lane on a signed iPhone |
-| [Open Noise](https://github.com/pauljump/openappco/issues/3) | In review | Await Apple review of version 1.0.0 (build 7). |
-| [Open Piano](https://github.com/pauljump/openappco/issues/1) | In review | Await Apple review of version 1.0.0 (build 9). |
-| [Open Pressure](https://github.com/pauljump/openappco/issues/12) | Building | Install on a signed iPhone; verify Apple Health write/import, reminders, PDF/CSV share, VoiceOver, and large Dynamic Type |
-| [Open Random](https://github.com/pauljump/openappco/issues/10) | Building | Run large-batch, export, VoiceOver, and Dynamic Type QA on a signed iPhone |
-| [Open Scan](https://github.com/pauljump/openappco/issues/5) | Building | Run QR/barcode decode tests on a signed iPhone |
-| [Open Tally](https://github.com/pauljump/openappco/issues/6) | In review | Await Apple review of version 1.0.0 (build 5). |
-| [Open Tip](https://github.com/pauljump/openappco/issues/11) | Building | Run currency rounding, split reconciliation, accessibility, and Dynamic Type QA on a signed iPhone |
-| [Open Tuner](https://github.com/pauljump/openappco/issues/4) | Building | Run calibrated audio tests on a signed iPhone |
+| # | App | Status | Next |
+| --- | --- | --- | --- |
+| — | [Open Breath](https://github.com/pauljump/openappco/issues/8) | Building | Run haptic, interruption, accessibility, and persistence QA on a signed iPhone |
+| — | [Open Fraction](https://github.com/pauljump/openappco/issues/7) | Building | Run focused device QA, then validate signed archives |
+| — | [Open Journal](https://github.com/pauljump/openappco/issues/9) | Building | Run Face ID, export, accessibility, and Dynamic Type QA on a signed iPhone |
+| — | [Open Magnifier](https://github.com/pauljump/openappco/issues/2) | Building | Run the device lane on a signed iPhone |
+| — | [Open Noise](https://github.com/pauljump/openappco/issues/3) | In review | Await Apple review of version 1.0.0 (build 7). |
+| — | [Open Piano](https://github.com/pauljump/openappco/issues/1) | In review | Await Apple review of version 1.0.0 (build 9). |
+| — | [Open Pressure](https://github.com/pauljump/openappco/issues/12) | Building | Install on a signed iPhone; verify Apple Health write/import, reminders, PDF/CSV share, VoiceOver, and large Dynamic Type |
+| — | [Open Random](https://github.com/pauljump/openappco/issues/10) | Building | Run large-batch, export, VoiceOver, and Dynamic Type QA on a signed iPhone |
+| — | [Open Scan](https://github.com/pauljump/openappco/issues/5) | Building | Run QR/barcode decode tests on a signed iPhone |
+| — | [Open Tally](https://github.com/pauljump/openappco/issues/6) | In review | Await Apple review of version 1.0.0 (build 5). |
+| — | [Open Tip](https://github.com/pauljump/openappco/issues/11) | Building | Run currency rounding, split reconciliation, accessibility, and Dynamic Type QA on a signed iPhone |
+| — | [Open Tuner](https://github.com/pauljump/openappco/issues/4) | Building | Run calibrated audio tests on a signed iPhone |
 <!-- apps:end -->
 
 **Building** includes implementation and testing. **In review** means submitted to Apple. **Live** means publicly downloadable. Existing prototypes are not release promises; their issues record outstanding work and evidence dates.

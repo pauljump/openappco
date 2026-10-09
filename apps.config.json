@@ -1,40 +1,255 @@
 {
-  "note": "Presentation copy for openappco.com. Status never lives here: GitHub issue labels own it (see docs/WORKFLOW.md). Quotes are short verified App Store review excerpts from the app-research corpus.",
+  "note": "Presentation copy for openappco.com. Status never lives here: GitHub issue labels own it. `lineup` is the approved release order, written only by scripts/lineup.mjs approve (see docs/WORKFLOW.md). `names` gives short names/taglines to ranked opportunities before they have an issue.",
   "apps": [
-    { "slug": "open-piano", "issue": 1, "name": "Open Piano", "tagline": "A real piano. Labeled keys, a trail of every note, record and play back.", "ascId": "6804585543", "bundleId": "com.openpiano.app", "landscape": true,
-      "origin": { "source": "Piano for iPhone", "url": "https://apps.apple.com/us/app/piano-for-iphone/id531263194", "count": 3, "quote": "Pop up ads cover the whole screen whenever I play a note." },
-      "links": { "support": "https://openforx.polyfeeds.dev/apps/open-piano/support", "privacy": "https://openforx.polyfeeds.dev/apps/open-piano/privacy" } },
-    { "slug": "open-noise", "issue": 3, "name": "Open Noise", "tagline": "White, brown, and ocean noise. Quiet on purpose, no timer limit.", "ascId": "6820576119", "bundleId": "com.opennoise.app",
-      "origin": { "count": 16, "source": "Noise Machine", "url": "https://apps.apple.com/us/app/noise-machine-brown-white/id1261956119", "quote": "This app literally needs you to pay or else you only have a five minute limit" },
-      "links": { "support": "open-noise/support/", "privacy": "open-noise/privacy/" } },
-    { "slug": "open-tally", "issue": 6, "name": "Open Tally", "tagline": "Count the thing. A calm counter board that opens ready.", "ascId": "6820183055", "bundleId": "com.opentally.app",
-      "origin": { "count": 3, "source": "Count That Now", "url": "https://apps.apple.com/us/app/count-that-now-tally-counter/id955952873", "quote": "Demands $13 every time I open the app." },
-      "links": { "support": "open-tally/support/", "privacy": "open-tally/privacy/" } },
-    { "slug": "open-tuner", "issue": 4, "name": "Open Tuner", "tagline": "Tune by ear. A calm chromatic tuner with a clear in-tune state.",
-      "origin": { "count": 28, "source": "n-Track Tuner", "url": "https://apps.apple.com/us/app/n-track-tuner/id409786458", "quote": "We just need a tuner guys, you don't need our personal data!" } },
-    { "slug": "open-fraction", "issue": 7, "name": "Open Fraction", "tagline": "Keep the whole fraction. Four operators, reduction, a quiet keypad.",
-      "origin": { "count": 3, "source": "Fraction Calculator Plus", "url": "https://apps.apple.com/us/app/fraction-calculator-plus/id1355361770", "quote": "how is the addition function a Pro feature??" } },
-    { "slug": "open-pressure", "issue": 12, "name": "Open Pressure", "tagline": "Three numbers. Done. A blood pressure log your doctor can read.",
-      "origin": { "count": 7, "source": "Blood Pressure App", "url": "https://apps.apple.com/us/app/blood-pressure-app/id1591935741", "quote": "I did an update to the app and it lost my profile and blood pressure history." } },
-    { "slug": "open-breath", "issue": 8, "name": "Open Breath", "tagline": "Breathe at your pace. Box breathing with no paywall or countdown pressure.",
-      "origin": { "count": 4, "source": "Breathe+", "url": "https://apps.apple.com/us/app/breathing-exercises-breathe/id1106998959", "quote": "now you have to pay for a subscription to use it." } },
-    { "slug": "open-random", "issue": 10, "name": "Open Random", "tagline": "Pick a number. A calm generator that opens ready.",
-      "origin": { "count": 4, "source": "Random Number Generator. RNG", "url": "https://apps.apple.com/us/app/random-number-generator-rng/id1128190780", "quote": "Why are there ads in a random number generator of all things??" } },
-    { "slug": "open-scan", "issue": 5, "name": "Open Scan", "tagline": "Point, scan, done. QR and barcodes with a short local history.",
-      "origin": { "count": 3, "source": "Qrafter", "url": "https://apps.apple.com/us/app/qrafter-qr-code-reader/id416098700", "quote": "there’s no obvious easy to even scan without signing up." } },
-    { "slug": "open-tip", "issue": 11, "name": "Open Tip", "tagline": "Settle the table. Tip, tax, and split in one calm view.",
-      "origin": { "count": 9, "source": "iTip Calc", "url": "https://apps.apple.com/us/app/itip-calc-by-palasoftware/id282914454", "quote": "Cannot tap on any of the predefined values" } },
-    { "slug": "open-journal", "issue": 9, "name": "Open Journal", "tagline": "Write in plain Markdown. Your words, your phone, no lock-in.",
-      "origin": { "count": 3, "source": "Day One", "url": "https://apps.apple.com/us/app/day-one-daily-journal-diary/id1044867788", "quote": "losing 2 whole months of daily journal entry" } },
-    { "slug": "open-magnifier", "issue": 2, "name": "Open Magnifier", "tagline": "Clarity, your way. A camera magnifier with a light and nothing else.",
-      "origin": { "count": 4, "source": "Magnifying Glass With Light", "url": "https://apps.apple.com/us/app/magnifying-glass-with-light/id406048120", "quote": "Doesn’t seem to use the cameras focus any longer." } }
+    {
+      "slug": "open-piano",
+      "issue": 1,
+      "name": "Open Piano",
+      "tagline": "A real piano. Labeled keys, a trail of every note, record and play back.",
+      "ascId": "6804585543",
+      "bundleId": "com.openpiano.app",
+      "landscape": true,
+      "origin": {
+        "source": "Piano for iPhone",
+        "url": "https://apps.apple.com/us/app/piano-for-iphone/id531263194",
+        "count": 3,
+        "quote": "Pop up ads cover the whole screen whenever I play a note."
+      },
+      "links": {
+        "support": "https://openforx.polyfeeds.dev/apps/open-piano/support",
+        "privacy": "https://openforx.polyfeeds.dev/apps/open-piano/privacy"
+      },
+      "opportunity": "opp-5560da664694bafc71b7"
+    },
+    {
+      "slug": "open-noise",
+      "issue": 3,
+      "name": "Open Noise",
+      "tagline": "White, brown, and ocean noise. Quiet on purpose, no timer limit.",
+      "ascId": "6820576119",
+      "bundleId": "com.opennoise.app",
+      "origin": {
+        "count": 16,
+        "source": "Noise Machine",
+        "url": "https://apps.apple.com/us/app/noise-machine-brown-white/id1261956119",
+        "quote": "This app literally needs you to pay or else you only have a five minute limit"
+      },
+      "links": {
+        "support": "open-noise/support/",
+        "privacy": "open-noise/privacy/"
+      },
+      "opportunity": "opp-439e9d04dcc2f3543086"
+    },
+    {
+      "slug": "open-tally",
+      "issue": 6,
+      "name": "Open Tally",
+      "tagline": "Count the thing. A calm counter board that opens ready.",
+      "ascId": "6820183055",
+      "bundleId": "com.opentally.app",
+      "origin": {
+        "count": 3,
+        "source": "Count That Now",
+        "url": "https://apps.apple.com/us/app/count-that-now-tally-counter/id955952873",
+        "quote": "Demands $13 every time I open the app."
+      },
+      "links": {
+        "support": "open-tally/support/",
+        "privacy": "open-tally/privacy/"
+      },
+      "opportunity": "opp-eb3904a28e7b56f86ee4"
+    },
+    {
+      "slug": "open-tuner",
+      "issue": 4,
+      "name": "Open Tuner",
+      "tagline": "Tune by ear. A calm chromatic tuner with a clear in-tune state.",
+      "origin": {
+        "count": 28,
+        "source": "n-Track Tuner",
+        "url": "https://apps.apple.com/us/app/n-track-tuner/id409786458",
+        "quote": "We just need a tuner guys, you don't need our personal data!"
+      },
+      "opportunity": "opp-435741905e03bf75d6dd"
+    },
+    {
+      "slug": "open-fraction",
+      "issue": 7,
+      "name": "Open Fraction",
+      "tagline": "Keep the whole fraction. Four operators, reduction, a quiet keypad.",
+      "origin": {
+        "count": 3,
+        "source": "Fraction Calculator Plus",
+        "url": "https://apps.apple.com/us/app/fraction-calculator-plus/id1355361770",
+        "quote": "how is the addition function a Pro feature??"
+      },
+      "opportunity": "opp-ab4d9516c4e238e0758d"
+    },
+    {
+      "slug": "open-pressure",
+      "issue": 12,
+      "name": "Open Pressure",
+      "tagline": "Three numbers. Done. A blood pressure log your doctor can read.",
+      "origin": {
+        "count": 7,
+        "source": "Blood Pressure App",
+        "url": "https://apps.apple.com/us/app/blood-pressure-app/id1591935741",
+        "quote": "I did an update to the app and it lost my profile and blood pressure history."
+      },
+      "opportunity": "opp-e693b91e74c25689ad12"
+    },
+    {
+      "slug": "open-breath",
+      "issue": 8,
+      "name": "Open Breath",
+      "tagline": "Breathe at your pace. Box breathing with no paywall or countdown pressure.",
+      "origin": {
+        "count": 4,
+        "source": "Breathe+",
+        "url": "https://apps.apple.com/us/app/breathing-exercises-breathe/id1106998959",
+        "quote": "now you have to pay for a subscription to use it."
+      },
+      "opportunity": "opp-3f70850d6025f5cb2471"
+    },
+    {
+      "slug": "open-random",
+      "issue": 10,
+      "name": "Open Random",
+      "tagline": "Pick a number. A calm generator that opens ready.",
+      "origin": {
+        "count": 4,
+        "source": "Random Number Generator. RNG",
+        "url": "https://apps.apple.com/us/app/random-number-generator-rng/id1128190780",
+        "quote": "Why are there ads in a random number generator of all things??"
+      },
+      "opportunity": "opp-56caf947ee85ac6840a2"
+    },
+    {
+      "slug": "open-scan",
+      "issue": 5,
+      "name": "Open Scan",
+      "tagline": "Point, scan, done. QR and barcodes with a short local history.",
+      "origin": {
+        "count": 3,
+        "source": "Qrafter",
+        "url": "https://apps.apple.com/us/app/qrafter-qr-code-reader/id416098700",
+        "quote": "there’s no obvious easy to even scan without signing up."
+      },
+      "opportunity": "opp-26608d780d81628c10cb"
+    },
+    {
+      "slug": "open-tip",
+      "issue": 11,
+      "name": "Open Tip",
+      "tagline": "Settle the table. Tip, tax, and split in one calm view.",
+      "origin": {
+        "count": 9,
+        "source": "iTip Calc",
+        "url": "https://apps.apple.com/us/app/itip-calc-by-palasoftware/id282914454",
+        "quote": "Cannot tap on any of the predefined values"
+      },
+      "opportunity": "opp-5ba46c720ab402474dd0"
+    },
+    {
+      "slug": "open-journal",
+      "issue": 9,
+      "name": "Open Journal",
+      "tagline": "Write in plain Markdown. Your words, your phone, no lock-in.",
+      "origin": {
+        "count": 3,
+        "source": "Day One",
+        "url": "https://apps.apple.com/us/app/day-one-daily-journal-diary/id1044867788",
+        "quote": "losing 2 whole months of daily journal entry"
+      },
+      "opportunity": "opp-deb547947caded1f4777"
+    },
+    {
+      "slug": "open-magnifier",
+      "issue": 2,
+      "name": "Open Magnifier",
+      "tagline": "Clarity, your way. A camera magnifier with a light and nothing else.",
+      "origin": {
+        "count": 4,
+        "source": "Magnifying Glass With Light",
+        "url": "https://apps.apple.com/us/app/magnifying-glass-with-light/id406048120",
+        "quote": "Doesn’t seem to use the cameras focus any longer."
+      },
+      "opportunity": "opp-9eb44031fb47b9193b66"
+    }
   ],
-  "teasers": [
-    { "name": "Open Shelf", "slug": "open-shelf", "icon": true, "tagline": "Scan the books on your shelf. No 30-book cap, no account, one-tap export.", "hint": "Built. Testing next." },
-    { "name": "Open Tides", "tagline": "High and low tide from public NOAA stations. Tomorrow included, no video first.", "quote": "Just to look at the next day you need to watch an ad or pay.", "apps": 31, "complaints": 96 },
-    { "name": "Open Fast", "tagline": "A fasting timer that keeps your history, on your phone, for free.", "quote": "SUBSCRIPTION TO A TIMER? seriously??", "apps": 13, "complaints": 40 },
-    { "name": "Open Recorder", "tagline": "Record as long as you need. Export without a Pro upgrade.", "quote": "Can’t export without Pro version", "apps": 8, "complaints": 27 },
-    { "name": "Open Level", "tagline": "A bubble level with degrees and percent slope. It opens to the level.", "quote": "every time I attempted it it jumped to ads or games", "apps": 1, "complaints": 4 },
-    { "name": "Open Cycle", "tagline": "A private cycle log. Your years of history never go behind a paywall.", "quote": "all my data is behind a paywall with zero warning.", "apps": 1, "complaints": 3 }
-  ]
+  "names": {
+    "opp-46d8f4f1b7bc1d3b37ce": [
+      "Open Tides",
+      "High and low tide from public NOAA stations. Tomorrow included, no video first."
+    ],
+    "opp-3fadc4dd91873be4aaf3": [
+      "Open Macros",
+      "Log calories and macros with no account, and keep every day you've logged."
+    ],
+    "opp-c2412192d356aadbbe29": [
+      "Open Fast",
+      "A fasting timer that keeps your history on your phone, for free."
+    ],
+    "opp-1c79b6dac8a5f619703e": [
+      "Open Recorder",
+      "Record as long as you need. Export plain audio files without a Pro upgrade."
+    ],
+    "opp-ac7cb068022f98604890": [
+      "Open Metronome",
+      "Steady time for practice. Nothing pops up over the beat."
+    ],
+    "opp-40e7db09284081e2d52f": [
+      "Open Currency",
+      "Convert prices in a shop abroad, offline, silently."
+    ],
+    "opp-b059a830549fed19a5a5": [
+      "Open Compress",
+      "Shrink a video on your phone. No trial, no surprise charge."
+    ],
+    "opp-e2b81fd52eaf19ec43c2": [
+      "Open Collage",
+      "Grids and stitched photos you can actually save."
+    ],
+    "opp-241531e10f15ec5b0383": [
+      "Open Ruler",
+      "An on-screen ruler, calibrated to your iPhone. No weekly fee."
+    ],
+    "opp-1bd395b876700d4b14ac": [
+      "Open Flashcards",
+      "Make and review flashcards offline. Your decks stay yours."
+    ],
+    "opp-c94e99bae1b3f39e632d": [
+      "Open Tones",
+      "Binaural beats and pure tones, on device, no account."
+    ],
+    "opp-ed34b2570a0f154dfb1d": [
+      "Open Mileage",
+      "A mileage log that stays on your phone and exports for taxes."
+    ],
+    "opp-fbe089e59c5e8b076685": [
+      "Open Invoice",
+      "PDF invoices and estimates. Your client list is never held hostage."
+    ],
+    "opp-69658db244495ee16f5d": [
+      "Open Feeds",
+      "An RSS reader that keeps your feeds and skips the paywalled ones."
+    ],
+    "opp-f5d0b279963520b1a1c8": [
+      "Open Reader",
+      "Read your own EPUBs and PDFs. No ads between pages."
+    ],
+    "opp-2a43a04a648f29e75fb7": [
+      "Open Seizure Log",
+      "A private seizure and medication diary you can hand to a neurologist."
+    ],
+    "opp-336724e858cd9e20b3ac": [
+      "Open Cycle",
+      "A private cycle log. Your years of history never go behind a paywall."
+    ],
+    "opp-b482260653424f2e0a80": [
+      "Open Planner",
+      "A planner that never deletes your plans."
+    ]
+  },
+  "lineup": []
 }
