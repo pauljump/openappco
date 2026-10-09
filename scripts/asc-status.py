@@ -24,8 +24,10 @@ import sys
 
 REPO = "pauljump/openappco"
 TOOL = "/Users/mini-home/projects/_factory/brain/tools/appstore-connect.py"
+# Rejections stay in-review: the app is still in Apple's process and stays on
+# the public site as "Changes requested" rather than disappearing.
 REVIEW = {"WAITING_FOR_REVIEW", "IN_REVIEW", "PENDING_DEVELOPER_RELEASE", "PENDING_APPLE_RELEASE",
-          "PROCESSING_FOR_APP_STORE", "ACCEPTED"}
+          "PROCESSING_FOR_APP_STORE", "ACCEPTED", "REJECTED", "METADATA_REJECTED", "INVALID_BINARY"}
 LIVE = {"READY_FOR_SALE", "READY_FOR_DISTRIBUTION"}
 
 

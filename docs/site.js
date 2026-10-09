@@ -73,11 +73,9 @@
     .catch(() => document.querySelectorAll('[data-stars]').forEach(el => { el.textContent = '★'; }));
 
   /* ---------- the lineup ---------- */
-  const STAGES = ['Queued', 'Building', 'Submitted', 'In review', 'Live'];
-  const stageIndex = { queued: 0, building: 1, changes: 1, submitted: 2, review: 3, approved: 3, live: 4 };
+  const STAGES = ['Submitted', 'In review', 'Live'];
+  const stageIndex = { changes: 0, submitted: 0, review: 1, approved: 1, live: 2 };
   const stateText = {
-    queued: 'Next in line. Brief and build start when a slot opens.',
-    building: 'Being built and tested on real iPhones.',
     changes: '<b>Apple asked for changes.</b> Fixing and resubmitting.',
     submitted: '<b>Waiting for Apple review.</b> Submitted and in line.',
     review: '<b>Apple is reviewing it right now.</b>',
@@ -86,31 +84,22 @@
   };
   const badge = { queued: ['Queued', ''], building: ['Building', ''], changes: ['Changes requested', 'changes'], submitted: ['At Apple', 'apple'], review: ['In review', 'apple'], approved: ['Approved', 'apple'], live: ['Live', 'live'] };
 
-  function severity(sv) {
-    if (!sv || !sv.counts) return '';
-    const c = sv.counts, w = { h: c.harm * 8, b: c.blocked * 4, a: c.interrupted * 2, o: c.friction }, t = w.h + w.b + w.a + w.o || 1;
-    return `<div class="bars" aria-hidden="true">${['h', 'b', 'a', 'o'].map(k => `<i class="${k}" style="width:${(w[k] / t * 100).toFixed(1)}%"></i>`).join('')}</div>
-      <p class="sevline">Severity <b>${sv.score}</b> · ${c.harm} harm · ${c.blocked} blocked · ${c.interrupted} ads · from ${sv.complaints} complaints across ${sv.sourceApps} apps</p>`;
-  }
-
   function card(a) {
     const idx = stageIndex[a.stage] ?? 0;
-    const keys = STAGES.map((_, i) => `<i class="${a.stage === 'live' && i === 4 ? 'live-k' : i < idx ? 'done' : i === idx ? (a.stage === 'live' ? 'live-k' : 'now') : ''}"></i>`).join('');
+    const keys = STAGES.map((_, i) => `<i class="${a.stage === 'live' && i === 2 ? 'live-k' : i < idx ? 'done' : i === idx ? (a.stage === 'live' ? 'live-k' : 'now') : ''}"></i>`).join('');
     const labels = STAGES.map((s, i) => `<span class="${i === idx ? 'cur' : ''}">${s}</span>`).join('');
     const o = a.origin;
     const [btext, bcls] = badge[a.stage] || badge.building;
-    const slot = a.slot ? `<span class="slot">#${a.slot}</span>` : '';
     const shot = a.hasShot
-      ? `<div class="shot" style="background-image:url('assets/apps/${esc(a.slug)}/shot.jpg')" role="img" aria-label="${esc(a.name)} screenshot"><span class="badge ${bcls}">${btext}</span>${slot}</div>`
-      : `<div class="shot empty"><span class="badge ${bcls}">${btext}</span>${slot}<div>${o ? `<q>${esc(o.quote)}</q><small>one-star review of ${esc(o.source)}</small>` : ''}</div></div>`;
-    const origin = o && a.hasShot ? `<div class="origin"><q>${esc(o.quote)}</q><small>Worst complaint: <a href="${esc(o.url)}" rel="noopener">${esc(o.source)}</a></small></div>` : '';
+      ? `<div class="shot" style="background-image:url('assets/apps/${esc(a.slug)}/shot.jpg')" role="img" aria-label="${esc(a.name)} screenshot"><span class="badge ${bcls}">${btext}</span></div>`
+      : `<div class="shot empty"><span class="badge ${bcls}">${btext}</span><div>${o ? `<q>${esc(o.quote)}</q><small>one-star review of ${esc(o.source)}</small>` : ''}</div></div>`;
+    const origin = o && a.hasShot ? `<div class="origin"><q>${esc(o.quote)}</q><small>Why it exists: <a href="${esc(o.url)}" rel="noopener">${esc(o.source)}</a></small></div>` : '';
     const icon = a.hasIcon ? `<img src="assets/apps/${esc(a.slug)}/icon.png" alt="" loading="lazy">` : `<span class="t-icon">${esc(a.name.replace('Open ', '')[0])}</span>`;
     const get = a.store ? `<a class="get store" href="${esc(a.store.url)}" rel="noopener">Get it free</a>` : `<a class="get" href="${esc(a.issueUrl)}" rel="noopener">Follow progress →</a>`;
     return `<article class="card${a.landscape ? ' feature' : ''}" id="${esc(a.slug)}">${shot}
       <div class="body">
         <div class="app-head">${icon}<h3>${esc(a.name)}</h3></div>
         <p class="tagline">${esc(a.tagline)}</p>
-        ${severity(a.severity)}
         <div class="keys" aria-hidden="true">${keys}</div><div class="keys-labels" aria-label="Stage: ${STAGES[idx]}">${labels}</div>
         <p class="state">${stateText[a.stage] || stateText.building}</p>
         ${origin}
@@ -118,29 +107,19 @@
       </div></article>`;
   }
 
-  function mini(a) {
-    const [btext] = badge[a.stage] || badge.building;
-    return `<a class="mini" href="${esc(a.issueUrl)}" rel="noopener">${a.hasIcon ? `<img src="assets/apps/${esc(a.slug)}/icon.png" alt="" loading="lazy">` : ''}<span><b>${esc(a.name)}</b><small>${btext}</small></span><span class="like">👍 <b>${a.likes || 0}</b></span></a>`;
-  }
-
   function render(data) {
-    const lineup = data.apps.filter(a => a.slot).sort((a, b) => a.slot - b.slot);
-    const rest = data.apps.filter(a => !a.slot).sort((a, b) => (b.likes || 0) - (a.likes || 0) || a.name.localeCompare(b.name));
-    $('#grid').innerHTML = (lineup.length ? lineup : data.apps).map(card).join('');
-    $('#also').innerHTML = lineup.length ? rest.map(mini).join('') : '';
-    $('#built').hidden = !lineup.length || !rest.length;
-    const count = s => (lineup.length ? lineup : data.apps).filter(a => s.includes(a.stage)).length;
+    const order = { live: 0, approved: 1, review: 2, submitted: 3, changes: 4 };
+    const apps = data.apps.slice().sort((a, b) => (b.landscape ? 1 : 0) - (a.landscape ? 1 : 0) || order[a.stage] - order[b.stage] || a.name.localeCompare(b.name));
+    $('#grid').innerHTML = apps.map(card).join('');
+    const count = s => apps.filter(a => s.includes(a.stage)).length;
     $('#pipeline').innerHTML = [
-      ['queued', count(['queued']), 'Queued', 'Picked, not started'],
-      ['', count(['building', 'changes']), 'Building', 'Coding and device testing'],
-      ['apple', count(['submitted']), 'Submitted', 'Waiting in Apple’s line'],
+      ['apple', count(['submitted', 'changes']), 'Submitted', 'Waiting in Apple’s line'],
       ['apple', count(['review', 'approved']), 'In review', 'Apple is looking at it'],
       ['live', count(['live']), 'Live', 'Free on the App Store']
     ].map(([c, n, l, s]) => `<div class="pipe ${c}"><b>${n}</b><span>${l}</span><small>${s}</small></div>`).join('');
     if (data.generated) $('#updated').textContent = 'Status as of ' + new Date(data.generated).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + '.';
-    const quotes = lineup.concat(rest).filter(a => a.origin).map(a => a.origin);
-    const chips = quotes.map(q => `<div class="quote-chip"><span class="stars1">★☆☆☆☆</span><q>${esc(q.quote)}</q><small>${esc(q.source)}</small></div>`).join('');
-    $('#heard').innerHTML = chips + chips;
+    const chips = apps.filter(a => a.origin).map(a => `<div class="quote-chip"><span class="stars1">★☆☆☆☆</span><q>${esc(a.origin.quote)}</q><small>${esc(a.origin.source)}</small></div>`).join('');
+    $('#heard').innerHTML = chips.repeat(3);
   }
 
   // apps.json is rendered by the status workflow; the live GitHub read refreshes
@@ -158,7 +137,7 @@
           if (likes !== a.likes) { a.likes = likes; changed = true; }
           if (label && label !== a.label && !a.store) {
             a.label = label; changed = true;
-            a.stage = label === 'status:live' ? 'live' : label === 'status:queued' ? 'queued' : label === 'status:in-review' ? (a.stage === 'review' || a.stage === 'approved' ? a.stage : 'submitted') : 'building';
+            a.stage = label === 'status:live' ? 'live' : label === 'status:in-review' ? (a.stage === 'review' || a.stage === 'approved' ? a.stage : 'submitted') : 'changes';
           }
         }
         if (changed) render(data);

@@ -20,8 +20,7 @@
   <nav aria-label="Main">
     <a href="#story">Story</a>
     <a href="#apps">Apps</a>
-    <a href="#built">Also built</a>
-    <a class="star-btn" href="https://github.com/pauljump/openappco" target="_blank" rel="noopener" data-star-link>
+        <a class="star-btn" href="https://github.com/pauljump/openappco" target="_blank" rel="noopener" data-star-link>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.2.8-.5v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.4-5.5-6.2 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.3a11.7 11.7 0 0 1 6.2 0c2.4-1.6 3.4-1.3 3.4-1.3.6 1.7.2 3 .1 3.3.8.9 1.2 2 1.2 3.3 0 4.8-2.8 5.9-5.5 6.2.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.2 11.2 0 0 0 12 .8Z"/></svg>
       <span>Star</span><b class="star-count" data-stars>★</b>
     </a>
@@ -66,7 +65,7 @@
       <p>The apps we tried had other plans. The music kept stopping for ads. We weren’t the only ones who noticed. One review of a piano app says, <em>“literally every single time I go to hit a key an ad pops up.”</em> Another says, <em>“Now you can’t close the ad to get back to the keyboard.”</em></p>
       <p>So we built <b>Open Piano</b>: labeled keys, a trail of the notes you played, and record and play back. It has no ads, no account, and no tracking. It’s free, and nothing in it is waiting to be unlocked.</p>
       <p>Then we looked around. We collected 121,602 App Store reviews and went through the 46,070 one- and two-star ones, across 2,540 apps. We found the same thing everywhere. The tuner wants your personal data. The tally counter <em>“demands $13 every time I open the app.”</em> The white-noise machine stops after five minutes unless you pay. These are tiny tools that each do one job, and they’re buried under ads, paywalls, and fake limits.</p>
-      <p>Each one is small enough to build right, so we’re building them, one at a time, in public.</p>
+      <p>Each one is small enough to build right, so we’re building them, one at a time.</p>
     </div>
   </div>
 
@@ -97,25 +96,11 @@
 
 <section class="apps wrap" id="apps">
   <div class="section-head">
-    <div><p class="eyebrow">The lineup</p><h2>Ten apps, in order of how badly people are being treated.</h2></div>
-    <p class="aside">We don’t rank by market size. We rank by severity: every verified one-star complaint is scored, and the worst treatment goes first. Status updates on its own from <a href="https://github.com/pauljump/openappco/issues?q=is%3Aissue+label%3Aapp">our public tracker</a> and the App Store. <span class="updated" id="updated"></span></p>
+    <div><p class="eyebrow">The apps</p><h2>Shipped, one at a time.</h2></div>
+    <p class="aside">An app shows up here the day it goes to Apple, and gets a download button the day Apple lets it out. Status updates on its own from App Store Connect and <a href="https://github.com/pauljump/openappco/issues?q=is%3Aissue+label%3Aapp">our public tracker</a>. <span class="updated" id="updated"></span></p>
   </div>
-  <div class="rubric" aria-label="Severity scoring">
-    <span><b class="sev harm">8</b> Harm: lost data, surprise charges, privacy, unsafe ads</span>
-    <span><b class="sev blocked">4</b> Blocked: the core job is paywalled or behind a signup</span>
-    <span><b class="sev ads">2</b> Ads and nags that break the task</span>
-    <span><b class="sev other">1</b> Other bugs</span>
-  </div>
-  <div class="pipeline" id="pipeline" aria-label="Release pipeline summary"></div>
-  <div class="grid" id="grid"><p class="loading">Loading the lineup…</p></div>
-</section>
-
-<section class="next wrap" id="built">
-  <div class="section-head">
-    <div><p class="eyebrow">Also built</p><h2>Finished prototypes, lower on the severity list.</h2></div>
-    <p class="aside">These work and are free. They ship when a lineup slot opens or a quick device check is all they need. A 👍 on any of them tells us to move it up.</p>
-  </div>
-  <div class="mini-grid" id="also"></div>
+  <div class="pipeline" id="pipeline" aria-label="Release status summary"></div>
+  <div class="grid" id="grid"><p class="loading">Loading…</p></div>
 </section>
 
 <section class="bench wrap">

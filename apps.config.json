@@ -1,5 +1,5 @@
 {
-  "note": "Presentation copy for openappco.com. Status never lives here: GitHub issue labels own it. `lineup` is the approved release order, written only by scripts/lineup.mjs approve (see docs/WORKFLOW.md). `names` gives short names/taglines to ranked opportunities before they have an issue.",
+  "note": "Presentation copy for openappco.com. Status never lives here: GitHub issue labels own it. Only apps submitted to Apple or live are published; what ships next is chosen day-of, privately (see _factory/open-suite/scripts/today.mjs).",
   "apps": [
     {
       "slug": "open-piano",
@@ -176,80 +176,5 @@
       },
       "opportunity": "opp-9eb44031fb47b9193b66"
     }
-  ],
-  "names": {
-    "opp-46d8f4f1b7bc1d3b37ce": [
-      "Open Tides",
-      "High and low tide from public NOAA stations. Tomorrow included, no video first."
-    ],
-    "opp-3fadc4dd91873be4aaf3": [
-      "Open Macros",
-      "Log calories and macros with no account, and keep every day you've logged."
-    ],
-    "opp-c2412192d356aadbbe29": [
-      "Open Fast",
-      "A fasting timer that keeps your history on your phone, for free."
-    ],
-    "opp-1c79b6dac8a5f619703e": [
-      "Open Recorder",
-      "Record as long as you need. Export plain audio files without a Pro upgrade."
-    ],
-    "opp-ac7cb068022f98604890": [
-      "Open Metronome",
-      "Steady time for practice. Nothing pops up over the beat."
-    ],
-    "opp-40e7db09284081e2d52f": [
-      "Open Currency",
-      "Convert prices in a shop abroad, offline, silently."
-    ],
-    "opp-b059a830549fed19a5a5": [
-      "Open Compress",
-      "Shrink a video on your phone. No trial, no surprise charge."
-    ],
-    "opp-e2b81fd52eaf19ec43c2": [
-      "Open Collage",
-      "Grids and stitched photos you can actually save."
-    ],
-    "opp-241531e10f15ec5b0383": [
-      "Open Ruler",
-      "An on-screen ruler, calibrated to your iPhone. No weekly fee."
-    ],
-    "opp-1bd395b876700d4b14ac": [
-      "Open Flashcards",
-      "Make and review flashcards offline. Your decks stay yours."
-    ],
-    "opp-c94e99bae1b3f39e632d": [
-      "Open Tones",
-      "Binaural beats and pure tones, on device, no account."
-    ],
-    "opp-ed34b2570a0f154dfb1d": [
-      "Open Mileage",
-      "A mileage log that stays on your phone and exports for taxes."
-    ],
-    "opp-fbe089e59c5e8b076685": [
-      "Open Invoice",
-      "PDF invoices and estimates. Your client list is never held hostage."
-    ],
-    "opp-69658db244495ee16f5d": [
-      "Open Feeds",
-      "An RSS reader that keeps your feeds and skips the paywalled ones."
-    ],
-    "opp-f5d0b279963520b1a1c8": [
-      "Open Reader",
-      "Read your own EPUBs and PDFs. No ads between pages."
-    ],
-    "opp-2a43a04a648f29e75fb7": [
-      "Open Seizure Log",
-      "A private seizure and medication diary you can hand to a neurologist."
-    ],
-    "opp-336724e858cd9e20b3ac": [
-      "Open Cycle",
-      "A private cycle log. Your years of history never go behind a paywall."
-    ],
-    "opp-b482260653424f2e0a80": [
-      "Open Planner",
-      "A planner that never deletes your plans."
-    ]
-  },
-  "lineup": []
+  ]
 }
