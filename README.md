@@ -13,7 +13,7 @@ We find useful apps buried under ads, subscriptions, and unnecessary friction—
 | [Open Fraction](https://github.com/pauljump/openappco/issues/7) | Building | Run focused device QA, then validate signed archives |
 | [Open Journal](https://github.com/pauljump/openappco/issues/9) | Building | Run Face ID, export, accessibility, and Dynamic Type QA on a signed iPhone |
 | [Open Magnifier](https://github.com/pauljump/openappco/issues/2) | Building | Run the device lane on a signed iPhone |
-| [Open Noise](https://github.com/pauljump/openappco/issues/3) | Building | Address Apple's review feedback for version 1.0.0, then resubmit. |
+| [Open Noise](https://github.com/pauljump/openappco/issues/3) | In review | Await Apple review of version 1.0.0 (build 7). |
 | [Open Piano](https://github.com/pauljump/openappco/issues/1) | In review | Await Apple review of version 1.0.0 (build 9). |
 | [Open Pressure](https://github.com/pauljump/openappco/issues/12) | Building | Install on a signed iPhone; verify Apple Health write/import, reminders, PDF/CSV share, VoiceOver, and large Dynamic Type |
 | [Open Random](https://github.com/pauljump/openappco/issues/10) | Building | Run large-batch, export, VoiceOver, and Dynamic Type QA on a signed iPhone |
