@@ -52,6 +52,16 @@ Sending the reply and resubmitting are separate external actions unless the
 current instruction explicitly authorizes both. Immediately before resubmitting,
 verify the version and exact build again and obtain any needed current approval.
 
+When using the App Store Connect API after an information hold, the rejected
+app-version item may remain attached to the original review submission. Mark
+that exact item resolved and submit the original submission again. Do not create
+a replacement submission and try to move the same app version into it; Apple
+may reject that because the version is already associated with the original.
+
+Some high-level clients may create an empty draft before discovering this
+conflict. Verify that it contains zero items, record it, and do not cancel or
+delete it automatically.
+
 ## 5. Read back and retain evidence
 
 Require `WAITING_FOR_REVIEW` or another active review state after resubmission.
