@@ -1,0 +1,43 @@
+name: App status
+
+# Re-renders docs/apps.json and the README table whenever a tracking issue
+# changes, and hourly to catch App Store availability and new 👍 reactions.
+on:
+  issues:
+    types: [opened, edited, labeled, unlabeled, closed, reopened]
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+
+concurrency:
+  group: app-status
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Render status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/sync-apps.mjs --promote
+      - name: Commit and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- docs/apps.json README.md; then echo "No change"; exit 0; fi
+          git config user.name "openappco-status"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/apps.json README.md
+          git commit -m "Update app status"
+          git push
+          gh api -X POST repos/${{ github.repository }}/pages/builds || true

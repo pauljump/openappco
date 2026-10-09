@@ -1,3 +1,159 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="App support — Open AppCo"><title>App support — Open AppCo</title><link rel="stylesheet" href="styles.css"><script src="https://pulse.polyfeeds.dev/_pulse/posthog.js" defer></script></head>
-<body><main><nav aria-label="Main"><a class="brand" href="https://github.com/pauljump/openappco">Open AppCo</a><a href="open-piano/support/">Support</a><a href="open-piano/privacy/">Privacy</a></nav><h1>Open AppCo</h1><p>Everyday apps. Free for everyone. Built in public.</p><p><a class="cta" href="https://github.com/pauljump/openappco">⭐️ Like what we're building? Star Open AppCo on GitHub <span id="stars"></span></a></p><h2>Open Piano</h2><p><a href="open-piano/support/">Help and contact</a> · <a href="open-piano/privacy/">Privacy policy</a></p><p>Stars tell us people want free, open apps. <a href="https://github.com/pauljump/openappco">Give the repo a star →</a></p><footer>Open AppCo · <a href="mailto:pauljump@me.com">Contact Paul</a></footer></main><script>fetch("https://api.github.com/repos/pauljump/openappco").then(function(r){return r.json()}).then(function(d){var n=d.stargazers_count;if(n>0)document.getElementById("stars").textContent="· "+n.toLocaleString()+(n==1?" star":" stars")}).catch(function(){})</script></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open AppCo — Free apps. No ads. No catch.</title>
+<meta name="description" content="It started with a piano app for a kid that kept stopping for ads. Open AppCo builds simple iPhone apps that are free for real: no ads, no accounts, no tracking.">
+<meta property="og:title" content="Open AppCo — It started with a piano.">
+<meta property="og:description" content="Simple iPhone apps, free for real. No ads, no accounts, no tracking. Built in public.">
+<meta property="og:image" content="https://openappco.com/assets/apps/open-piano/shot.jpg">
+<meta property="og:url" content="https://openappco.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<script src="https://pulse.polyfeeds.dev/_pulse/posthog.js" defer></script>
+</head>
+<body>
+<header class="top wrap">
+  <a class="brand" href="./" aria-label="Open AppCo home"><img src="assets/mark.svg" alt="" width="30" height="30">Open AppCo</a>
+  <nav aria-label="Main">
+    <a href="#story">Story</a>
+    <a href="#apps">Apps</a>
+    <a href="#next">Up next</a>
+    <a class="star-btn" href="https://github.com/pauljump/openappco" target="_blank" rel="noopener" data-star-link>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.2.8-.5v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.4-5.5-6.2 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.3a11.7 11.7 0 0 1 6.2 0c2.4-1.6 3.4-1.3 3.4-1.3.6 1.7.2 3 .1 3.3.8.9 1.2 2 1.2 3.3 0 4.8-2.8 5.9-5.5 6.2.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.2 11.2 0 0 0 12 .8Z"/></svg>
+      <span>Star</span><b class="star-count" data-stars>★</b>
+    </a>
+  </nav>
+</header>
+
+<main>
+<section class="hero wrap">
+  <p class="eyebrow">Free iPhone apps · No ads · No accounts · No catch</p>
+  <h1>It started with<br>a piano.</h1>
+  <p class="lead">We wanted a simple piano app for a kid. Every one we tried stopped the music for an ad. So we built our own. Then we kept going.</p>
+
+  <div class="stage" id="stage">
+    <div class="stage-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="stage-title">Go ahead. Play something.</span><span class="stage-hint">tap the keys · or use A–K on a keyboard</span></div>
+    <div class="piano" id="piano" role="group" aria-label="Playable piano, C to E"></div>
+    <div class="trail" id="trail" aria-live="polite"><span class="trail-empty">Your notes will show up here.</span></div>
+
+    <div class="ad" id="ad" role="dialog" aria-modal="true" aria-labelledby="ad-title" hidden>
+      <div class="ad-card">
+        <div class="ad-tag">Advertisement</div>
+        <div class="ad-burst">✨ PIANO PRO ✨</div>
+        <h2 id="ad-title">Unlock all 88 keys!</h2>
+        <p class="ad-price">Only <s>$19.99</s> $7.99/week</p>
+        <button class="ad-cta" type="button" tabindex="-1">Start free trial</button>
+        <button class="ad-close" id="ad-close" type="button" disabled aria-label="Close ad">5</button>
+      </div>
+    </div>
+    <div class="reveal" id="reveal" hidden>
+      <blockquote>“Pop up ads cover the whole screen whenever I play a note.”</blockquote>
+      <p class="cite">— a real App Store review of a real piano app</p>
+      <p>That’s what it felt like, every few notes. <b>That was the only ad you’ll ever see from us.</b> Keep playing.</p>
+      <button type="button" id="reveal-close" class="text-btn">Back to the piano →</button>
+    </div>
+  </div>
+</section>
+
+<section class="story wrap" id="story">
+  <div class="story-grid">
+    <div class="story-label"><p class="eyebrow">Why this exists</p><h2>A kid hunting for a melody doesn’t need an upsell.</h2></div>
+    <div class="prose">
+      <p>The kid wanted to find a song by ear. Tap a key, hear a note, find the next one. That’s the whole job.</p>
+      <p>The apps we tried had other plans. The music kept stopping for ads. We weren’t the only ones who noticed. One review of a piano app says, <em>“literally every single time I go to hit a key an ad pops up.”</em> Another says, <em>“Now you can’t close the ad to get back to the keyboard.”</em></p>
+      <p>So we built <b>Open Piano</b>: labeled keys, a trail of the notes you played, and record and play back. It has no ads, no account, and no tracking. It’s free, and nothing in it is waiting to be unlocked.</p>
+      <p>Then we looked around. We collected 121,602 App Store reviews and went through the 46,070 one- and two-star ones, across 2,540 apps. We found the same thing everywhere. The tuner wants your personal data. The tally counter <em>“demands $13 every time I open the app.”</em> The white-noise machine stops after five minutes unless you pay. These are tiny tools that each do one job, and they’re buried under ads, paywalls, and fake limits.</p>
+      <p>Each one is small enough to build right, so we’re building them, one at a time, in public.</p>
+    </div>
+  </div>
+
+  <div class="heard" aria-label="Heard in one-star reviews">
+    <p class="eyebrow">Heard in one-star reviews</p>
+    <div class="heard-track" id="heard"></div>
+  </div>
+</section>
+
+<section class="free wrap">
+  <div class="free-head">
+    <p class="eyebrow">Why free matters</p>
+    <h2>“Free” used to mean free.</h2>
+  </div>
+  <div class="free-grid">
+    <div><h3>The people who need simple tools most get hit hardest.</h3><p>Kids. Grandparents with a magnifier. Someone logging blood pressure for a doctor. They’re the least able to dodge a dark pattern, and the most likely to tap the wrong button on a $9.99/week trial.</p></div>
+    <div><h3>These apps cost almost nothing to give away.</h3><p>A piano doesn’t need a server. A tally counter doesn’t need your email. Once it’s built well, giving it to one more person costs us close to zero. So charging a subscription for it is just extraction.</p></div>
+    <div><h3>Your data should outlive the app.</h3><p>People lose years of journal entries and health history to an update or a sudden paywall. Our apps keep everything on your phone and export it in one tap. If you leave, your data goes with you.</p></div>
+  </div>
+  <ul class="promises" aria-label="Our promises">
+    <li><b>No ads.</b> Not now, not “later.”</li>
+    <li><b>No account.</b> Open it and it works.</li>
+    <li><b>No tracking.</b> What you do stays on your phone.</li>
+    <li><b>Your data exports.</b> Plain files, one tap.</li>
+    <li><b>Nothing to unlock.</b> Every feature, for everyone.</li>
+  </ul>
+</section>
+
+<section class="apps wrap" id="apps">
+  <div class="section-head">
+    <div><p class="eyebrow">The apps</p><h2>What we’ve built, and where each one is.</h2></div>
+    <p class="aside">Every app has to pass Apple review before you can download it. This board updates on its own from <a href="https://github.com/pauljump/openappco/issues?q=is%3Aissue+label%3Aapp">our public tracker</a> and the App Store. <span class="updated" id="updated"></span></p>
+  </div>
+  <div class="pipeline" id="pipeline" aria-label="Release pipeline summary"></div>
+  <div class="grid" id="grid"><p class="loading">Loading the board…</p></div>
+</section>
+
+<section class="next wrap" id="next">
+  <div class="section-head">
+    <div><p class="eyebrow">Up next</p><h2>On the bench.</h2></div>
+    <p class="aside">These come straight from the research. Each one started with people in the reviews asking for the same simple thing. Want one sooner? <a href="https://github.com/pauljump/openappco/discussions">Tell us in Discussions.</a></p>
+  </div>
+  <div class="teasers" id="teasers"></div>
+</section>
+
+<section class="bench wrap">
+  <div class="bench-card">
+    <div>
+      <p class="eyebrow">How it stays free</p>
+      <h2>Underwrite a feature. Everyone gets it.</h2>
+      <p>We keep the apps small, and we build them in the open. Soon you’ll be able to put a few dollars toward a feature you want. Nothing unlocks for you alone. The feature ships free to everyone, and your name goes on the receipt.</p>
+      <p class="muted">Not open yet. Until it is, a star or a 👍 tells us what to build next.</p>
+    </div>
+    <div class="receipt" aria-hidden="true">
+      <div class="r-head">RECEIPT · OPEN PIANO 1.1</div>
+      <div class="r-row"><span>Sustain pedal</span><span>shipped</span></div>
+      <div class="r-row"><span>Shares raised</span><span>50 / 50</span></div>
+      <div class="r-row"><span>Price to you</span><span>$0.00</span></div>
+      <div class="r-row"><span>Price to everyone</span><span>$0.00</span></div>
+      <div class="r-foot">Underwritten by people who wanted it to exist.</div>
+      <div class="r-note">illustration</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta wrap">
+  <div class="cta-count"><span class="big-star">★</span><span class="big-num" data-stars>—</span></div>
+  <div>
+    <h2>Every star is a vote that free apps should exist.</h2>
+    <p>It’s the number we watch. Starring the repo costs nothing and tells us people want this.</p>
+    <a class="button" href="https://github.com/pauljump/openappco" target="_blank" rel="noopener" data-star-link>Star Open AppCo on GitHub</a>
+  </div>
+</section>
+</main>
+
+<footer class="wrap foot">
+  <div><a class="brand small" href="./"><img src="assets/mark.svg" alt="" width="22" height="22">Open AppCo</a><p>Everyday apps. Free for everyone. Built in public.</p></div>
+  <div class="foot-links">
+    <a href="https://github.com/pauljump/openappco">GitHub</a>
+    <a href="https://github.com/pauljump/openappco/discussions">Discussions</a>
+    <a href="https://github.com/pauljump/openappco/blob/main/docs/RESEARCH.md">How we research</a>
+    <a href="open-noise/support/">Open Noise help</a>
+    <a href="open-tally/support/">Open Tally help</a>
+    <a href="https://openforx.polyfeeds.dev/apps/open-piano/support">Open Piano help</a>
+    <a href="mailto:pauljump@me.com">Contact</a>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

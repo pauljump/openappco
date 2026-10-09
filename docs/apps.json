@@ -1,0 +1,320 @@
+{
+  "generated": "2026-10-09T00:13:48.800Z",
+  "apps": [
+    {
+      "slug": "open-breath",
+      "issue": 8,
+      "name": "Open Breath",
+      "tagline": "Breathe at your pace. Box breathing with no paywall or countdown pressure.",
+      "origin": {
+        "count": 4,
+        "source": "Breathe+",
+        "url": "https://apps.apple.com/us/app/breathing-exercises-breathe/id1106998959",
+        "quote": "now you have to pay for a subscription to use it."
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/8",
+      "label": "status:building",
+      "status": "Building",
+      "stage": "building",
+      "ascState": null,
+      "ascChecked": null,
+      "next": "Run haptic, interruption, accessibility, and persistence QA on a signed iPhone",
+      "likes": 0,
+      "store": null
+    },
+    {
+      "slug": "open-fraction",
+      "issue": 7,
+      "name": "Open Fraction",
+      "tagline": "Keep the whole fraction. Four operators, reduction, a quiet keypad.",
+      "origin": {
+        "count": 3,
+        "source": "Fraction Calculator Plus",
+        "url": "https://apps.apple.com/us/app/fraction-calculator-plus/id1355361770",
+        "quote": "how is the addition function a Pro feature??"
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/7",
+      "label": "status:building",
+      "status": "Building",
+      "stage": "building",
+      "ascState": null,
+      "ascChecked": null,
+      "next": "Run focused device QA, then validate signed archives",
+      "likes": 0,
+      "store": null
+    },
+    {
+      "slug": "open-journal",
+      "issue": 9,
+      "name": "Open Journal",
+      "tagline": "Write in plain Markdown. Your words, your phone, no lock-in.",
+      "origin": {
+        "count": 3,
+        "source": "Day One",
+        "url": "https://apps.apple.com/us/app/day-one-daily-journal-diary/id1044867788",
+        "quote": "losing 2 whole months of daily journal entry"
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/9",
+      "label": "status:building",
+      "status": "Building",
+      "stage": "building",
+      "ascState": null,
+      "ascChecked": null,
+      "next": "Run Face ID, export, accessibility, and Dynamic Type QA on a signed iPhone",
+      "likes": 0,
+      "store": null
+    },
+    {
+      "slug": "open-magnifier",
+      "issue": 2,
+      "name": "Open Magnifier",
+      "tagline": "Clarity, your way. A camera magnifier with a light and nothing else.",
+      "origin": {
+        "count": 4,
+        "source": "Magnifying Glass With Light",
+        "url": "https://apps.apple.com/us/app/magnifying-glass-with-light/id406048120",
+        "quote": "Doesn’t seem to use the cameras focus any longer."
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/2",
+      "label": "status:building",
+      "status": "Building",
+      "stage": "building",
+      "ascState": null,
+      "ascChecked": null,
+      "next": "Run the device lane on a signed iPhone",
+      "likes": 0,
+      "store": null
+    },
+    {
+      "slug": "open-noise",
+      "issue": 3,
+      "name": "Open Noise",
+      "tagline": "White, brown, and ocean noise. Quiet on purpose, no timer limit.",
+      "ascId": "6820576119",
+      "bundleId": "com.opennoise.app",
+      "origin": {
+        "count": 16,
+        "source": "Noise Machine",
+        "url": "https://apps.apple.com/us/app/noise-machine-brown-white/id1261956119",
+        "quote": "This app literally needs you to pay or else you only have a five minute limit"
+      },
+      "links": {
+        "support": "open-noise/support/",
+        "privacy": "open-noise/privacy/"
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/3",
+      "label": "status:in-review",
+      "status": "In review",
+      "stage": "submitted",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-08",
+      "next": "Await Apple review of version 1.0.0 (build 7).",
+      "likes": 0,
+      "store": null
+    },
+    {
+      "slug": "open-piano",
+      "issue": 1,
+      "name": "Open Piano",
+      "tagline": "A real piano. Labeled keys, a trail of every note, record and play back.",
+      "ascId": "6804585543",
+      "bundleId": "com.openpiano.app",
+      "landscape": true,
+      "origin": {
+        "source": "Piano for iPhone",
+        "url": "https://apps.apple.com/us/app/piano-for-iphone/id531263194",
+        "count": 3,
+        "quote": "Pop up ads cover the whole screen whenever I play a note."
+      },
+      "links": {
+        "support": "https://openforx.polyfeeds.dev/apps/open-piano/support",
+        "privacy": "https://openforx.polyfeeds.dev/apps/open-piano/privacy"
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/1",
+      "label": "status:in-review",
+      "status": "In review",
+      "stage": "submitted",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-08",
+      "next": "Await Apple review of version 1.0.0 (build 9).",
+      "likes": 0,
+      "store": null
+    },
+    {
+      "slug": "open-pressure",
+      "issue": 12,
+      "name": "Open Pressure",
+      "tagline": "Three numbers. Done. A blood pressure log your doctor can read.",
+      "origin": {
+        "count": 7,
+        "source": "Blood Pressure App",
+        "url": "https://apps.apple.com/us/app/blood-pressure-app/id1591935741",
+        "quote": "I did an update to the app and it lost my profile and blood pressure history."
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/12",
+      "label": "status:building",
+      "status": "Building",
+      "stage": "building",
+      "ascState": null,
+      "ascChecked": null,
+      "next": "Install on a signed iPhone; verify Apple Health write/import, reminders, PDF/CSV share, VoiceOver, and large Dynamic Type",
+      "likes": 0,
+      "store": null
+    },
+    {
+      "slug": "open-random",
+      "issue": 10,
+      "name": "Open Random",
+      "tagline": "Pick a number. A calm generator that opens ready.",
+      "origin": {
+        "count": 4,
+        "source": "Random Number Generator. RNG",
+        "url": "https://apps.apple.com/us/app/random-number-generator-rng/id1128190780",
+        "quote": "Why are there ads in a random number generator of all things??"
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/10",
+      "label": "status:building",
+      "status": "Building",
+      "stage": "building",
+      "ascState": null,
+      "ascChecked": null,
+      "next": "Run large-batch, export, VoiceOver, and Dynamic Type QA on a signed iPhone",
+      "likes": 0,
+      "store": null
+    },
+    {
+      "slug": "open-scan",
+      "issue": 5,
+      "name": "Open Scan",
+      "tagline": "Point, scan, done. QR and barcodes with a short local history.",
+      "origin": {
+        "count": 3,
+        "source": "Qrafter",
+        "url": "https://apps.apple.com/us/app/qrafter-qr-code-reader/id416098700",
+        "quote": "there’s no obvious easy to even scan without signing up."
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/5",
+      "label": "status:building",
+      "status": "Building",
+      "stage": "building",
+      "ascState": null,
+      "ascChecked": null,
+      "next": "Run QR/barcode decode tests on a signed iPhone",
+      "likes": 0,
+      "store": null
+    },
+    {
+      "slug": "open-tally",
+      "issue": 6,
+      "name": "Open Tally",
+      "tagline": "Count the thing. A calm counter board that opens ready.",
+      "ascId": "6820183055",
+      "bundleId": "com.opentally.app",
+      "origin": {
+        "count": 3,
+        "source": "Count That Now",
+        "url": "https://apps.apple.com/us/app/count-that-now-tally-counter/id955952873",
+        "quote": "Demands $13 every time I open the app."
+      },
+      "links": {
+        "support": "open-tally/support/",
+        "privacy": "open-tally/privacy/"
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/6",
+      "label": "status:in-review",
+      "status": "In review",
+      "stage": "submitted",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-08",
+      "next": "Await Apple review of version 1.0.0 (build 5).",
+      "likes": 0,
+      "store": null
+    },
+    {
+      "slug": "open-tip",
+      "issue": 11,
+      "name": "Open Tip",
+      "tagline": "Settle the table. Tip, tax, and split in one calm view.",
+      "origin": {
+        "count": 9,
+        "source": "iTip Calc",
+        "url": "https://apps.apple.com/us/app/itip-calc-by-palasoftware/id282914454",
+        "quote": "Cannot tap on any of the predefined values"
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/11",
+      "label": "status:building",
+      "status": "Building",
+      "stage": "building",
+      "ascState": null,
+      "ascChecked": null,
+      "next": "Run currency rounding, split reconciliation, accessibility, and Dynamic Type QA on a signed iPhone",
+      "likes": 0,
+      "store": null
+    },
+    {
+      "slug": "open-tuner",
+      "issue": 4,
+      "name": "Open Tuner",
+      "tagline": "Tune by ear. A calm chromatic tuner with a clear in-tune state.",
+      "origin": {
+        "count": 28,
+        "source": "n-Track Tuner",
+        "url": "https://apps.apple.com/us/app/n-track-tuner/id409786458",
+        "quote": "We just need a tuner guys, you don't need our personal data!"
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/4",
+      "label": "status:building",
+      "status": "Building",
+      "stage": "building",
+      "ascState": null,
+      "ascChecked": null,
+      "next": "Run calibrated audio tests on a signed iPhone",
+      "likes": 0,
+      "store": null
+    }
+  ],
+  "teasers": [
+    {
+      "name": "Open Shelf",
+      "slug": "open-shelf",
+      "icon": true,
+      "tagline": "Scan the books on your shelf. No 30-book cap, no account, one-tap export.",
+      "hint": "Built. Testing next."
+    },
+    {
+      "name": "Open Tides",
+      "tagline": "High and low tide from public NOAA stations. Tomorrow included, no video first.",
+      "quote": "Just to look at the next day you need to watch an ad or pay.",
+      "apps": 31,
+      "complaints": 96
+    },
+    {
+      "name": "Open Fast",
+      "tagline": "A fasting timer that keeps your history, on your phone, for free.",
+      "quote": "SUBSCRIPTION TO A TIMER? seriously??",
+      "apps": 13,
+      "complaints": 40
+    },
+    {
+      "name": "Open Recorder",
+      "tagline": "Record as long as you need. Export without a Pro upgrade.",
+      "quote": "Can’t export without Pro version",
+      "apps": 8,
+      "complaints": 27
+    },
+    {
+      "name": "Open Level",
+      "tagline": "A bubble level with degrees and percent slope. It opens to the level.",
+      "quote": "every time I attempted it it jumped to ads or games",
+      "apps": 1,
+      "complaints": 4
+    },
+    {
+      "name": "Open Cycle",
+      "tagline": "A private cycle log. Your years of history never go behind a paywall.",
+      "quote": "all my data is behind a paywall with zero warning.",
+      "apps": 1,
+      "complaints": 3
+    }
+  ]
+}

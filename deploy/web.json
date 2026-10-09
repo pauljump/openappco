@@ -5,16 +5,21 @@
     "branch": "main",
     "path": "/docs"
   },
-  "url": "https://pauljump.github.io/openappco/",
+  "url": "https://openappco.com/",
   "hostnames": [
-    "pauljump.github.io"
+    "openappco.com",
+    "www.openappco.com"
   ],
-  "pathPrefix": "/openappco/",
+  "pathPrefix": "/",
   "status": "production",
   "localService": null,
   "publication": "Push static docs on main; GitHub Pages deploys from the configured branch.",
   "healthChecks": [
-    "/openappco/open-piano/support/",
-    "/openappco/open-piano/privacy/"
-  ]
+    "/",
+    "/apps.json",
+    "/open-noise/support/",
+    "/open-tally/support/",
+    "/open-piano/support/"
+  ],
+  "dns": "Cloudflare zone openappco.com: apex + www CNAME to pauljump.github.io, DNS-only (GitHub issues the TLS cert). docs/CNAME sets the Pages custom domain; old pauljump.github.io/openappco/* URLs 301 here."
 }
