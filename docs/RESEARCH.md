@@ -1,6 +1,6 @@
 # Research and mining
 
-The existing OpenX Miner operation continues under Open AppCo. Its evidence and internal backlog are preserved; moving the tracker does not restart collection.
+The existing App Store review-mining operation continues under Open AppCo. Its evidence and internal backlog are preserved; moving the tracker does not restart collection.
 
 1. Collect bounded batches of public App Store listings and reviews, preserving source URLs, IDs, capture dates, and run provenance.
 2. Verify evidence, group recurring friction, and merge candidates solving the same job.

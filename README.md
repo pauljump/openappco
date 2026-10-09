@@ -4,9 +4,8 @@
 
 We find useful apps buried under ads, subscriptions, and unnecessary friction—and build straightforward alternatives.
 
-**Open AppCo** is the project and public home. **Open X** is the app-family
-naming pattern: Open Piano, Open Noise, Open Tally, and the next straightforward
-replacement.
+**Open AppCo** is the project, app family, and public home. Its apps use direct
+names such as Open Piano, Open Noise, and Open Tally.
 
 ## Apps
 
@@ -39,9 +38,8 @@ replacement.
 - [App Store submission kit](workflows/app-store/)
 
 The project was previously called Open for X. This repository is the Open AppCo
-project home and progress tracker; “Open X” now describes the family of apps.
-App code and the existing mining pipeline remain in their original repositories
-while we prepare individual public releases. This repo does not yet contain app
-source code.
+project home and progress tracker. App code and the existing mining pipeline
+remain in their original repositories while we prepare individual public
+releases. This repo does not yet contain app source code.
 
 [Open Piano support](https://openforx.polyfeeds.dev/apps/open-piano/support) · [Privacy](https://openforx.polyfeeds.dev/apps/open-piano/privacy) · [Wishlist](https://openforx.polyfeeds.dev/apps/open-piano/wishlist)

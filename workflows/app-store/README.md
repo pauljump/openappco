@@ -1,10 +1,7 @@
-# Open X App Store submission kit
+# Open AppCo App Store submission kit
 
-This is Open AppCo's reusable, public-safe workflow for submitting an Open X
-app to Apple and responding when App Review asks for more information.
-
-Open AppCo is the project. Open X is the app family: Open Piano, Open Noise,
-Open Tally, and future `Open <Noun>` apps.
+This is Open AppCo's reusable, public-safe workflow for submitting an app to
+Apple and responding when App Review asks for more information.
 
 The kit was distilled from real first-version submissions. It is not official
 Apple guidance and cannot guarantee acceptance or prevent an information

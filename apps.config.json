@@ -1,5 +1,5 @@
 {
-  "note": "Presentation copy for openappco.com. Status never lives here: GitHub issue labels own it (see docs/WORKFLOW.md). Quotes are short verified App Store review excerpts from the OpenX Miner corpus.",
+  "note": "Presentation copy for openappco.com. Status never lives here: GitHub issue labels own it (see docs/WORKFLOW.md). Quotes are short verified App Store review excerpts from the app-research corpus.",
   "apps": [
     { "slug": "open-piano", "issue": 1, "name": "Open Piano", "tagline": "A real piano. Labeled keys, a trail of every note, record and play back.", "ascId": "6804585543", "bundleId": "com.openpiano.app", "landscape": true,
       "origin": { "source": "Piano for iPhone", "url": "https://apps.apple.com/us/app/piano-for-iphone/id531263194", "count": 3, "quote": "Pop up ads cover the whole screen whenever I play a note." },
