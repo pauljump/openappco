@@ -1,0 +1,31 @@
+Hello App Review,
+
+Thank you for the opportunity to provide the requested information for [APP NAME] [VERSION] (build [BUILD]).
+
+1. Physical-device testing and recording
+
+The attached recording was captured on [DEVICE] running [OS VERSION]. It begins on the Home Screen, launches the submitted build, and demonstrates [ORDINARY CORE FLOW]. [ACCOUNT / UGC / PAID-CONTENT FLOWS ARE NOT APPLICABLE, OR DESCRIBE EACH FLOW SHOWN].
+
+2. Purpose, target audience, value, and business model
+
+[APP NAME] is [PURPOSE] for [TARGET AUDIENCE]. It solves [PROBLEM] by [CORE VALUE]. The business model is [FREE / PAID / IAP / SUBSCRIPTION / OTHER], with [ADS / TRACKING / PURCHASE DETAILS].
+
+3. Setup and access
+
+[DESCRIBE THE FASTEST PATH FROM LAUNCH TO THE MAIN FEATURE, INCLUDING PERMISSIONS, HARDWARE, SAMPLE FILES, OR DEMO CREDENTIALS. SAY NONE WHEN NONE ARE REQUIRED.]
+
+4. External services and tools
+
+[LIST EVERY RUNTIME DATA, AUTHENTICATION, PAYMENT, ANALYTICS, ADVERTISING, NETWORK, OR AI SERVICE. DISTINGUISH MATERIAL BUILD-TIME CONTENT TOOLS FROM RUNTIME SERVICES. SAY NONE WHEN NONE APPLY.]
+
+5. Regional differences
+
+[DESCRIBE REGIONAL DIFFERENCES, OR CONFIRM THAT FEATURES AND CONTENT ARE THE SAME IN EVERY AVAILABLE REGION.]
+
+6. Regulated activity and protected material
+
+[DESCRIBE REGULATED SERVICES AND AUTHORIZATION, PLUS RIGHTS FOR THIRD-PARTY OR PROTECTED MATERIAL. SAY NONE WHEN NONE APPLY.]
+
+Please let us know if any additional information is needed to complete the review.
+
+Thank you.

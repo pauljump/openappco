@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "appName": "Open Example",
+  "bundleId": "com.example.openexample",
+  "platform": "IOS",
+  "version": "1.0.0",
+  "buildNumber": "1",
+  "supportUrl": "https://example.com/support/",
+  "privacyUrl": "https://example.com/privacy/",
+  "releaseType": "MANUAL",
+  "reviewNotesFile": "review-notes.txt",
+  "reviewResponseFile": "reviewer-response.txt",
+  "physicalDeviceTestSummaryFile": "physical-device-tests.json",
+  "reviewVideo": {
+    "file": "device-demo.mov",
+    "sha256": "replace-with-64-lowercase-hex-characters",
+    "durationSeconds": 30,
+    "device": "iPhone model",
+    "osVersion": "iOS version",
+    "demonstrates": "Home Screen, launch, and ordinary core flow"
+  }
+}

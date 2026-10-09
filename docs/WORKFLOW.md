@@ -13,3 +13,17 @@ Use the app name as the title. Include a `Next: ` line, scope, evidence date, re
 Site stages: Building → Submitted (WAITING_FOR_REVIEW) → In review (IN_REVIEW, or approved and releasing) → Live. Rejections show as "Changes requested". Presentation copy, icons, quotes and teasers live in `apps.config.json` and `docs/assets/apps/<slug>/`.
 
 Discuss suggestions in Discussions. Keep unselected research internal. Never publish private review contacts, raw reviews, or credentials.
+
+## App release workflows
+
+The reusable, public-safe App Store process lives in the
+[App Store submission kit](../workflows/app-store/). It separates two workflows:
+
+1. preparing and submitting an exact release candidate; and
+2. responding to App Review and resubmitting after an information request or
+   resolved issue.
+
+The kit contains templates and a local validator, but no Apple credentials and
+no automatic submit action. App source, signed archives, reviewer contact
+details, private messages, and credentialed receipts remain in their canonical
+private locations.

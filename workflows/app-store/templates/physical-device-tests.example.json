@@ -1,0 +1,7 @@
+{
+  "result": "Passed",
+  "device": "iPhone model",
+  "osVersion": "iOS version",
+  "passedTests": 1,
+  "notes": "Describe the release-candidate smoke test and any focused physical-device checks."
+}
