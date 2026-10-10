@@ -1,6 +1,21 @@
 {
-  "generated": "2026-10-10T12:37:22.606Z",
+  "generated": "2026-10-10T15:52:24.773Z",
   "apps": [
+    {
+      "issue": 14,
+      "issueUrl": "https://github.com/pauljump/openappco/issues/14",
+      "name": "Open Metronome",
+      "label": "status:in-review",
+      "status": "In review",
+      "stage": "submitted",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-10",
+      "next": "Wait for Apple's review decision.",
+      "likes": 0,
+      "store": null,
+      "hasShot": false,
+      "hasIcon": false
+    },
     {
       "slug": "open-noise",
       "issue": 3,

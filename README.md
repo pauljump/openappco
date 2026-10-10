@@ -12,6 +12,7 @@ names such as Open Piano, Open Noise, and Open Tally.
 <!-- apps:start -->
 | App | Status |
 | --- | --- |
+| [Open Metronome](https://github.com/pauljump/openappco/issues/14) | In review |
 | [Open Noise](https://github.com/pauljump/openappco/issues/3) | In review |
 | [Open Piano](https://github.com/pauljump/openappco/issues/1) | In review |
 | [Open Tally](https://github.com/pauljump/openappco/issues/6) | [Live](https://apps.apple.com/us/app/open-tally/id6820183055) |
