@@ -18,16 +18,13 @@ Site stages: Submitted (WAITING_FOR_REVIEW) → In review (IN_REVIEW, or approve
 
 Discuss suggestions in Discussions. Keep unselected research internal. Never publish private review contacts, raw reviews, or credentials.
 
-## App release workflows
+## How an app gets from idea to the App Store
 
-The reusable, public-safe App Store process lives in the
-[App Store submission kit](../workflows/app-store/). It separates two workflows:
+Open AppCo follows [Slipway](https://github.com/pauljump/slipway), a general nine-stage workflow
+for shipping small iOS apps: pick, brief, look, build, device check, store packet, submit,
+review, live. Slipway holds the procedure, templates and an offline checker, and anyone can use it
+for their own apps. Open AppCo adds its own defaults on top: no ads, no account, no tracking,
+nothing to unlock, support and privacy pages on openappco.com, and this repository's status
+pipeline.
 
-1. preparing and submitting an exact release candidate; and
-2. responding to App Review and resubmitting after an information request or
-   resolved issue.
-
-The kit contains templates and a local validator, but no Apple credentials and
-no automatic submit action. App source, signed archives, reviewer contact
-details, private messages, and credentialed receipts remain in their canonical
-private locations.
+App source, signed builds, reviewer contact details, Apple messages and credentials stay private.

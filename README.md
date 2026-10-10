@@ -28,7 +28,7 @@ names such as Open Piano, Open Noise, and Open Tally.
 - [Ideas and conversation](https://github.com/pauljump/openappco/discussions)
 - [Research and mining](docs/RESEARCH.md)
 - [Progress workflow](docs/WORKFLOW.md)
-- [App Store submission kit](workflows/app-store/)
+- [How we ship: Slipway](https://github.com/pauljump/slipway), our idea-to-App-Store workflow
 
 The project was previously called Open for X. This repository is the Open AppCo
 project home and progress tracker. App code and the existing mining pipeline
