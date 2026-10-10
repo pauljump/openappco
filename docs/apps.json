@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T23:30:12.820Z",
+  "generated": "2026-10-10T00:00:21.432Z",
   "apps": [
     {
       "slug": "open-noise",
@@ -81,12 +81,12 @@
       },
       "opportunity": "opp-eb3904a28e7b56f86ee4",
       "issueUrl": "https://github.com/pauljump/openappco/issues/6",
-      "label": "status:in-review",
-      "status": "In review",
-      "stage": "review",
-      "ascState": "IN_REVIEW",
+      "label": "status:live",
+      "status": "Live",
+      "stage": "live",
+      "ascState": "READY_FOR_SALE",
       "ascChecked": "2026-10-09",
-      "next": "Apple is reviewing version 1.0.0 (build 5).",
+      "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
       "store": null,
       "hasShot": true,
