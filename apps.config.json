@@ -60,6 +60,25 @@
       "opportunity": "opp-eb3904a28e7b56f86ee4"
     },
     {
+      "slug": "open-metronome",
+      "issue": 14,
+      "name": "Open Metronome",
+      "tagline": "Steady time for practice. Nothing pops up over the beat.",
+      "ascId": "6821184769",
+      "bundleId": "com.openmetronome.app",
+      "origin": {
+        "count": 16,
+        "source": "Metronome Tuner | Practice+",
+        "url": "https://apps.apple.com/us/app/metronome-tuner-practice/id858142974",
+        "quote": "I have this app for my kids to practice with. I just saw a porn add show up on it."
+      },
+      "links": {
+        "support": "open-metronome/support/",
+        "privacy": "open-metronome/privacy/"
+      },
+      "opportunity": "opp-ac7cb068022f98604890"
+    },
+    {
       "slug": "open-tuner",
       "issue": 4,
       "name": "Open Tuner",
