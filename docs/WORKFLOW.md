@@ -27,4 +27,16 @@ for their own apps. Open AppCo adds its own defaults on top: no ads, no account,
 nothing to unlock, support and privacy pages on openappco.com, and this repository's status
 pipeline.
 
+Between pick and brief, Open AppCo adds a selected-candidate review audit. The broad mining pass is
+for finding promising jobs; the audit then revisits every source app behind the chosen job, requests
+every public Apple feed page in the recorded storefronts and sort orders, deduplicates the results,
+and records feed caps or failures. Only manually checked receipts can drive requirements. The exact
+coverage boundary is published with the methodology because Apple's public feed is not a complete
+lifetime or worldwide archive.
+
 App source, signed builds, reviewer contact details, Apple messages and credentials stay private.
+
+Device review is performed on a real iPhone. When available, the release walkthrough is captured
+wirelessly with Apple's iPhone Mirroring: the agent retries the connection after an unlock or
+reconnect, launches from the Home Screen, uses clean demo content, and inspects the finished video.
+USB is a fallback, not a default requirement. Private phone content is kept out of release evidence.

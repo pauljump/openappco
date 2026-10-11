@@ -1,10 +1,25 @@
 {
-  "generated": "2026-10-11T14:30:55.251Z",
+  "generated": "2026-10-11T14:32:22.451Z",
   "apps": [
     {
+      "slug": "open-flashcards",
       "issue": 15,
-      "issueUrl": "https://github.com/pauljump/openappco/issues/15",
       "name": "Open Flashcards",
+      "tagline": "Make cards. Keep them exact. Local decks, unrestricted study, and plain CSV.",
+      "ascId": "6821626941",
+      "bundleId": "com.openflashcards.app",
+      "origin": {
+        "count": 122,
+        "source": "Flashcards Maker Flash Cards",
+        "url": "https://apps.apple.com/us/app/flashcards-maker-flash-cards/id1437113609",
+        "quote": "Created hours of review material using the desktop version only to lose everything."
+      },
+      "links": {
+        "support": "open-flashcards/support/",
+        "privacy": "open-flashcards/privacy/"
+      },
+      "opportunity": "opp-1bd395b876700d4b14ac",
+      "issueUrl": "https://github.com/pauljump/openappco/issues/15",
       "label": "status:in-review",
       "status": "In review",
       "stage": "submitted",
@@ -13,8 +28,8 @@
       "next": "Wait for Apple's review decision.",
       "likes": 0,
       "store": null,
-      "hasShot": false,
-      "hasIcon": false
+      "hasShot": true,
+      "hasIcon": true
     },
     {
       "slug": "open-metronome",
