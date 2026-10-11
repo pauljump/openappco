@@ -1,6 +1,30 @@
 {
-  "generated": "2026-10-11T14:32:22.451Z",
+  "generated": "2026-10-11T17:06:49.384Z",
   "apps": [
+    {
+      "slug": "open-breath",
+      "issue": 8,
+      "name": "Open Breath",
+      "tagline": "Breathe at your pace. Box breathing with no paywall or countdown pressure.",
+      "origin": {
+        "count": 4,
+        "source": "Breathe+",
+        "url": "https://apps.apple.com/us/app/breathing-exercises-breathe/id1106998959",
+        "quote": "now you have to pay for a subscription to use it."
+      },
+      "opportunity": "opp-3f70850d6025f5cb2471",
+      "issueUrl": "https://github.com/pauljump/openappco/issues/8",
+      "label": "status:in-review",
+      "status": "In review",
+      "stage": "submitted",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-11",
+      "next": "Await Apple review of version 1.0.0 (build 4).",
+      "likes": 0,
+      "store": null,
+      "hasShot": true,
+      "hasIcon": true
+    },
     {
       "slug": "open-flashcards",
       "issue": 15,
