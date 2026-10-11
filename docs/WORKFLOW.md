@@ -6,9 +6,22 @@ Use the app name as the title. Include a `Next: ` line, scope, evidence date, re
 
 ## Status pipeline (openappco.com)
 
-1. **App Store Connect → issues.** `scripts/asc-status.py --apply` (run on the Mini with `/Users/mini-home/projects/asc-venv/bin/python`) reads each app's newest App Store version, read-only, and when it changed rewrites the issue's status label, `App Store: <STATE> · checked <date>` line, and `Next:` line. Apps match by App Store Connect name = issue title. Unsubmitted versions are skipped.
+1. **App Store Connect → issues.** `scripts/asc-status.py --apply` (run on the Mini with `/Users/mini-home/projects/asc-venv/bin/python`) reads each app's newest App Store version, read-only, and when it changed rewrites the issue's status label, `App Store: <STATE> · checked <date>` line, and `Next:` line. Apps match by the `ascId` and issue number in `apps.config.json`, with exact-name matching only as a fallback. This survives App Store subtitle-style names such as “Open Breath: Breathing Timer.” Unsubmitted versions are skipped.
 2. **Issues → site.** `.github/workflows/status.yml` runs `node scripts/sync-apps.mjs --promote` on every issue change and hourly. It writes `docs/apps.json` and the README table, checks the public iTunes lookup (no credentials) and flips an app to `status:live` once Apple lists it, then commits and asks Pages to rebuild.
 3. **Site.** `docs/site.js` renders `apps.json` and refreshes 👍 counts and labels live from the GitHub API. Repo stars are the site-wide "likes"; a 👍 on an app's issue is that app's like.
+
+Each numbered app also has a generated living page. `app-pages.config.json` owns its immutable
+number, post description, public media and verified complaint/fix rows. Run:
+
+```bash
+node scripts/render-app-pages.mjs
+node scripts/validate-launch-system.mjs
+node scripts/render-app-pages.mjs --post <slug>
+```
+
+The hourly status workflow runs the first two commands after refreshing `docs/apps.json`, so every
+page gets a current static fallback while `docs/app-page.js` also refreshes status in the browser.
+The `--post` form prints the ready-to-paste daily X copy and always links to the app page.
 
 ## What ships next
 
@@ -17,6 +30,34 @@ Nothing upcoming is published. The site and README list an app only once it is s
 Site stages: Submitted (WAITING_FOR_REVIEW) → In review (IN_REVIEW, or approved and releasing) → Live. Rejections show as "Changes requested". Presentation copy, icons and quotes live in `apps.config.json` and `docs/assets/apps/<slug>/`.
 
 Discuss suggestions in Discussions. Keep unselected research internal. Never publish private review contacts, raw reviews, or credentials.
+
+## Daily app post
+
+Once App Store Connect confirms that Apple's review queue accepted the exact approved version and
+build (`WAITING_FOR_REVIEW`), the app receives the next permanent Open AppCo launch number. The
+number is recorded explicitly and never inferred from issue numbers, build numbers, configuration
+order, or the site's current card count. Its public source of truth is the app's `launchNumber` in
+`apps.config.json`.
+
+Each kit has three pieces: a short X post naming the launch number, recording that the app was sent
+to Apple for review that day, and describing the app's job in one sentence; a 1200×630 share image
+styled like a compact iOS App Store listing; and an app-specific living status page. The image shows
+the app icon, name, description,
+CHECK IT OUT action, Free · iPhone, one real screenshot and `APP #<number>`. It deliberately omits
+Apple’s changing review status and does not restate the launch number as an ordinal, so the same
+image remains accurate after approval.
+
+The post links to `/<slug>/`, not the homepage or an App Store URL that is not live yet. The page
+leads with the current Apple status, then shows three clean screenshots, the inspected
+physical-device demo, and every manually verified complaint category the app claims to address with
+the corresponding feature delivered free. Quotes are short, source-linked, and stripped of
+reviewer identity. The page also states the audit's storefront, sort-order, date and Apple feed-cap
+boundary; it never claims access to every lifetime or worldwide review. The status pipeline keeps
+the page current. Only after the public App Store lookup succeeds does the page's main action become
+the verified download link; that later transition does not create a second launch number.
+Approval also does not create a second numbered post or card. A short unnumbered reply to the
+original post can announce that the app is live, while the next day's main post stays focused on the
+next app.
 
 ## How an app gets from idea to the App Store
 

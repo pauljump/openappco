@@ -1,0 +1,167 @@
+{
+  "apps": [
+    {
+      "slug": "open-piano",
+      "launchNumber": 1,
+      "submittedDate": "2026-10-07",
+      "tinyDescription": "Play a real piano, see every note, and record it without an ad covering the keys.",
+      "fallbackStatus": "In Review",
+      "fallbackNext": "Wait for Apple's review decision.",
+      "screenshots": [
+        {
+          "src": "../assets/apps/open-piano/shot.jpg",
+          "alt": "Open Piano keyboard and note trail",
+          "caption": "A playable piano with labeled keys and a visible note trail."
+        }
+      ],
+      "fixes": [
+        {
+          "quote": "Pop up ads cover the whole screen whenever I play a note.",
+          "source": "Piano for iPhone",
+          "sourceUrl": "https://apps.apple.com/us/app/piano-for-iphone/id531263194",
+          "fix": "There is no advertising path. Play, record, and listen back without an interruption covering the keys."
+        }
+      ]
+    },
+    {
+      "slug": "open-tally",
+      "launchNumber": 2,
+      "submittedDate": "2026-10-08",
+      "tinyDescription": "Count the thing. A calm counter board that opens ready.",
+      "fallbackStatus": "Live on the App Store",
+      "fallbackNext": "Collect feedback and maintain.",
+      "screenshots": [
+        {"src": "../assets/apps/open-tally/screens/01-home.jpg", "alt": "Open Tally home counter", "caption": "Open straight into a counter."},
+        {"src": "../assets/apps/open-tally/screens/02-multiple.jpg", "alt": "Open Tally board with multiple counters", "caption": "Keep several counts on one board."},
+        {"src": "../assets/apps/open-tally/screens/03-focus.jpg", "alt": "Open Tally focused counter", "caption": "Focus on one count when that is all you need."}
+      ],
+      "video": {
+        "src": "../assets/apps/open-tally/device-demo.mp4",
+        "poster": "../assets/apps/open-tally/screens/01-home.jpg",
+        "label": "Physical-device check",
+        "description": "The submitted build running on a real iPhone."
+      },
+      "fixes": [
+        {
+          "quote": "Demands $13 every time I open the app.",
+          "source": "Count That Now",
+          "sourceUrl": "https://apps.apple.com/us/app/count-that-now-tally-counter/id955952873",
+          "fix": "Every counter and board feature is available for free. There is no purchase screen."
+        }
+      ]
+    },
+    {
+      "slug": "open-noise",
+      "launchNumber": 3,
+      "submittedDate": "2026-10-09",
+      "tinyDescription": "White, brown, and ocean noise. Quiet on purpose, with no timer limit.",
+      "fallbackStatus": "Waiting for Review",
+      "fallbackNext": "Wait for Apple's review decision.",
+      "screenshots": [
+        {"src": "../assets/apps/open-noise/screens/01-ready.jpg", "alt": "Open Noise ready screen", "caption": "Open ready, then choose a sound."},
+        {"src": "../assets/apps/open-noise/screens/02-white.jpg", "alt": "Open Noise white-noise screen", "caption": "White noise with direct controls."},
+        {"src": "../assets/apps/open-noise/screens/03-ocean.jpg", "alt": "Open Noise ocean sound screen", "caption": "Ocean sound without a timer limit."}
+      ],
+      "video": {
+        "src": "../assets/apps/open-noise/device-demo.mp4",
+        "poster": "../assets/apps/open-noise/screens/01-ready.jpg",
+        "label": "Physical-device check",
+        "description": "The submitted build running on a real iPhone."
+      },
+      "fixes": [
+        {
+          "quote": "This app literally needs you to pay or else you only have a five minute limit",
+          "source": "Noise Machine",
+          "sourceUrl": "https://apps.apple.com/us/app/noise-machine-brown-white/id1261956119",
+          "fix": "White, brown, and ocean noise run without a five-minute limit, subscription, or unlock."
+        }
+      ]
+    },
+    {
+      "slug": "open-metronome",
+      "launchNumber": 4,
+      "submittedDate": "2026-10-10",
+      "tinyDescription": "Steady time for practice. Nothing pops up over the beat.",
+      "fallbackStatus": "Waiting for Review",
+      "fallbackNext": "Wait for Apple's review decision.",
+      "screenshots": [
+        {"src": "../assets/apps/open-metronome/screens/01-ready.jpg", "alt": "Open Metronome ready screen", "caption": "Choose a tempo and start."},
+        {"src": "../assets/apps/open-metronome/screens/02-beat.jpg", "alt": "Open Metronome active beat", "caption": "A clear beat that stays uninterrupted."},
+        {"src": "../assets/apps/open-metronome/screens/03-meter.jpg", "alt": "Open Metronome time-signature controls", "caption": "Common meters without setup friction."}
+      ],
+      "video": {
+        "src": "../assets/apps/open-metronome/device-demo.mp4",
+        "poster": "../assets/apps/open-metronome/screens/01-ready.jpg",
+        "label": "Physical-device check",
+        "description": "The submitted build running on a real iPhone."
+      },
+      "fixes": [
+        {
+          "quote": "I just saw a porn ad show up on it.",
+          "source": "Metronome Tuner | Practice+",
+          "sourceUrl": "https://apps.apple.com/us/app/metronome-tuner-practice/id858142974",
+          "fix": "There are no ads. The beat and controls stay visible throughout practice."
+        }
+      ]
+    },
+    {
+      "slug": "open-breath",
+      "launchNumber": 5,
+      "submittedDate": "2026-10-10",
+      "tinyDescription": "Breathe at your pace. Box breathing with no paywall or countdown pressure.",
+      "fallbackStatus": "Waiting for Review",
+      "fallbackNext": "Wait for Apple's review decision.",
+      "screenshots": [
+        {"src": "../assets/apps/open-breath/screens/01-practice.jpg", "alt": "Open Breath practice setup", "caption": "Choose a pace without a subscription screen."},
+        {"src": "../assets/apps/open-breath/screens/02-active.jpg", "alt": "Open Breath active breathing session", "caption": "A calm, readable breathing cycle."},
+        {"src": "../assets/apps/open-breath/screens/03-history.jpg", "alt": "Open Breath local history", "caption": "Keep a simple history on the phone."}
+      ],
+      "video": {
+        "src": "../assets/apps/open-breath/device-demo.mp4",
+        "poster": "../assets/apps/open-breath/screens/01-practice.jpg",
+        "label": "Physical-device check",
+        "description": "The submitted build running on a real iPhone."
+      },
+      "fixes": [
+        {
+          "quote": "now you have to pay for a subscription to use it.",
+          "source": "Breathe+",
+          "sourceUrl": "https://apps.apple.com/us/app/breathing-exercises-breathe/id1106998959",
+          "fix": "Box breathing is available without a subscription, paywall, or countdown pressure."
+        }
+      ]
+    },
+    {
+      "slug": "open-flashcards",
+      "launchNumber": 6,
+      "submittedDate": "2026-10-11",
+      "tinyDescription": "Make cards. Keep them exact. Study without limits.",
+      "fallbackStatus": "Waiting for Review",
+      "fallbackNext": "Wait for Apple's review decision.",
+      "screenshots": [
+        {"src": "../assets/apps/open-flashcards/screens/01-study.jpg", "alt": "Open Flashcards study screen showing a revealed answer and Know and Again controls", "caption": "Study, reveal, know or try again."},
+        {"src": "../assets/apps/open-flashcards/screens/02-decks.jpg", "alt": "Open Flashcards deck list with local card counts", "caption": "Local decks with no card limit."},
+        {"src": "../assets/apps/open-flashcards/screens/03-create.jpg", "alt": "Open Flashcards card editor for exact front and back text", "caption": "Your text stays exactly yours."}
+      ],
+      "video": {
+        "src": "../assets/apps/open-flashcards/device-demo.mp4",
+        "poster": "../assets/apps/open-flashcards/screens/01-study.jpg",
+        "label": "35-second device check",
+        "description": "This is the submitted build: launch, resume an interrupted study session, reveal, mark the card known, and finish."
+      },
+      "fixes": [
+        {"quote": "The app glitched and deleted them all.", "source": "Flashcards Maker Flash Cards", "sourceUrl": "https://apps.apple.com/us/app/flashcards-maker-flash-cards/id1437113609", "fix": "Saves every edit locally and keeps a previous-good snapshot for recovery."},
+        {"quote": "AI changing the content.", "source": "Quizlet", "sourceUrl": "https://apps.apple.com/us/app/quizlet-more-than-flashcards/id546473125", "fix": "Keeps the exact text you type or import. There is no AI rewriting path."},
+        {"quote": "Keeps rejecting my CSV files.", "source": "SmartCards+", "sourceUrl": "https://apps.apple.com/us/app/spaced-repetition-smartcards/id1210521987", "fix": "Imports and exports ordinary CSV, preserving quoted commas, quotation marks and line breaks."},
+        {"quote": "A limit on how many cards you can use.", "source": "SmartCards+", "sourceUrl": "https://apps.apple.com/us/app/spaced-repetition-smartcards/id1210521987", "fix": "Includes unlimited cards and unrestricted study for free. No ads, subscription or unlock."},
+        {"quote": "Finish a whole deck before it logs your progress.", "source": "SmartCards+", "sourceUrl": "https://apps.apple.com/us/app/spaced-repetition-smartcards/id1210521987", "fix": "Restores the same study queue, prompt side and remaining count after interruption or relaunch."},
+        {"quote": "You can’t shuffle the cards.", "source": "Flashcards with Cram", "sourceUrl": "https://apps.apple.com/us/app/flashcards-with-cram/id734887700", "fix": "Lets you study in original or shuffled order, with fronts or backs as prompts."},
+        {"quote": "Forced to create a deck before I create a card.", "source": "Flashcard Hero", "sourceUrl": "https://apps.apple.com/us/app/flashcard-hero/id650812005", "fix": "Starts the first card immediately in My Cards, while still supporting named decks."}
+      ],
+      "coverage": {
+        "summary": "On October 11, 2026, we captured 6,978 unique public review entries across 14 source apps; 2,231 were rated one to three stars. The audit requested pages 1–10 of Apple's most-recent and most-helpful feeds in the United States, Canada, Great Britain and Australia. All 400 requested feed snapshots succeeded.",
+        "boundary": "Apple caps these public feeds at ten pages. Two source apps filled page 10, so older reviews may exist beyond what Apple exposed. This is every verified complaint category Open Flashcards claims to address—not every review ever written."
+      }
+    }
+  ]
+}

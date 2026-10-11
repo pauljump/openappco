@@ -16,28 +16,34 @@ permissions:
 
 concurrency:
   group: app-status
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - name: Render status
         env:
           GH_TOKEN: ${{ github.token }}
-        run: node scripts/sync-apps.mjs --promote
+        run: |
+          node scripts/sync-apps.mjs --promote
+          node scripts/render-app-pages.mjs
+          node scripts/validate-launch-system.mjs
       - name: Commit and publish
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if git diff --quiet -- docs/apps.json README.md; then echo "No change"; exit 0; fi
+          if git diff --quiet -- docs/apps.json README.md docs/open-*/index.html; then echo "No change"; exit 0; fi
           git config user.name "openappco-status"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/apps.json README.md
+          git add docs/apps.json README.md docs/open-*/index.html
           git commit -m "Update app status"
           git push
           gh api -X POST repos/${{ github.repository }}/pages/builds || true

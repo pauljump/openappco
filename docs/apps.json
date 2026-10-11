@@ -1,8 +1,9 @@
 {
-  "generated": "2026-10-11T17:06:49.384Z",
+  "generated": "2026-10-11T17:08:05.514Z",
   "apps": [
     {
       "slug": "open-breath",
+      "launchNumber": 5,
       "issue": 8,
       "name": "Open Breath",
       "tagline": "Breathe at your pace. Box breathing with no paywall or countdown pressure.",
@@ -13,6 +14,12 @@
         "quote": "now you have to pay for a subscription to use it."
       },
       "opportunity": "opp-3f70850d6025f5cb2471",
+      "ascId": "6821446626",
+      "bundleId": "com.openbreathwork.app",
+      "links": {
+        "support": "open-breathwork/support/",
+        "privacy": "open-breathwork/privacy/"
+      },
       "issueUrl": "https://github.com/pauljump/openappco/issues/8",
       "label": "status:in-review",
       "status": "In review",
@@ -27,6 +34,7 @@
     },
     {
       "slug": "open-flashcards",
+      "launchNumber": 6,
       "issue": 15,
       "name": "Open Flashcards",
       "tagline": "Make cards. Keep them exact. Local decks, unrestricted study, and plain CSV.",
@@ -57,6 +65,7 @@
     },
     {
       "slug": "open-metronome",
+      "launchNumber": 4,
       "issue": 14,
       "name": "Open Metronome",
       "tagline": "Steady time for practice. Nothing pops up over the beat.",
@@ -87,6 +96,7 @@
     },
     {
       "slug": "open-noise",
+      "launchNumber": 3,
       "issue": 3,
       "name": "Open Noise",
       "tagline": "White, brown, and ocean noise. Quiet on purpose, no timer limit.",
@@ -117,6 +127,7 @@
     },
     {
       "slug": "open-piano",
+      "launchNumber": 1,
       "issue": 1,
       "name": "Open Piano",
       "tagline": "A real piano. Labeled keys, a trail of every note, record and play back.",
@@ -148,6 +159,7 @@
     },
     {
       "slug": "open-tally",
+      "launchNumber": 2,
       "issue": 6,
       "name": "Open Tally",
       "tagline": "Count the thing. A calm counter board that opens ready.",

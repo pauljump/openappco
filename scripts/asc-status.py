@@ -24,6 +24,7 @@ import sys
 
 REPO = "pauljump/openappco"
 TOOL = "/Users/mini-home/projects/_factory/brain/tools/appstore-connect.py"
+CONFIG = "/Users/mini-home/projects/openappco/apps.config.json"
 # Rejections stay in-review: the app is still in Apple's process and stays on
 # the public site as "Changes requested" rather than disappearing.
 REVIEW = {"WAITING_FOR_REVIEW", "IN_REVIEW", "PENDING_DEVELOPER_RELEASE", "PENDING_APPLE_RELEASE",
@@ -40,6 +41,7 @@ def next_line(state: str, version: str, build: str | None) -> str | None:
         "PENDING_APPLE_RELEASE": f"Approved by Apple. Version {version} is releasing.",
         "PROCESSING_FOR_APP_STORE": f"Approved by Apple. Version {version} is processing for the App Store.",
         "READY_FOR_SALE": "Live on the App Store. Collect feedback and maintain.",
+        "READY_FOR_DISTRIBUTION": "Live on the App Store. Collect feedback and maintain.",
         "REJECTED": f"Address Apple's review feedback for version {version}, then resubmit.",
         "METADATA_REJECTED": f"Fix the App Store listing Apple flagged for version {version}, then resubmit.",
     }.get(state)
@@ -64,10 +66,14 @@ def main() -> int:
     issues = json.loads(gh("issue", "list", "--repo", REPO, "--label", "app", "--state", "open",
                            "--limit", "200", "--json", "number,title,body,labels"))
     by_name = {i["title"]: i for i in issues}
+    by_number = {i["number"]: i for i in issues}
+    configured = json.loads(open(CONFIG, encoding="utf-8").read())["apps"]
+    by_asc_id = {str(app["ascId"]): app for app in configured if app.get("ascId")}
     today = dt.date.today().isoformat()
 
     for app in client.request("GET", "/apps", params={"limit": "200", "fields[apps]": "name"})["data"]:
-        issue = by_name.get(app["attributes"]["name"])
+        meta = by_asc_id.get(str(app["id"]))
+        issue = by_number.get(meta["issue"]) if meta and meta.get("issue") else by_name.get(app["attributes"]["name"])
         if not issue:
             continue
         versions = client.request("GET", f"/apps/{app['id']}/appStoreVersions", params={

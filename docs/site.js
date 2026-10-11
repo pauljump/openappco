@@ -95,10 +95,11 @@
       : `<div class="shot empty"><span class="badge ${bcls}">${btext}</span><div>${o ? `<q>${esc(o.quote)}</q><small>one-star review of ${esc(o.source)}</small>` : ''}</div></div>`;
     const origin = o && a.hasShot ? `<div class="origin"><q>${esc(o.quote)}</q><small>Why it exists: <a href="${esc(o.url)}" rel="noopener">${esc(o.source)}</a></small></div>` : '';
     const icon = a.hasIcon ? `<img src="assets/apps/${esc(a.slug)}/icon.png" alt="" loading="lazy">` : `<span class="t-icon">${esc(a.name.replace('Open ', '')[0])}</span>`;
-    const get = a.store ? `<a class="get store" href="${esc(a.store.url)}" rel="noopener">Get it free</a>` : `<a class="get" href="${esc(a.issueUrl)}" rel="noopener">Follow progress →</a>`;
+    const detailUrl = a.launchNumber ? `${esc(a.slug)}/` : esc(a.issueUrl);
+    const get = a.store ? `<a class="get store" href="${esc(a.store.url)}" rel="noopener">Get it free</a>` : `<a class="get" href="${detailUrl}">Check it out →</a>`;
     return `<article class="card${a.landscape ? ' feature' : ''}" id="${esc(a.slug)}">${shot}
       <div class="body">
-        <div class="app-head">${icon}<h3>${esc(a.name)}</h3></div>
+        <div class="app-head">${icon}<h3>${a.launchNumber ? `<a href="${detailUrl}">${esc(a.name)}</a>` : esc(a.name)}</h3></div>
         <p class="tagline">${esc(a.tagline)}</p>
         <div class="keys" aria-hidden="true">${keys}</div><div class="keys-labels" aria-label="Stage: ${STAGES[idx]}">${labels}</div>
         <p class="state">${stateText[a.stage] || stateText.building}</p>
