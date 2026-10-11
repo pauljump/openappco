@@ -1,6 +1,21 @@
 {
-  "generated": "2026-10-10T21:48:06.197Z",
+  "generated": "2026-10-11T14:30:55.251Z",
   "apps": [
+    {
+      "issue": 15,
+      "issueUrl": "https://github.com/pauljump/openappco/issues/15",
+      "name": "Open Flashcards",
+      "label": "status:in-review",
+      "status": "In review",
+      "stage": "submitted",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-11",
+      "next": "Wait for Apple's review decision.",
+      "likes": 0,
+      "store": null,
+      "hasShot": false,
+      "hasIcon": false
+    },
     {
       "slug": "open-metronome",
       "issue": 14,
