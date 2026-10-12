@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -44,6 +44,15 @@ for (const page of pageConfig.apps) {
   if (page.video) {
     const path = page.video.src.replace(/^\.\.\//, 'docs/');
     if (!existsSync(resolve(root, path))) failures.push(`${page.slug}: missing ${path}`);
+  }
+}
+
+// Public pages give support@openappco.com (forwarded) as the contact, never a personal address
+// (Paul, 2026-10-12).
+for (const file of readdirSync(resolve(root, 'docs'), { recursive: true })) {
+  if (!/\.(html|js|json|md)$/.test(file)) continue;
+  for (const email of readFileSync(resolve(root, 'docs', file), 'utf8').match(/[\w.+-]+@[\w-]+\.[\w.-]+/g) || []) {
+    if (!/@openappco\.com$/i.test(email)) failures.push(`docs/${file}: non-openappco email ${email}`);
   }
 }
 
