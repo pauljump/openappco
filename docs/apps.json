@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T22:30:24.060Z",
+  "generated": "2026-10-12T23:00:22.985Z",
   "apps": [
     {
       "slug": "open-breath",
@@ -90,11 +90,7 @@
       "ascChecked": "2026-10-12",
       "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": {
-        "url": "https://apps.apple.com/us/app/open-flashcards/id6821626941",
-        "version": "1.0.0",
-        "released": "2026-10-12T22:26:48Z"
-      },
+      "store": null,
       "hasShot": true,
       "hasIcon": true
     },

@@ -14,7 +14,7 @@ names such as Open Piano, Open Noise, and Open Tally.
 | --- | --- |
 | [Open Breath](https://github.com/pauljump/openappco/issues/8) | Live |
 | [Open Feeds](https://github.com/pauljump/openappco/issues/16) | In review |
-| [Open Flashcards](https://github.com/pauljump/openappco/issues/15) | [Live](https://apps.apple.com/us/app/open-flashcards/id6821626941) |
+| [Open Flashcards](https://github.com/pauljump/openappco/issues/15) | Live |
 | [Open Metronome](https://github.com/pauljump/openappco/issues/14) | In review |
 | [Open Noise](https://github.com/pauljump/openappco/issues/3) | In review |
 | [Open Piano](https://github.com/pauljump/openappco/issues/1) | In review |
