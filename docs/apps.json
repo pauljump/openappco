@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T13:42:13.666Z",
+  "generated": "2026-10-12T18:30:16.851Z",
   "apps": [
     {
       "slug": "open-breath",
@@ -211,9 +211,9 @@
       "label": "status:live",
       "status": "Live",
       "stage": "live",
-      "ascState": "READY_FOR_SALE",
-      "ascChecked": "2026-10-09",
-      "next": "Live on the App Store. Collect feedback and maintain.",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-12",
+      "next": "Await Apple review of version 1.0.1 (build 6).",
       "likes": 0,
       "store": {
         "url": "https://apps.apple.com/us/app/open-tally/id6820183055",
