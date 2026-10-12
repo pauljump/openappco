@@ -162,6 +162,91 @@
         "summary": "On October 11, 2026, we captured 6,978 unique public review entries across 14 source apps; 2,231 were rated one to three stars. The audit requested pages 1–10 of Apple's most-recent and most-helpful feeds in the United States, Canada, Great Britain and Australia. All 400 requested feed snapshots succeeded.",
         "boundary": "Apple caps these public feeds at ten pages. Two source apps filled page 10, so older reviews may exist beyond what Apple exposed. This is every verified complaint category Open Flashcards claims to address—not every review ever written."
       }
+    },
+    {
+      "slug": "open-feeds",
+      "launchNumber": 7,
+      "submittedDate": "2026-10-12",
+      "tinyDescription": "Follow any site. Read means read. Your feed list stays yours.",
+      "fallbackStatus": "Waiting for Review",
+      "fallbackNext": "Wait for Apple's review decision.",
+      "screenshots": [
+        {
+          "src": "../assets/apps/open-feeds/screens/01-feeds.jpg",
+          "alt": "Open Feeds list with unread counts for each followed site",
+          "caption": "Every feed, with an honest unread count."
+        },
+        {
+          "src": "../assets/apps/open-feeds/screens/02-headlines.jpg",
+          "alt": "Open Feeds All Unread headlines, with two read headlines laid flat",
+          "caption": "Scroll past it and it’s read."
+        },
+        {
+          "src": "../assets/apps/open-feeds/screens/03-browse.jpg",
+          "alt": "Open Feeds Add Feed screen browsing popular feeds by topic",
+          "caption": "Browse checked feeds or paste any site."
+        }
+      ],
+      "video": {
+        "src": "../assets/apps/open-feeds/device-demo.mp4",
+        "poster": "../assets/apps/open-feeds/screens/01-feeds.jpg",
+        "label": "60-second device check",
+        "description": "On a real iPhone: launch from the Home Screen, open All Unread, read an article and watch the unread count drop, then browse popular feeds."
+      },
+      "fixes": [
+        {
+          "quote": "lost all of the feeds I had spent years curating",
+          "source": "Feedly",
+          "sourceUrl": "https://apps.apple.com/us/app/id396069556",
+          "fix": "Saves your list of feeds as an ordinary OPML file in Files after every change, and recovers from it."
+        },
+        {
+          "quote": "I’m constantly seeing things I’ve already read",
+          "source": "Reeder.",
+          "sourceUrl": "https://apps.apple.com/us/app/id6475002485",
+          "fix": "Read headlines stay read. A refresh never brings them back as unread."
+        },
+        {
+          "quote": "Unable to mark as read while scrolling",
+          "source": "NetNewsWire",
+          "sourceUrl": "https://apps.apple.com/us/app/id1480640210",
+          "fix": "Marks headlines read as you scroll past them. You can turn that off."
+        },
+        {
+          "quote": "Mark as Read requires at least 2 presses",
+          "source": "Feedly",
+          "sourceUrl": "https://apps.apple.com/us/app/id396069556",
+          "fix": "Mark All Read clears the list in one tap, with Undo."
+        },
+        {
+          "quote": "Only 10 feeds max allowed on free version",
+          "source": "Reeder.",
+          "sourceUrl": "https://apps.apple.com/us/app/id6475002485",
+          "fix": "Follow as many feeds as you like, free. No subscription or unlock."
+        },
+        {
+          "quote": "Can’t add any new feeds unless you know the exact RSS URL",
+          "source": "Reeder.",
+          "sourceUrl": "https://apps.apple.com/us/app/id6475002485",
+          "fix": "Paste any site’s address and it finds the feed, or browse about 270 checked popular feeds."
+        },
+        {
+          "quote": "takes me back to the login screen",
+          "source": "Feedly",
+          "sourceUrl": "https://apps.apple.com/us/app/id396069556",
+          "fix": "No account. Nothing to sign in to, ever."
+        },
+        {
+          "quote": "The app loads with about 20 feeds you never asked for",
+          "source": "NetNewsWire",
+          "sourceUrl": "https://apps.apple.com/us/app/id1480640210",
+          "fix": "Starts empty. Nothing is followed until you choose it."
+        }
+      ],
+      "coverage": {
+        "summary": "On October 11, 2026, we captured 8,959 unique public review entries across 12 source apps (8 feed readers and 4 news apps); 3,745 were rated one to three stars. The audit requested pages 1–10 of Apple's most-recent and most-helpful feeds in the United States, Canada, Great Britain and Australia. All 403 requested feed snapshots succeeded.",
+        "boundary": "Apple caps these public feeds at ten pages. Three source apps filled page 10, so older reviews may exist beyond what Apple exposed. This is every verified complaint category Open Feeds claims to address—not every review ever written."
+      }
     }
   ]
 }

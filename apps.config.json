@@ -183,7 +183,7 @@
         "count": 3,
         "source": "Qrafter",
         "url": "https://apps.apple.com/us/app/qrafter-qr-code-reader/id416098700",
-        "quote": "there\u2019s no obvious easy to even scan without signing up."
+        "quote": "there’s no obvious easy to even scan without signing up."
       },
       "opportunity": "opp-26608d780d81628c10cb"
     },
@@ -222,9 +222,29 @@
         "count": 4,
         "source": "Magnifying Glass With Light",
         "url": "https://apps.apple.com/us/app/magnifying-glass-with-light/id406048120",
-        "quote": "Doesn\u2019t seem to use the cameras focus any longer."
+        "quote": "Doesn’t seem to use the cameras focus any longer."
       },
       "opportunity": "opp-9eb44031fb47b9193b66"
+    },
+    {
+      "slug": "open-feeds",
+      "launchNumber": 7,
+      "issue": 16,
+      "name": "Open Feeds",
+      "tagline": "Read means read. Unread counts you can trust, and a feed list no update can wipe.",
+      "ascId": "6821955088",
+      "bundleId": "com.openfeeds.app",
+      "origin": {
+        "count": 85,
+        "source": "Feedly - Smart News Reader",
+        "url": "https://apps.apple.com/us/app/id396069556",
+        "quote": "lost all of the feeds I had spent years curating"
+      },
+      "links": {
+        "support": "open-feeds/support/",
+        "privacy": "open-feeds/privacy/"
+      },
+      "opportunity": "opp-69658db244495ee16f5d"
     }
   ]
 }
