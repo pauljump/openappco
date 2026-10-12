@@ -1,0 +1,74 @@
+{
+  "slipway": 2,
+  "phase": "pick",
+  "next": "Write idea.md and the differentiation sentence, then check the store name.",
+  "app": {
+    "slug": "example-counter",
+    "storeName": "Example Counter",
+    "nameCheck": {
+      "method": "",
+      "at": "",
+      "result": "",
+      "fallback": ""
+    },
+    "displayName": "Example Counter",
+    "bundleId": "com.example.counter",
+    "sku": "example-counter",
+    "version": "1.0.0",
+    "build": "1",
+    "locale": "en-US",
+    "category": "UTILITIES",
+    "kind": "counter",
+    "orientation": "portrait",
+    "audio": false,
+    "permissions": []
+  },
+  "differentiation": "",
+  "incumbents": [],
+  "decisions": {
+    "privacy": "data-not-collected",
+    "network": "none",
+    "signIn": "none",
+    "payments": "none",
+    "contentRights": "none",
+    "ageRating": "4+",
+    "releaseType": "AFTER_APPROVAL",
+    "availability": "all territories",
+    "supportUrl": "https://example.com/example-counter/support/",
+    "privacyUrl": "https://example.com/example-counter/privacy/",
+    "copyright": "2026 Example Studio"
+  },
+  "look": {
+    "new": true,
+    "motif": "",
+    "palette": "",
+    "approvedAt": ""
+  },
+  "files": {
+    "idea": "idea.md",
+    "brief": "brief.md",
+    "source": [
+      "Sources"
+    ],
+    "infoPlist": "build/1/App.xcarchive/Products/Applications/App.app/Info.plist",
+    "privacyManifest": "build/1/App.xcarchive/Products/Applications/App.app/PrivacyInfo.xcprivacy",
+    "metadataDir": "store/metadata",
+    "reviewNotes": "store/review-notes.txt",
+    "reviewReply": "store/review-reply.txt",
+    "deviceCheck": "store/device-check.json",
+    "screenshots": "store/screenshots"
+  },
+  "apple": {
+    "appId": "",
+    "state": "",
+    "checkedAt": "",
+    "submittedAt": ""
+  },
+  "history": [
+    {
+      "phase": "pick",
+      "at": "YYYY-MM-DD",
+      "note": "Started."
+    }
+  ]
+}

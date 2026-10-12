@@ -61,7 +61,7 @@ next app.
 
 ## How an app gets from idea to the App Store
 
-Open AppCo follows [Slipway](https://github.com/pauljump/slipway), a general five-phase workflow
+Open AppCo follows [Slipway](../slipway/), a general five-phase workflow
 for shipping small iOS apps: pick, build it, on my phone, get it submitted, Apple's answer. Slipway holds the procedure, templates and an offline checker, and anyone can use it
 for their own apps. Open AppCo adds its own defaults on top: no ads, no account, no tracking,
 nothing to unlock, support and privacy pages on openappco.com, and this repository's status

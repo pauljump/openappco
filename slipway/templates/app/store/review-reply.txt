@@ -1,0 +1,25 @@
+Hello App Review,
+
+Thank you for reviewing [APP NAME]. Here is the requested information for version [VERSION] (build [BUILD]). The physical-device recording is attached to this message.
+
+1. Physical-device testing and recording
+This build ([VERSION] ([BUILD])) was tested on [DEVICE MODEL] running [IOS VERSION]. The attached recording starts on the Home Screen, opens [APP NAME], and shows [THE CORE FLOW IN ONE LINE]. The app has no registration, login, account deletion, user-generated content or purchases, so none are shown.
+
+2. Purpose, target audience, and business model
+[APP NAME] is [WHAT IT IS] for [WHO USES IT]. It lets them [CORE JOB] by [HOW]. Business model: free, with no ads, in-app purchases, subscriptions or payment screens.
+
+3. Setup and access
+No setup, login, demo account, sample file or special hardware is needed. Open the app and [FIRST TAP]. [PERMISSIONS: NAME EACH ONE AND WHEN IT IS ASKED, OR SAY THE APP ASKS FOR NO PERMISSIONS.]
+
+4. External services
+The app works offline. It uses no external services: no authentication, payment, advertising, analytics, tracking, AI or data providers. [IF THERE IS ANY NETWORK CALL, NAME IT, SAY WHAT IT FETCHES, AND SAY WHAT HAPPENS OFFLINE.]
+
+5. Regional differences
+The app works the same way, with the same content, in every region where it is available.
+
+6. Regulated activity and protected material
+The app does not operate in a regulated field. All code, icons and artwork are original or Apple system symbols. [LIST ANY THIRD-PARTY MATERIAL, SUCH AS SOUNDS OR FONTS, WITH ITS LICENSE, OR SAY THERE IS NONE.]
+
+Please let us know if you need anything else.
+
+Thank you.

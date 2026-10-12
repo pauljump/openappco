@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  App Store export. Use with:
+    xcodebuild -exportArchive -archivePath build/<build>/App.xcarchive \
+      -exportOptionsPlist ExportOptions.plist -exportPath build/<build>/export \
+      -allowProvisioningUpdates -authenticationKeyPath ... -authenticationKeyID ... -authenticationKeyIssuerID ...
+  Do NOT add testFlightInternalTestingOnly: a build exported with it can't go to the App Store.
+-->
+<plist version="1.0">
+<dict>
+  <key>method</key>
+  <string>app-store-connect</string>
+  <key>destination</key>
+  <string>export</string>
+  <key>signingStyle</key>
+  <string>automatic</string>
+  <key>teamID</key>
+  <string>YOUR_TEAM_ID</string>
+  <key>manageAppVersionAndBuildNumber</key>
+  <false/>
+  <key>uploadSymbols</key>
+  <true/>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+{
+  "mac": "[BUILD MAC NAME]",
+  "phone": "[TEST IPHONE NAME]",
+  "connections": {
+    "toolchain": {},
+    "api": {"network": true},
+    "webSession": {"network": true},
+    "signing": {},
+    "phone": {},
+    "capture": {},
+    "capturePermission": {},
+    "agreements": {"network": true},
+    "hosting": {"network": true},
+    "reviewContact": {},
+    "publication": {}
+  }
+}

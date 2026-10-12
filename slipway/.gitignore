@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Never commit these
+*.p8
+*.mobileprovision
+*.ipa
+*.xcarchive/
+receipts/
+
+# Private execution/configuration never belongs in a clone
+.slipway/
+*.sqlite3
+*.sqlite3-*
+connections.local.json

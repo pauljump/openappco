@@ -1,0 +1,27 @@
+{
+  "build": "1",
+  "device": "iPhone model",
+  "osVersion": "iOS x.y",
+  "testedAt": "YYYY-MM-DD",
+  "observedBy": "human",
+  "checks": {
+    "launchFromHomeScreen": "not-run",
+    "coreFlow": "not-run",
+    "relaunchKeepsData": "not-run",
+    "voiceOverCoreFlow": "not-run",
+    "largestTextSize": "not-run",
+    "audioThroughSpeaker": "n/a",
+    "audioWhenLocked": "n/a",
+    "interruptionRecovers": "n/a",
+    "permissionDenied": "n/a"
+  },
+  "video": {
+    "file": "device-demo.mov",
+    "sha256": "",
+    "startsOnHomeScreen": false,
+    "hasAudio": false,
+    "how": "phone screen recording | QuickTime over USB | iPhone Mirroring",
+    "shows": "Home Screen, launch, and the core flow"
+  },
+  "notes": "Each check is pass, fail, not-run or n/a. Audio checks apply when app.audio is true; permissionDenied and interruptionRecovers apply to each entry in app.permissions. If a later build only changed text or links, add \"carryForward\": {\"toBuild\": \"2\", \"why\": \"...\"}."
+}
