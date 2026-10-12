@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11T17:08:05.514Z",
+  "generated": "2026-10-12T13:36:28.969Z",
   "apps": [
     {
       "slug": "open-breath",
@@ -31,6 +31,21 @@
       "store": null,
       "hasShot": true,
       "hasIcon": true
+    },
+    {
+      "issue": 16,
+      "issueUrl": "https://github.com/pauljump/openappco/issues/16",
+      "name": "Open Feeds",
+      "label": "status:in-review",
+      "status": "In review",
+      "stage": "submitted",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-12",
+      "next": "Wait for Apple's review decision.",
+      "likes": 0,
+      "store": null,
+      "hasShot": false,
+      "hasIcon": false
     },
     {
       "slug": "open-flashcards",
