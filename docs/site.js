@@ -109,8 +109,8 @@
   }
 
   function render(data) {
-    const order = { live: 0, approved: 1, review: 2, submitted: 3, changes: 4 };
-    const apps = data.apps.slice().sort((a, b) => (b.landscape ? 1 : 0) - (a.landscape ? 1 : 0) || order[a.stage] - order[b.stage] || a.name.localeCompare(b.name));
+    // In the order they shipped: app #1 first, then each day's new app (launchNumber is immutable).
+    const apps = data.apps.slice().sort((a, b) => (a.launchNumber ?? Infinity) - (b.launchNumber ?? Infinity) || a.name.localeCompare(b.name));
     $('#grid').innerHTML = apps.map(card).join('');
     const count = s => apps.filter(a => s.includes(a.stage)).length;
     $('#pipeline').innerHTML = [

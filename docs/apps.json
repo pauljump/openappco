@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T13:36:28.969Z",
+  "generated": "2026-10-12T13:42:13.666Z",
   "apps": [
     {
       "slug": "open-breath",
@@ -33,9 +33,25 @@
       "hasIcon": true
     },
     {
+      "slug": "open-feeds",
+      "launchNumber": 7,
       "issue": 16,
-      "issueUrl": "https://github.com/pauljump/openappco/issues/16",
       "name": "Open Feeds",
+      "tagline": "Read means read. Unread counts you can trust, and a feed list no update can wipe.",
+      "ascId": "6821955088",
+      "bundleId": "com.openfeeds.app",
+      "origin": {
+        "count": 85,
+        "source": "Feedly - Smart News Reader",
+        "url": "https://apps.apple.com/us/app/id396069556",
+        "quote": "lost all of the feeds I had spent years curating"
+      },
+      "links": {
+        "support": "open-feeds/support/",
+        "privacy": "open-feeds/privacy/"
+      },
+      "opportunity": "opp-69658db244495ee16f5d",
+      "issueUrl": "https://github.com/pauljump/openappco/issues/16",
       "label": "status:in-review",
       "status": "In review",
       "stage": "submitted",
@@ -44,8 +60,8 @@
       "next": "Wait for Apple's review decision.",
       "likes": 0,
       "store": null,
-      "hasShot": false,
-      "hasIcon": false
+      "hasShot": true,
+      "hasIcon": true
     },
     {
       "slug": "open-flashcards",
