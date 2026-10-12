@@ -28,6 +28,15 @@ for (const page of pageConfig.apps) {
     `docs/assets/apps/${page.slug}/shot.jpg`,
     `docs/assets/apps/${page.slug}/launch-card.png`
   ]) if (!existsSync(resolve(root, file))) failures.push(`${page.slug}: missing ${file}`);
+  // The homepage card shows shot.jpg whole: it must be the app's full first screenshot at
+  // 414x900 (900x414 for landscape apps), never a crop or a missing image (Paul, 2026-10-12).
+  const shotPath = resolve(root, `docs/assets/apps/${page.slug}/shot.jpg`);
+  if (existsSync(shotPath)) {
+    const size = jpegSize(readFileSync(shotPath));
+    const want = meta?.landscape ? '900x414' : '414x900';
+    if (!size) failures.push(`${page.slug}: shot.jpg is not a readable JPEG`);
+    else if (`${size.w}x${size.h}` !== want) failures.push(`${page.slug}: shot.jpg is ${size.w}x${size.h}; needs ${want} (the whole first screenshot)`);
+  }
   for (const shot of page.screenshots || []) {
     const path = shot.src.replace(/^\.\.\//, 'docs/');
     if (!existsSync(resolve(root, path))) failures.push(`${page.slug}: missing ${path}`);
@@ -48,3 +57,14 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(`Validated ${pageConfig.apps.length} launch kits, numbered 1-${Math.max(...ordered)}.`);
+
+function jpegSize(buf) {
+  let i = 2;
+  while (i < buf.length) {
+    if (buf[i] !== 0xff) return null;
+    const marker = buf[i + 1], len = buf.readUInt16BE(i + 2);
+    if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) return { h: buf.readUInt16BE(i + 5), w: buf.readUInt16BE(i + 7) };
+    i += 2 + len;
+  }
+  return null;
+}

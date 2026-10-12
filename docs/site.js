@@ -91,7 +91,7 @@
     const o = a.origin;
     const [btext, bcls] = badge[a.stage] || badge.building;
     const shot = a.hasShot
-      ? `<div class="shot" style="background-image:url('assets/apps/${esc(a.slug)}/shot.jpg')" role="img" aria-label="${esc(a.name)} screenshot"><span class="badge ${bcls}">${btext}</span></div>`
+      ? `<div class="shot"><img src="assets/apps/${esc(a.slug)}/shot.jpg" alt="${esc(a.name)} screenshot" loading="lazy"><span class="badge ${bcls}">${btext}</span></div>`
       : `<div class="shot empty"><span class="badge ${bcls}">${btext}</span><div>${o ? `<q>${esc(o.quote)}</q><small>one-star review of ${esc(o.source)}</small>` : ''}</div></div>`;
     const origin = o && a.hasShot ? `<div class="origin"><q>${esc(o.quote)}</q><small>Why it exists: <a href="${esc(o.url)}" rel="noopener">${esc(o.source)}</a></small></div>` : '';
     const icon = a.hasIcon ? `<img src="assets/apps/${esc(a.slug)}/icon.png" alt="" loading="lazy">` : `<span class="t-icon">${esc(a.name.replace('Open ', '')[0])}</span>`;

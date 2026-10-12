@@ -80,3 +80,10 @@ a{color:inherit;text-underline-offset:3px}h1,h2,h3{font-family:var(--serif);font
 .pipeline{grid-template-columns:repeat(3,1fr)}.keys,.keys-labels{grid-template-columns:repeat(3,1fr)}
 .shot.empty{display:flex;align-items:flex-end;padding:56px 22px 22px;background:linear-gradient(160deg,#2a261e,#17150f)}.shot.empty q{font:500 19px/1.3 var(--serif);color:#f3dfa8}.shot.empty small{display:block;margin-top:8px;color:#a39d8e;font:12px var(--mono)}
 @media (max-width:620px){.pipeline{grid-template-columns:1fr}.pipe:nth-child(n){border-left:0;border-top:1.5px solid var(--ink)}.pipe:first-child{border-top:0}}
+
+/* App card screenshots: always the whole screen, never cropped (Paul, 2026-10-12). */
+.shot{height:400px;background:#ece6d9;display:flex;align-items:center;justify-content:center;padding:22px 16px;overflow:hidden}
+.shot img{display:block;height:100%;width:auto;max-width:100%;object-fit:contain;border-radius:18px;box-shadow:0 14px 30px rgba(32,28,20,.22)}
+.card.feature .shot{height:auto;min-height:320px;padding:24px}
+.card.feature .shot img{width:100%;height:auto;max-height:440px;border-radius:12px}
+@media (max-width:900px){.card.feature .shot{min-height:0}}
