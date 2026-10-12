@@ -12,7 +12,7 @@ names such as Open Piano, Open Noise, and Open Tally.
 <!-- apps:start -->
 | App | Status |
 | --- | --- |
-| [Open Breath](https://github.com/pauljump/openappco/issues/8) | In review |
+| [Open Breath](https://github.com/pauljump/openappco/issues/8) | Live |
 | [Open Feeds](https://github.com/pauljump/openappco/issues/16) | In review |
 | [Open Flashcards](https://github.com/pauljump/openappco/issues/15) | In review |
 | [Open Metronome](https://github.com/pauljump/openappco/issues/14) | In review |
