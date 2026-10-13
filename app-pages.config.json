@@ -323,6 +323,76 @@
         }
       ],
       "reviewLine": "We read 6,760 App Store reviews of 11 ebook and comic readers. These complaints kept coming up."
+    },
+    {
+      "slug": "open-dice",
+      "launchNumber": 9,
+      "submittedDate": "2026-10-13",
+      "tinyDescription": "Just dice. Roll up to 12, hide the total, simulate a million rolls.",
+      "fallbackStatus": "Waiting for Review",
+      "fallbackNext": "Wait for Apple's review decision.",
+      "reviewLine": "We read 2,555 App Store reviews of 12 dice apps. These complaints kept coming up.",
+      "screenshots": [
+        {
+          "src": "../assets/apps/open-dice/screens/01-first.jpg",
+          "alt": "Open Dice with two dice, the total, and What's different",
+          "caption": "Tap the dice. That's it."
+        },
+        {
+          "src": "../assets/apps/open-dice/screens/02-simulate.jpg",
+          "alt": "Simulate: two dice rolled 1,000 times, 7 most common",
+          "caption": "Roll a million times and see they're fair."
+        },
+        {
+          "src": "../assets/apps/open-dice/screens/03-rolls.jpg",
+          "alt": "Your rolls: a chart of totals and every roll, newest first",
+          "caption": "Every roll, kept until you reset."
+        }
+      ],
+      "video": {
+        "src": "../assets/apps/open-dice/device-demo.mp4",
+        "poster": "../assets/apps/open-dice/screens/01-first.jpg",
+        "label": "60-second device check",
+        "description": "On a real iPhone: launch from the Home Screen, roll 12 dice, switch to 2, hide and show the total, open Your rolls, and simulate 1,000 rolls."
+      },
+      "fixes": [
+        {
+          "quote": "lately the ads have contained inappropriate images to be used with children",
+          "source": "Dice Dice",
+          "sourceUrl": "https://apps.apple.com/us/app/id359677142",
+          "fix": "No ads of any kind."
+        },
+        {
+          "quote": "This app asked me to rate it after every few rolls.",
+          "source": "Dice Roller ►",
+          "sourceUrl": "https://apps.apple.com/us/app/id1178898792",
+          "fix": "No rating requests or pop-ups."
+        },
+        {
+          "quote": "It rolls 6, 50% of the time.",
+          "source": "Dice Dice",
+          "sourceUrl": "https://apps.apple.com/us/app/id359677142",
+          "fix": "Every die uses the iPhone's secure random generator, and Simulate shows you the counts."
+        },
+        {
+          "quote": "half of the dice will occasionally land outside of the screen",
+          "source": "Dice Roller ►",
+          "sourceUrl": "https://apps.apple.com/us/app/id1178898792",
+          "fix": "Dice land face up in a fixed grid, always readable."
+        },
+        {
+          "quote": "I'm using tape to cover the total number because my 1st grader is using the app for homework.",
+          "source": "Dice Roller ►",
+          "sourceUrl": "https://apps.apple.com/us/app/id1178898792",
+          "fix": "One tap hides the total."
+        },
+        {
+          "quote": "the app still wont total dice rolls without paying an additional fee",
+          "source": "Dice Roller: Shake & Roll",
+          "sourceUrl": "https://apps.apple.com/us/app/id1114861974",
+          "fix": "The total, 12 dice and Simulate are all included."
+        }
+      ]
     }
   ]
 }

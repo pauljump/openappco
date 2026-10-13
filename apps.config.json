@@ -265,6 +265,25 @@
         "privacy": "open-reader/privacy/"
       },
       "opportunity": "opp-f5d0b279963520b1a1c8"
+    },
+    {
+      "slug": "open-dice",
+      "launchNumber": 9,
+      "issue": 18,
+      "name": "Open Dice",
+      "tagline": "Just dice. Fair, quiet, and nothing in front of your kids.",
+      "ascId": "6822451773",
+      "bundleId": "com.opendice.app",
+      "origin": {
+        "count": 221,
+        "source": "Dice Dice",
+        "url": "https://apps.apple.com/us/app/id359677142",
+        "quote": "lately the ads have contained inappropriate images to be used with children"
+      },
+      "links": {
+        "support": "open-dice/support/",
+        "privacy": "open-dice/privacy/"
+      }
     }
   ]
 }
