@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T02:35:47.046Z",
+  "generated": "2026-10-13T13:56:26.003Z",
   "apps": [
     {
       "slug": "open-breath",
@@ -28,7 +28,11 @@
       "ascChecked": "2026-10-12",
       "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": null,
+      "store": {
+        "url": "https://apps.apple.com/us/app/open-breath-breathing-timer/id6821446626",
+        "version": "1.0.0",
+        "released": "2026-10-12T21:36:12Z"
+      },
       "hasShot": true,
       "hasIcon": true
     },
@@ -90,7 +94,11 @@
       "ascChecked": "2026-10-12",
       "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": null,
+      "store": {
+        "url": "https://apps.apple.com/us/app/open-flashcards/id6821626941",
+        "version": "1.0.0",
+        "released": "2026-10-12T22:26:48Z"
+      },
       "hasShot": true,
       "hasIcon": true
     },
@@ -189,6 +197,21 @@
       "hasIcon": true
     },
     {
+      "issue": 17,
+      "issueUrl": "https://github.com/pauljump/openappco/issues/17",
+      "name": "Open Reader",
+      "label": "status:in-review",
+      "status": "In review",
+      "stage": "submitted",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-13",
+      "next": "Wait for Apple's review decision.",
+      "likes": 0,
+      "store": null,
+      "hasShot": false,
+      "hasIcon": false
+    },
+    {
       "slug": "open-tally",
       "launchNumber": 2,
       "issue": 6,
@@ -217,8 +240,8 @@
       "likes": 0,
       "store": {
         "url": "https://apps.apple.com/us/app/open-tally/id6820183055",
-        "version": "1.0.0",
-        "released": "2026-10-09T23:39:26Z"
+        "version": "1.0.1",
+        "released": "2026-10-13T00:25:34Z"
       },
       "hasShot": true,
       "hasIcon": true
