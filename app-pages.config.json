@@ -247,6 +247,91 @@
         "summary": "On October 11, 2026, we captured 8,959 unique public review entries across 12 source apps (8 feed readers and 4 news apps); 3,745 were rated one to three stars. The audit requested pages 1–10 of Apple's most-recent and most-helpful feeds in the United States, Canada, Great Britain and Australia. All 403 requested feed snapshots succeeded.",
         "boundary": "Apple caps these public feeds at ten pages. Three source apps filled page 10, so older reviews may exist beyond what Apple exposed. This is every verified complaint category Open Feeds claims to address—not every review ever written."
       }
+    },
+    {
+      "slug": "open-reader",
+      "launchNumber": 8,
+      "submittedDate": "2026-10-13",
+      "tinyDescription": "Read your own EPUB, PDF and comics. Your books stay files.",
+      "fallbackStatus": "Waiting for Review",
+      "fallbackNext": "Wait for Apple's review decision.",
+      "screenshots": [
+        {
+          "src": "../assets/apps/open-reader/screens/01-library.jpg",
+          "alt": "Open Reader library with What's different and Continue reading",
+          "caption": "Your books, as plain files you can see."
+        },
+        {
+          "src": "../assets/apps/open-reader/screens/02-reading.jpg",
+          "alt": "Open Reader reading a public-domain chapter with the page bar showing Saved",
+          "caption": "Your page is saved on every turn."
+        },
+        {
+          "src": "../assets/apps/open-reader/screens/03-type.jpg",
+          "alt": "Open Reader Type sheet with size, line spacing, paragraph spacing and margins",
+          "caption": "14 sizes, spacing and margins."
+        }
+      ],
+      "video": {
+        "src": "../assets/apps/open-reader/device-demo.mp4",
+        "poster": "../assets/apps/open-reader/screens/01-library.jpg",
+        "label": "34-second device check",
+        "description": "On a real iPhone at 2x speed: launch from the Home Screen, keep reading where you stopped, turn pages, open Contents, make the text bigger, relaunch and land on the same page."
+      },
+      "fixes": [
+        {
+          "quote": "it deleted every single book that I had downloaded and all my reading data",
+          "source": "PureLibro: eBook Reader",
+          "sourceUrl": "https://apps.apple.com/us/app/id1546612448",
+          "fix": "Books are copied, unchanged, into a folder you can see in Files. The app never moves or rewrites them."
+        },
+        {
+          "quote": "these downloaded books get offloaded to icloud or something, so I can’t read them without downloading",
+          "source": "Apple Books",
+          "sourceUrl": "https://apps.apple.com/us/app/id364709193",
+          "fix": "Nothing is offloaded. Every book stays on your iPhone."
+        },
+        {
+          "quote": "Doesn't auto-bookmark your book upon closing",
+          "source": "Epub Reader -read epub,chm,txt",
+          "sourceUrl": "https://apps.apple.com/us/app/id1296870631",
+          "fix": "Your page is saved on every page turn and comes back when you reopen the app."
+        },
+        {
+          "quote": "the font choices are still \"too big\" and \"too small\". And it's still impossible to turn off full justification",
+          "source": "Ebook Reader",
+          "sourceUrl": "https://apps.apple.com/us/app/id381260755",
+          "fix": "14 text sizes, and justification is off unless you turn it on."
+        },
+        {
+          "quote": "you can adjust line hight, but not the space between paragraphs",
+          "source": "eBoox - fb2 ePub book reader",
+          "sourceUrl": "https://apps.apple.com/us/app/id1489172068",
+          "fix": "Line spacing, paragraph spacing and margins each have their own control."
+        },
+        {
+          "quote": "the free version won’t read CBZ files until you try to read them and then it prompts you to buy their paid subscription",
+          "source": "PureLibro: eBook Reader",
+          "sourceUrl": "https://apps.apple.com/us/app/id1546612448",
+          "fix": "EPUB, PDF and CBZ comics all open in this version, with no purchase."
+        },
+        {
+          "quote": "ads that show up while you are turning pages in a book",
+          "source": "Epub Reader -read epub,chm,txt",
+          "sourceUrl": "https://apps.apple.com/us/app/id1296870631",
+          "fix": "No ads in this version."
+        },
+        {
+          "quote": "there is no way to bulk import books, you have to add them one at a time",
+          "source": "PureLibro: eBook Reader",
+          "sourceUrl": "https://apps.apple.com/us/app/id1546612448",
+          "fix": "Pick many files, or a whole folder, at once."
+        }
+      ],
+      "coverage": {
+        "summary": "On October 12, 2026, we captured 6,760 unique public review entries across 11 source apps (4 from discovery and 7 direct ebook and comic readers); 3,186 were rated one to three stars. The audit requested pages 1–10 of Apple's most-recent and most-helpful feeds in the United States, Canada, Great Britain and Australia. All 329 requested feed snapshots succeeded.",
+        "boundary": "Apple caps these public feeds at ten pages. Four source apps filled page 10, so older reviews may exist beyond what Apple exposed. This is every verified complaint category Open Reader claims to address—not every review ever written."
+      }
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T13:56:26.003Z",
+  "generated": "2026-10-13T13:57:21.366Z",
   "apps": [
     {
       "slug": "open-breath",
@@ -197,9 +197,25 @@
       "hasIcon": true
     },
     {
+      "slug": "open-reader",
+      "launchNumber": 8,
       "issue": 17,
-      "issueUrl": "https://github.com/pauljump/openappco/issues/17",
       "name": "Open Reader",
+      "tagline": "Your books stay files. Your page is saved on every turn.",
+      "ascId": "6822322830",
+      "bundleId": "com.openbookreader.app",
+      "origin": {
+        "count": 301,
+        "source": "PureLibro: eBook Reader",
+        "url": "https://apps.apple.com/us/app/id1546612448",
+        "quote": "it deleted every single book that I had downloaded and all my reading data"
+      },
+      "links": {
+        "support": "open-reader/support/",
+        "privacy": "open-reader/privacy/"
+      },
+      "opportunity": "opp-f5d0b279963520b1a1c8",
+      "issueUrl": "https://github.com/pauljump/openappco/issues/17",
       "label": "status:in-review",
       "status": "In review",
       "stage": "submitted",
@@ -208,8 +224,8 @@
       "next": "Wait for Apple's review decision.",
       "likes": 0,
       "store": null,
-      "hasShot": false,
-      "hasIcon": false
+      "hasShot": true,
+      "hasIcon": true
     },
     {
       "slug": "open-tally",

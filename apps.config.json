@@ -245,6 +245,26 @@
         "privacy": "open-feeds/privacy/"
       },
       "opportunity": "opp-69658db244495ee16f5d"
+    },
+    {
+      "slug": "open-reader",
+      "launchNumber": 8,
+      "issue": 17,
+      "name": "Open Reader",
+      "tagline": "Your books stay files. Your page is saved on every turn.",
+      "ascId": "6822322830",
+      "bundleId": "com.openbookreader.app",
+      "origin": {
+        "count": 301,
+        "source": "PureLibro: eBook Reader",
+        "url": "https://apps.apple.com/us/app/id1546612448",
+        "quote": "it deleted every single book that I had downloaded and all my reading data"
+      },
+      "links": {
+        "support": "open-reader/support/",
+        "privacy": "open-reader/privacy/"
+      },
+      "opportunity": "opp-f5d0b279963520b1a1c8"
     }
   ]
 }
