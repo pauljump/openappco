@@ -69,16 +69,13 @@ function fixes(page, name) {
   <h3>What ${esc(name)} does instead</h3>
   <p>${esc(item.fix)}</p>
 </article>`).join('\n');
+  // One plain line on where the complaints came from; the full audit stays in private research.
+  const source = page.reviewLine ? `\n<p class="lede">${esc(page.reviewLine)}</p>` : '';
   return `<section aria-labelledby="complaints">
 <p class="section-kicker">Why this app exists</p>
-<h2 id="complaints">What people hated. What we fixed for free.</h2>
+<h2 id="complaints">What people hated. What we fixed for free.</h2>${source}
 ${items}
 </section>`;
-}
-
-function coverage(page) {
-  if (!page.coverage) return `<section aria-labelledby="boundary"><h2 id="boundary">What this page proves</h2><p>This page uses the manually verified public review excerpt that originally put this app in the Open AppCo queue. New releases publish the wider recorded-feed coverage and every verified complaint category they claim to address.</p></section>`;
-  return `<section aria-labelledby="boundary"><h2 id="boundary">What we reviewed</h2><p>${esc(page.coverage.summary)}</p><p>${esc(page.coverage.boundary)}</p></section>`;
 }
 
 function render(page) {
@@ -124,7 +121,6 @@ function render(page) {
 ${screenshots(page)}
 ${video(page)}
 ${fixes(page, meta.name)}
-${coverage(page)}
 <p><a class="cta" data-primary-link href="${esc(primaryUrl)}">${primaryText}</a></p>
 <footer>Open AppCo · Everyday apps. Free for everyone.</footer>
 </main>

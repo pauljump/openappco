@@ -158,10 +158,7 @@
         {"quote": "You can’t shuffle the cards.", "source": "Flashcards with Cram", "sourceUrl": "https://apps.apple.com/us/app/flashcards-with-cram/id734887700", "fix": "Lets you study in original or shuffled order, with fronts or backs as prompts."},
         {"quote": "Forced to create a deck before I create a card.", "source": "Flashcard Hero", "sourceUrl": "https://apps.apple.com/us/app/flashcard-hero/id650812005", "fix": "Starts the first card immediately in My Cards, while still supporting named decks."}
       ],
-      "coverage": {
-        "summary": "On October 11, 2026, we captured 6,978 unique public review entries across 14 source apps; 2,231 were rated one to three stars. The audit requested pages 1–10 of Apple's most-recent and most-helpful feeds in the United States, Canada, Great Britain and Australia. All 400 requested feed snapshots succeeded.",
-        "boundary": "Apple caps these public feeds at ten pages. Two source apps filled page 10, so older reviews may exist beyond what Apple exposed. This is every verified complaint category Open Flashcards claims to address—not every review ever written."
-      }
+      "reviewLine": "We read 6,978 App Store reviews of 14 flashcard apps. These complaints kept coming up."
     },
     {
       "slug": "open-feeds",
@@ -243,10 +240,7 @@
           "fix": "Starts empty. Nothing is followed until you choose it."
         }
       ],
-      "coverage": {
-        "summary": "On October 11, 2026, we captured 8,959 unique public review entries across 12 source apps (8 feed readers and 4 news apps); 3,745 were rated one to three stars. The audit requested pages 1–10 of Apple's most-recent and most-helpful feeds in the United States, Canada, Great Britain and Australia. All 403 requested feed snapshots succeeded.",
-        "boundary": "Apple caps these public feeds at ten pages. Three source apps filled page 10, so older reviews may exist beyond what Apple exposed. This is every verified complaint category Open Feeds claims to address—not every review ever written."
-      }
+      "reviewLine": "We read 8,959 App Store reviews of 12 feed and news readers. These complaints kept coming up."
     },
     {
       "slug": "open-reader",
@@ -328,10 +322,7 @@
           "fix": "Pick many files, or a whole folder, at once."
         }
       ],
-      "coverage": {
-        "summary": "On October 12, 2026, we captured 6,760 unique public review entries across 11 source apps (4 from discovery and 7 direct ebook and comic readers); 3,186 were rated one to three stars. The audit requested pages 1–10 of Apple's most-recent and most-helpful feeds in the United States, Canada, Great Britain and Australia. All 329 requested feed snapshots succeeded.",
-        "boundary": "Apple caps these public feeds at ten pages. Four source apps filled page 10, so older reviews may exist beyond what Apple exposed. This is every verified complaint category Open Reader claims to address—not every review ever written."
-      }
+      "reviewLine": "We read 6,760 App Store reviews of 11 ebook and comic readers. These complaints kept coming up."
     }
   ]
 }
