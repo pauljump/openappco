@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T00:30:20.788Z",
+  "generated": "2026-10-13T02:35:47.046Z",
   "apps": [
     {
       "slug": "open-breath",
@@ -28,11 +28,7 @@
       "ascChecked": "2026-10-12",
       "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": {
-        "url": "https://apps.apple.com/us/app/open-breath-breathing-timer/id6821446626",
-        "version": "1.0.0",
-        "released": "2026-10-12T21:36:12Z"
-      },
+      "store": null,
       "hasShot": true,
       "hasIcon": true
     },
@@ -94,11 +90,7 @@
       "ascChecked": "2026-10-12",
       "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": {
-        "url": "https://apps.apple.com/us/app/open-flashcards/id6821626941",
-        "version": "1.0.0",
-        "released": "2026-10-12T22:26:48Z"
-      },
+      "store": null,
       "hasShot": true,
       "hasIcon": true
     },
