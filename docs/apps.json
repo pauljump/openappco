@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T13:57:21.366Z",
+  "generated": "2026-10-13T19:00:17.388Z",
   "apps": [
     {
       "slug": "open-breath",
@@ -218,10 +218,10 @@
       "issueUrl": "https://github.com/pauljump/openappco/issues/17",
       "label": "status:in-review",
       "status": "In review",
-      "stage": "submitted",
-      "ascState": "WAITING_FOR_REVIEW",
+      "stage": "review",
+      "ascState": "IN_REVIEW",
       "ascChecked": "2026-10-13",
-      "next": "Wait for Apple's review decision.",
+      "next": "Apple is reviewing version 1.0.0 (build 1).",
       "likes": 0,
       "store": null,
       "hasShot": true,
