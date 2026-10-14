@@ -19,7 +19,7 @@ names such as Open Piano, Open Noise, and Open Tally.
 | [Open Metronome](https://github.com/pauljump/openappco/issues/14) | In review |
 | [Open Noise](https://github.com/pauljump/openappco/issues/3) | In review |
 | [Open Piano](https://github.com/pauljump/openappco/issues/1) | In review |
-| [Open Reader](https://github.com/pauljump/openappco/issues/17) | Live |
+| [Open Reader](https://github.com/pauljump/openappco/issues/17) | [Live](https://apps.apple.com/us/app/open-reader-epub-pdf/id6822322830) |
 | [Open Tally](https://github.com/pauljump/openappco/issues/6) | [Live](https://apps.apple.com/us/app/open-tally/id6820183055) |
 <!-- apps:end -->
 
