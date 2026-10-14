@@ -393,6 +393,76 @@
           "fix": "The total, 12 dice and Simulate are all included."
         }
       ]
+    },
+    {
+      "slug": "open-tuner",
+      "launchNumber": 10,
+      "submittedDate": "2026-10-14",
+      "tinyDescription": "Guitar, 12-string, uke, banjo and bass. 28 tunings, all included.",
+      "fallbackStatus": "Waiting for Review",
+      "fallbackNext": "Wait for Apple's review decision.",
+      "reviewLine": "We read 16,437 App Store reviews of 18 tuner apps. These complaints kept coming up.",
+      "screenshots": [
+        {
+          "src": "../assets/apps/open-tuner/screens/01-intro.jpg",
+          "alt": "Open Tuner on guitar, low E nearly in tune, with What's different",
+          "caption": "Tap a peg. Pluck. Tune."
+        },
+        {
+          "src": "../assets/apps/open-tuner/screens/02-banjo-high.jpg",
+          "alt": "Banjo string two semitones high: Too high. Loosen, don't tighten.",
+          "caption": "Sharp? It says loosen."
+        },
+        {
+          "src": "../assets/apps/open-tuner/screens/03-twelve.jpg",
+          "alt": "12-string headstock with twelve pegs, octave string selected",
+          "caption": "12-string, one string at a time."
+        }
+      ],
+      "video": {
+        "src": "../assets/apps/open-tuner/device-demo.mp4",
+        "poster": "../assets/apps/open-tuner/screens/01-intro.jpg",
+        "label": "28-second device check",
+        "description": "On a real iPhone, with sound: launch from the Home Screen, play E2, read the low E string live, hold Play to repeat the note, switch strings, then the 12-string and bass."
+      },
+      "fixes": [
+        {
+          "quote": "it broke one of my strings becuase it kept telling me to tune up",
+          "source": "GuitarTuna",
+          "sourceUrl": "https://apps.apple.com/us/app/id527588389",
+          "fix": "Shows the note it hears, says loosen when you're sharp, and never says tighten when it isn't sure."
+        },
+        {
+          "quote": "any alternative like drop D or half step down will require a subscription",
+          "source": "GuitarTuna",
+          "sourceUrl": "https://apps.apple.com/us/app/id527588389",
+          "fix": "All 28 tunings across five instruments are included."
+        },
+        {
+          "quote": "Now there are 11 stupid questions before you can even use it.",
+          "source": "Guitar Tuner - Simply Tune",
+          "sourceUrl": "https://apps.apple.com/us/app/id1573260863",
+          "fix": "Opens straight to the tuner."
+        },
+        {
+          "quote": "pop-up ads that cover the whole screen each time you open the app",
+          "source": "Tuner T1",
+          "sourceUrl": "https://apps.apple.com/us/app/id453056916",
+          "fix": "No ads."
+        },
+        {
+          "quote": "automatically moves to the next one. You’re constantly selecting the string you want",
+          "source": "Guitar Tuner - Simply Tune",
+          "sourceUrl": "https://apps.apple.com/us/app/id1573260863",
+          "fix": "You pick the string. Auto never moves on by itself."
+        },
+        {
+          "quote": "this app has no option for 12-string guitars",
+          "source": "Fender Tune",
+          "sourceUrl": "https://apps.apple.com/us/app/id1107017950",
+          "fix": "12-string, each pair tuned one string at a time."
+        }
+      ]
     }
   ]
 }

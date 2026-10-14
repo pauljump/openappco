@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14T11:58:17.840Z",
+  "generated": "2026-10-14T11:59:27.235Z",
   "apps": [
     {
       "slug": "open-breath",
@@ -298,16 +298,22 @@
     },
     {
       "slug": "open-tuner",
+      "launchNumber": 10,
       "issue": 4,
       "name": "Open Tuner",
-      "tagline": "Tune by ear. A calm chromatic tuner with a clear in-tune state.",
+      "tagline": "Every instrument, every tuning, and it won't snap your strings.",
+      "ascId": "6822714309",
+      "bundleId": "com.opentuner.app",
       "origin": {
-        "count": 28,
-        "source": "n-Track Tuner",
-        "url": "https://apps.apple.com/us/app/n-track-tuner/id409786458",
-        "quote": "We just need a tuner guys, you don't need our personal data!"
+        "count": 243,
+        "source": "GuitarTuna",
+        "url": "https://apps.apple.com/us/app/id527588389",
+        "quote": "it broke one of my strings becuase it kept telling me to tune up"
       },
-      "opportunity": "opp-435741905e03bf75d6dd",
+      "links": {
+        "support": "open-tuner/support/",
+        "privacy": "open-tuner/privacy/"
+      },
       "issueUrl": "https://github.com/pauljump/openappco/issues/4",
       "label": "status:in-review",
       "status": "In review",
