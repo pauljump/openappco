@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14T21:00:15.848Z",
+  "generated": "2026-10-14T23:16:20.358Z",
   "apps": [
     {
       "slug": "open-breath",
@@ -62,7 +62,11 @@
       "ascChecked": "2026-10-14",
       "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": null,
+      "store": {
+        "url": "https://apps.apple.com/us/app/open-dice-roll-simulate/id6822451773",
+        "version": "1.0.0",
+        "released": "2026-10-14T18:01:11Z"
+      },
       "hasShot": true,
       "hasIcon": true
     },
