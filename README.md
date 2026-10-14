@@ -21,6 +21,7 @@ names such as Open Piano, Open Noise, and Open Tally.
 | [Open Piano](https://github.com/pauljump/openappco/issues/1) | In review |
 | [Open Reader](https://github.com/pauljump/openappco/issues/17) | [Live](https://apps.apple.com/us/app/open-reader-epub-pdf/id6822322830) |
 | [Open Tally](https://github.com/pauljump/openappco/issues/6) | [Live](https://apps.apple.com/us/app/open-tally/id6820183055) |
+| [Open Tuner](https://github.com/pauljump/openappco/issues/4) | In review |
 <!-- apps:end -->
 
 **Building** includes implementation and testing. **In review** means submitted to Apple. **Live** means publicly downloadable. Existing prototypes are not release promises; their issues record outstanding work and evidence dates.
