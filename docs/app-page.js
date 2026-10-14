@@ -43,7 +43,7 @@
       }
 
       const href = isLive ? app.store.url : app.issueUrl;
-      const text = isLive ? 'Get it free' : 'Follow the review status';
+      const text = isLive ? 'Get the app' : 'Follow the review status';
       document.querySelectorAll('[data-primary-link]').forEach(link => {
         if (href) link.href = href;
         link.textContent = text;

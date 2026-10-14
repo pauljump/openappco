@@ -80,7 +80,7 @@
     submitted: '<b>Waiting for Apple review.</b> Submitted and in line.',
     review: '<b>Apple is reviewing it right now.</b>',
     approved: '<b>Approved by Apple.</b> Releasing to the App Store.',
-    live: '<b>Live on the App Store.</b> Free, for everyone.'
+    live: '<b>Live on the App Store.</b> Ready to download.'
   };
   const badge = { queued: ['Queued', ''], building: ['Building', ''], changes: ['Changes requested', 'changes'], submitted: ['At Apple', 'apple'], review: ['In review', 'apple'], approved: ['Approved', 'apple'], live: ['Live', 'live'] };
 
@@ -96,7 +96,7 @@
     const origin = o && a.hasShot ? `<div class="origin"><q>${esc(o.quote)}</q><small>Why it exists: <a href="${esc(o.url)}" rel="noopener">${esc(o.source)}</a></small></div>` : '';
     const icon = a.hasIcon ? `<img src="assets/apps/${esc(a.slug)}/icon.png" alt="" loading="lazy">` : `<span class="t-icon">${esc(a.name.replace('Open ', '')[0])}</span>`;
     const detailUrl = a.launchNumber ? `${esc(a.slug)}/` : esc(a.issueUrl);
-    const get = a.store ? `<a class="get store" href="${esc(a.store.url)}" rel="noopener">Get it free</a>` : `<a class="get" href="${detailUrl}">Check it out →</a>`;
+    const get = a.store ? `<a class="get store" href="${esc(a.store.url)}" rel="noopener">Get the app</a>` : `<a class="get" href="${detailUrl}">Check it out →</a>`;
     return `<article class="card${a.landscape ? ' feature' : ''}" id="${esc(a.slug)}">${shot}
       <div class="body">
         <div class="app-head">${icon}<h3>${a.launchNumber ? `<a href="${detailUrl}">${esc(a.name)}</a>` : esc(a.name)}</h3></div>
@@ -116,7 +116,7 @@
     $('#pipeline').innerHTML = [
       ['apple', count(['submitted', 'changes']), 'Submitted', 'Waiting in Apple’s line'],
       ['apple', count(['review', 'approved']), 'In review', 'Apple is looking at it'],
-      ['live', count(['live']), 'Live', 'Free on the App Store']
+      ['live', count(['live']), 'Live', 'On the App Store']
     ].map(([c, n, l, s]) => `<div class="pipe ${c}"><b>${n}</b><span>${l}</span><small>${s}</small></div>`).join('');
     if (data.generated) $('#updated').textContent = 'Status as of ' + new Date(data.generated).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + '.';
     const chips = apps.filter(a => a.origin).map(a => `<div class="quote-chip"><span class="stars1">★☆☆☆☆</span><q>${esc(a.origin.quote)}</q><small>${esc(a.origin.source)}</small></div>`).join('');

@@ -27,7 +27,7 @@
       "launchNumber": 3,
       "issue": 3,
       "name": "Open Noise",
-      "tagline": "White, brown, and ocean noise. Quiet on purpose, no timer limit.",
+      "tagline": "White, brown, and ocean noise with no timer limit.",
       "ascId": "6820576119",
       "bundleId": "com.opennoise.app",
       "origin": {
@@ -47,7 +47,7 @@
       "launchNumber": 2,
       "issue": 6,
       "name": "Open Tally",
-      "tagline": "Count the thing. A calm counter board that opens ready.",
+      "tagline": "A tally counter that opens ready to count.",
       "ascId": "6820183055",
       "bundleId": "com.opentally.app",
       "origin": {
@@ -132,7 +132,7 @@
       "launchNumber": 5,
       "issue": 8,
       "name": "Open Breath",
-      "tagline": "Breathe at your pace. Box breathing with no paywall or countdown pressure.",
+      "tagline": "Box breathing at your own pace, with no paywall.",
       "origin": {
         "count": 4,
         "source": "Breathe+",
@@ -152,7 +152,7 @@
       "launchNumber": 6,
       "issue": 15,
       "name": "Open Flashcards",
-      "tagline": "Make cards. Keep them exact. Local decks, unrestricted study, and plain CSV.",
+      "tagline": "Make flashcards and study as much as you want. Decks stay on your phone and export as CSV.",
       "ascId": "6821626941",
       "bundleId": "com.openflashcards.app",
       "origin": {
@@ -237,7 +237,7 @@
       "launchNumber": 7,
       "issue": 16,
       "name": "Open Feeds",
-      "tagline": "Read means read. Unread counts you can trust, and a feed list no update can wipe.",
+      "tagline": "An RSS reader where read stays read. Your feed list is saved as a file an update can't wipe.",
       "ascId": "6821955088",
       "bundleId": "com.openfeeds.app",
       "origin": {
@@ -277,7 +277,7 @@
       "launchNumber": 9,
       "issue": 18,
       "name": "Open Dice",
-      "tagline": "Just dice. Fair, quiet, and nothing in front of your kids.",
+      "tagline": "Just dice. Fair rolls and no ads in front of your kids.",
       "ascId": "6822451773",
       "bundleId": "com.opendice.app",
       "origin": {

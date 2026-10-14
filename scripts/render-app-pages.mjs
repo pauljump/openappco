@@ -47,7 +47,7 @@ function screenshots(page) {
   const items = page.screenshots.map(item => `<figure><img src="${esc(item.src)}" alt="${esc(item.alt)}" loading="lazy"><figcaption>${esc(item.caption)}</figcaption></figure>`).join('\n');
   return `<section aria-labelledby="screenshots">
   <p class="section-kicker">The actual app</p>
-  <h2 id="screenshots">${page.screenshots.length === 1 ? 'See the app.' : `${page.screenshots.length} screens. No sales pitch.`}</h2>
+  <h2 id="screenshots">What it looks like.</h2>
   <div class="screenshot-grid count-${Math.min(page.screenshots.length, 3)}">${items}</div>
 </section>`;
 }
@@ -56,7 +56,7 @@ function video(page) {
   if (!page.video) return '';
   return `<section aria-labelledby="video">
   <p class="section-kicker">${esc(page.video.label)}</p>
-  <h2 id="video">It works on a real iPhone.</h2>
+  <h2 id="video">On a real iPhone.</h2>
   <p>${esc(page.video.description)}</p>
   <div class="video-frame"><video controls muted playsinline preload="metadata" poster="${esc(page.video.poster)}"><source src="${esc(page.video.src)}" type="video/mp4">Your browser does not support the demo video.</video></div>
 </section>`;
@@ -73,7 +73,7 @@ function fixes(page, name) {
   const source = page.reviewLine ? `\n<p class="lede">${esc(page.reviewLine)}</p>` : '';
   return `<section aria-labelledby="complaints">
 <p class="section-kicker">Why this app exists</p>
-<h2 id="complaints">What people hated. What we fixed for free.</h2>${source}
+<h2 id="complaints">What people complained about, and what we changed.</h2>${source}
 ${items}
 </section>`;
 }
@@ -87,7 +87,7 @@ function render(page) {
   const isLive = Boolean(current?.store?.url);
   const issueUrl = current?.issueUrl || `https://github.com/pauljump/openappco/issues/${meta.issue}`;
   const primaryUrl = isLive ? current.store.url : issueUrl;
-  const primaryText = isLive ? 'Get it free' : 'Follow the review status';
+  const primaryText = isLive ? 'Get the app' : 'Follow the review status';
   const checked = current?.ascChecked || page.submittedDate;
   const next = current?.next || page.fallbackNext;
   const support = pageLink(meta.links?.support, page.slug);
@@ -97,9 +97,9 @@ function render(page) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(meta.name)} — ${esc(status)}</title>
-<meta name="description" content="${esc(meta.name)}: ${esc(status)}. See the app and the App Store feedback we addressed for free.">
-<meta property="og:title" content="${esc(meta.name)} — Open AppCo app #${page.launchNumber}">
+<title>${esc(meta.name)}: ${esc(status)}</title>
+<meta name="description" content="${esc(meta.name)}: ${esc(status)}. Screens, a demo, and the App Store complaints it fixes.">
+<meta property="og:title" content="${esc(meta.name)}, Open AppCo app #${page.launchNumber}">
 <meta property="og:description" content="${esc(page.tinyDescription)}">
 <meta property="og:image" content="https://openappco.com/assets/apps/${page.slug}/launch-card.png">
 <meta property="og:url" content="https://openappco.com/${page.slug}/">
@@ -122,7 +122,7 @@ ${screenshots(page)}
 ${video(page)}
 ${fixes(page, meta.name)}
 <p><a class="cta" data-primary-link href="${esc(primaryUrl)}">${primaryText}</a></p>
-<footer>Open AppCo · Everyday apps. Free for everyone.</footer>
+<footer>Open AppCo · Everyday apps. Built in public.</footer>
 </main>
 <script src="../app-page.js" defer></script>
 </body>

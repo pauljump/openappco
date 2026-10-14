@@ -19,7 +19,7 @@
           "quote": "Pop up ads cover the whole screen whenever I play a note.",
           "source": "Piano for iPhone",
           "sourceUrl": "https://apps.apple.com/us/app/piano-for-iphone/id531263194",
-          "fix": "There is no advertising path. Play, record, and listen back without an interruption covering the keys."
+          "fix": "There are no ads. Play, record, and listen back without anything covering the keys."
         }
       ]
     },
@@ -27,7 +27,7 @@
       "slug": "open-tally",
       "launchNumber": 2,
       "submittedDate": "2026-10-08",
-      "tinyDescription": "Count the thing. A calm counter board that opens ready.",
+      "tinyDescription": "A tally counter that opens ready to count.",
       "fallbackStatus": "Live on the App Store",
       "fallbackNext": "Collect feedback and maintain.",
       "screenshots": [
@@ -46,7 +46,7 @@
           "quote": "Demands $13 every time I open the app.",
           "source": "Count That Now",
           "sourceUrl": "https://apps.apple.com/us/app/count-that-now-tally-counter/id955952873",
-          "fix": "Every counter and board feature is available for free. There is no purchase screen."
+          "fix": "Every counter and board feature is there when you open it. Nothing nags you to pay."
         }
       ]
     },
@@ -54,7 +54,7 @@
       "slug": "open-noise",
       "launchNumber": 3,
       "submittedDate": "2026-10-09",
-      "tinyDescription": "White, brown, and ocean noise. Quiet on purpose, with no timer limit.",
+      "tinyDescription": "White, brown, and ocean noise with no timer limit.",
       "fallbackStatus": "Waiting for Review",
       "fallbackNext": "Wait for Apple's review decision.",
       "screenshots": [
@@ -86,8 +86,8 @@
       "fallbackNext": "Wait for Apple's review decision.",
       "screenshots": [
         {"src": "../assets/apps/open-metronome/screens/01-ready.jpg", "alt": "Open Metronome ready screen", "caption": "Choose a tempo and start."},
-        {"src": "../assets/apps/open-metronome/screens/02-beat.jpg", "alt": "Open Metronome active beat", "caption": "A clear beat that stays uninterrupted."},
-        {"src": "../assets/apps/open-metronome/screens/03-meter.jpg", "alt": "Open Metronome time-signature controls", "caption": "Common meters without setup friction."}
+        {"src": "../assets/apps/open-metronome/screens/02-beat.jpg", "alt": "Open Metronome active beat", "caption": "The beat, with nothing on top of it."},
+        {"src": "../assets/apps/open-metronome/screens/03-meter.jpg", "alt": "Open Metronome time-signature controls", "caption": "Pick a time signature."}
       ],
       "video": {
         "src": "../assets/apps/open-metronome/device-demo.mp4",
@@ -108,12 +108,12 @@
       "slug": "open-breath",
       "launchNumber": 5,
       "submittedDate": "2026-10-10",
-      "tinyDescription": "Breathe at your pace. Box breathing with no paywall or countdown pressure.",
+      "tinyDescription": "Box breathing at your own pace, with no paywall.",
       "fallbackStatus": "Waiting for Review",
       "fallbackNext": "Wait for Apple's review decision.",
       "screenshots": [
-        {"src": "../assets/apps/open-breath/screens/01-practice.jpg", "alt": "Open Breath practice setup", "caption": "Choose a pace without a subscription screen."},
-        {"src": "../assets/apps/open-breath/screens/02-active.jpg", "alt": "Open Breath active breathing session", "caption": "A calm, readable breathing cycle."},
+        {"src": "../assets/apps/open-breath/screens/01-practice.jpg", "alt": "Open Breath practice setup", "caption": "Choose a pace."},
+        {"src": "../assets/apps/open-breath/screens/02-active.jpg", "alt": "Open Breath active breathing session", "caption": "A breathing cycle you can follow."},
         {"src": "../assets/apps/open-breath/screens/03-history.jpg", "alt": "Open Breath local history", "caption": "Keep a simple history on the phone."}
       ],
       "video": {
@@ -127,7 +127,7 @@
           "quote": "now you have to pay for a subscription to use it.",
           "source": "Breathe+",
           "sourceUrl": "https://apps.apple.com/us/app/breathing-exercises-breathe/id1106998959",
-          "fix": "Box breathing is available without a subscription, paywall, or countdown pressure."
+          "fix": "Box breathing works without a subscription or paywall."
         }
       ]
     },
@@ -135,13 +135,13 @@
       "slug": "open-flashcards",
       "launchNumber": 6,
       "submittedDate": "2026-10-11",
-      "tinyDescription": "Make cards. Keep them exact. Study without limits.",
+      "tinyDescription": "Make flashcards and study as much as you want. Your text is never rewritten.",
       "fallbackStatus": "Waiting for Review",
       "fallbackNext": "Wait for Apple's review decision.",
       "screenshots": [
         {"src": "../assets/apps/open-flashcards/screens/01-study.jpg", "alt": "Open Flashcards study screen showing a revealed answer and Know and Again controls", "caption": "Study, reveal, know or try again."},
         {"src": "../assets/apps/open-flashcards/screens/02-decks.jpg", "alt": "Open Flashcards deck list with local card counts", "caption": "Local decks with no card limit."},
-        {"src": "../assets/apps/open-flashcards/screens/03-create.jpg", "alt": "Open Flashcards card editor for exact front and back text", "caption": "Your text stays exactly yours."}
+        {"src": "../assets/apps/open-flashcards/screens/03-create.jpg", "alt": "Open Flashcards card editor for exact front and back text", "caption": "Your text, saved exactly as you typed it."}
       ],
       "video": {
         "src": "../assets/apps/open-flashcards/device-demo.mp4",
@@ -151,9 +151,9 @@
       },
       "fixes": [
         {"quote": "The app glitched and deleted them all.", "source": "Flashcards Maker Flash Cards", "sourceUrl": "https://apps.apple.com/us/app/flashcards-maker-flash-cards/id1437113609", "fix": "Saves every edit locally and keeps a previous-good snapshot for recovery."},
-        {"quote": "AI changing the content.", "source": "Quizlet", "sourceUrl": "https://apps.apple.com/us/app/quizlet-more-than-flashcards/id546473125", "fix": "Keeps the exact text you type or import. There is no AI rewriting path."},
+        {"quote": "AI changing the content.", "source": "Quizlet", "sourceUrl": "https://apps.apple.com/us/app/quizlet-more-than-flashcards/id546473125", "fix": "Keeps the exact text you type or import. Nothing rewrites it."},
         {"quote": "Keeps rejecting my CSV files.", "source": "SmartCards+", "sourceUrl": "https://apps.apple.com/us/app/spaced-repetition-smartcards/id1210521987", "fix": "Imports and exports ordinary CSV, preserving quoted commas, quotation marks and line breaks."},
-        {"quote": "A limit on how many cards you can use.", "source": "SmartCards+", "sourceUrl": "https://apps.apple.com/us/app/spaced-repetition-smartcards/id1210521987", "fix": "Includes unlimited cards and unrestricted study for free. No ads, subscription or unlock."},
+        {"quote": "A limit on how many cards you can use.", "source": "SmartCards+", "sourceUrl": "https://apps.apple.com/us/app/spaced-repetition-smartcards/id1210521987", "fix": "Includes unlimited cards and unrestricted study. No ads and no card limit."},
         {"quote": "Finish a whole deck before it logs your progress.", "source": "SmartCards+", "sourceUrl": "https://apps.apple.com/us/app/spaced-repetition-smartcards/id1210521987", "fix": "Restores the same study queue, prompt side and remaining count after interruption or relaunch."},
         {"quote": "You can’t shuffle the cards.", "source": "Flashcards with Cram", "sourceUrl": "https://apps.apple.com/us/app/flashcards-with-cram/id734887700", "fix": "Lets you study in original or shuffled order, with fronts or backs as prompts."},
         {"quote": "Forced to create a deck before I create a card.", "source": "Flashcard Hero", "sourceUrl": "https://apps.apple.com/us/app/flashcard-hero/id650812005", "fix": "Starts the first card immediately in My Cards, while still supporting named decks."}
@@ -164,14 +164,14 @@
       "slug": "open-feeds",
       "launchNumber": 7,
       "submittedDate": "2026-10-12",
-      "tinyDescription": "Follow any site. Read means read. Your feed list stays yours.",
+      "tinyDescription": "An RSS reader where read stays read, and your feed list is saved as a file.",
       "fallbackStatus": "Waiting for Review",
       "fallbackNext": "Wait for Apple's review decision.",
       "screenshots": [
         {
           "src": "../assets/apps/open-feeds/screens/01-feeds.jpg",
           "alt": "Open Feeds list with unread counts for each followed site",
-          "caption": "Every feed, with an honest unread count."
+          "caption": "Every feed, with an accurate unread count."
         },
         {
           "src": "../assets/apps/open-feeds/screens/02-headlines.jpg",
@@ -219,7 +219,7 @@
           "quote": "Only 10 feeds max allowed on free version",
           "source": "Reeder.",
           "sourceUrl": "https://apps.apple.com/us/app/id6475002485",
-          "fix": "Follow as many feeds as you like, free. No subscription or unlock."
+          "fix": "Follow as many feeds as you like. No feed limit."
         },
         {
           "quote": "Can’t add any new feeds unless you know the exact RSS URL",
@@ -336,7 +336,7 @@
         {
           "src": "../assets/apps/open-dice/screens/01-first.jpg",
           "alt": "Open Dice with two dice, the total, and What's different",
-          "caption": "Tap the dice. That's it."
+          "caption": "Tap the dice to roll."
         },
         {
           "src": "../assets/apps/open-dice/screens/02-simulate.jpg",

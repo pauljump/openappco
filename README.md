@@ -1,8 +1,8 @@
 # Open AppCo
 
-**Everyday apps. Free for everyone. Built in public.**
+**Everyday apps. Built in public.**
 
-We find useful apps buried under ads, subscriptions, and unnecessary friction—and build straightforward alternatives.
+We find useful apps buried under ads, subscriptions, and friction, and build plain alternatives.
 
 **Open AppCo** is the project, app family, and public home. Its apps use direct
 names such as Open Piano, Open Noise, and Open Tally.

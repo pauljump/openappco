@@ -40,17 +40,17 @@ order, or the site's current card count. Its public source of truth is the app's
 `apps.config.json`.
 
 Each kit has three pieces: a short lowercase X post in Paul's voice (the launch number and app
-name, one line on what the app does for a person, the free line and the page link); a 1200×630 share image
+name, one line on what the app does for a person and the page link); a 1200×630 share image
 styled like a compact iOS App Store listing; and an app-specific living status page. The image shows
 the app icon, name, description,
-CHECK IT OUT action, Free · iPhone, one real screenshot and `APP #<number>`. It deliberately omits
+CHECK IT OUT action, iPhone, one real screenshot and `APP #<number>`. It deliberately omits
 Apple’s changing review status and does not restate the launch number as an ordinal, so the same
 image remains accurate after approval.
 
 The post links to `/<slug>/`, not the homepage or an App Store URL that is not live yet. The page
 leads with the current Apple status, then shows three clean screenshots, the inspected
 physical-device demo, and every manually verified complaint category the app claims to address with
-the corresponding feature delivered free. Quotes are short, source-linked, and stripped of
+the corresponding feature that addresses it. Copy never promises a price (no "free"); pricing stays open. Quotes are short, source-linked, and stripped of
 reviewer identity. The page also states the audit's storefront, sort-order, date and Apple feed-cap
 boundary; it never claims access to every lifetime or worldwide review. The status pipeline keeps
 the page current. Only after the public App Store lookup succeeds does the page's main action become
