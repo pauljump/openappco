@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T17:00:17.123Z",
+  "generated": "2026-10-15T17:30:21.185Z",
   "apps": [
     {
       "slug": "open-beacon",
@@ -54,9 +54,9 @@
       "label": "status:live",
       "status": "Live",
       "stage": "live",
-      "ascState": "READY_FOR_SALE",
-      "ascChecked": "2026-10-12",
-      "next": "Live on the App Store. Collect feedback and maintain.",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-15",
+      "next": "Await Apple review of version 1.0.1 (build 10).",
       "likes": 0,
       "store": {
         "url": "https://apps.apple.com/us/app/open-breath-breathing-timer/id6821446626",
