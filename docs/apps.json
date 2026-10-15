@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T16:16:21.740Z",
+  "generated": "2026-10-15T16:30:19.249Z",
   "apps": [
     {
       "slug": "open-beacon",
@@ -23,9 +23,9 @@
       "label": "status:in-review",
       "status": "In review",
       "stage": "submitted",
-      "ascState": null,
-      "ascChecked": null,
-      "next": "Wait for Apple's review decision.",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-15",
+      "next": "Await Apple review of version 1.0.0 (build 1).",
       "likes": 0,
       "store": null,
       "hasShot": true,
