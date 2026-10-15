@@ -1,10 +1,25 @@
 {
-  "generated": "2026-10-15T16:14:16.871Z",
+  "generated": "2026-10-15T16:16:21.740Z",
   "apps": [
     {
+      "slug": "open-beacon",
+      "launchNumber": 11,
       "issue": 19,
-      "issueUrl": "https://github.com/pauljump/openappco/issues/19",
       "name": "Open Beacon",
+      "tagline": "Find lost earbuds and hearing aids by feel, sound or sight.",
+      "ascId": "6823219881",
+      "bundleId": "com.openbeacon.app",
+      "origin": {
+        "count": 177,
+        "source": "Find Air - My Device Tracker",
+        "url": "https://apps.apple.com/us/app/id1507917112",
+        "quote": "The first thing that happens when you download it is it demands that you buy a membership/subscription for the app to even do its job."
+      },
+      "links": {
+        "support": "open-beacon/support/",
+        "privacy": "open-beacon/privacy/"
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/19",
       "label": "status:in-review",
       "status": "In review",
       "stage": "submitted",
@@ -13,8 +28,8 @@
       "next": "Wait for Apple's review decision.",
       "likes": 0,
       "store": null,
-      "hasShot": false,
-      "hasIcon": false
+      "hasShot": true,
+      "hasIcon": true
     },
     {
       "slug": "open-breath",

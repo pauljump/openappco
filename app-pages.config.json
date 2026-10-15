@@ -463,6 +463,88 @@
           "fix": "12-string, each pair tuned one string at a time."
         }
       ]
+    },
+    {
+      "slug": "open-beacon",
+      "launchNumber": 11,
+      "submittedDate": "2026-10-15",
+      "tinyDescription": "Find lost earbuds and hearing aids by feel, sound or sight.",
+      "fallbackStatus": "Waiting for Review",
+      "fallbackNext": "Wait for Apple's review decision.",
+      "reviewLine": "We read 8,760 App Store reviews of 22 Bluetooth finder apps. These complaints kept coming up.",
+      "screenshots": [
+        {
+          "src": "../assets/apps/open-beacon/screens/01-find.jpg",
+          "alt": "Finding Left earbud: a filled target, Very near, Getting stronger, keep going",
+          "caption": "Walk and feel it get closer."
+        },
+        {
+          "src": "../assets/apps/open-beacon/screens/02-nearby.jpg",
+          "alt": "Nearby: your saved things with last seen times, then everything heard",
+          "caption": "Your things, by your names."
+        },
+        {
+          "src": "../assets/apps/open-beacon/screens/03-limits.jpg",
+          "alt": "First run card: what Open Beacon can and can't find",
+          "caption": "The limits, before you search."
+        }
+      ],
+      "video": {
+        "src": "../assets/apps/open-beacon/device-demo.mp4",
+        "poster": "../assets/apps/open-beacon/screens/01-find.jpg",
+        "label": "57 second device check",
+        "description": "On a real iPhone, silent: launch from the Home Screen, see what's nearby, find it as the word goes from Near to Very near, and go back Home."
+      },
+      "fixes": [
+        {
+          "quote": "The first thing that happens when you download it is it demands that you buy a membership/subscription for the app to even do its job.",
+          "source": "Find Air - My Device Tracker",
+          "sourceUrl": "https://apps.apple.com/us/app/id1507917112",
+          "fix": "It starts finding as soon as you allow Bluetooth. No paywall, account or trial."
+        },
+        {
+          "quote": "Gives you random numbers that mean nothing when trying to locate device",
+          "source": "Find Air - My Device Tracker",
+          "sourceUrl": "https://apps.apple.com/us/app/id1507917112",
+          "fix": "Five plain words from a smoothed signal, never a made up distance or percentage."
+        },
+        {
+          "quote": "didn't really show if I was “hot” or “cold”",
+          "source": "Marco: Find Lost Bluetooth",
+          "sourceUrl": "https://apps.apple.com/us/app/id1082252587",
+          "fix": "Vibration speeds up, the screen fills and one big word changes as you get closer."
+        },
+        {
+          "quote": "I had to get my other hearing aid far enough away that it didn’t confuse the situation",
+          "source": "Wunderfind: Find Lost Device",
+          "sourceUrl": "https://apps.apple.com/us/app/id1458601441",
+          "fix": "With two of a pair, it finds the one farther from your phone. One tap switches."
+        },
+        {
+          "quote": "I would like the option to label all the ‘N/A’ devices so I can locate them in the future.",
+          "source": "Find My Lost Bluetooth Device",
+          "sourceUrl": "https://apps.apple.com/us/app/id1488361557",
+          "fix": "Save any device and give it your own name. It shows when it was last heard."
+        },
+        {
+          "quote": "if you wanted your device to beep or make a noise, you had to pay",
+          "source": "Wunderfind: Find Lost Device",
+          "sourceUrl": "https://apps.apple.com/us/app/id1458601441",
+          "fix": "Connected headphones and hearing aids can play a chirp."
+        },
+        {
+          "quote": "Ad pops up when you find things. What gives?",
+          "source": "Wunderfind: Find Lost Device",
+          "sourceUrl": "https://apps.apple.com/us/app/id1458601441",
+          "fix": "No ads."
+        },
+        {
+          "quote": "Does not work if device you are looking for has no power or if AirPods are still in the case. That is what the app tells you when it fails",
+          "source": "Device Tracker",
+          "sourceUrl": "https://apps.apple.com/us/app/id1534477715",
+          "fix": "What it can't find is on the first screen, before you search."
+        }
+      ]
     }
   ]
 }

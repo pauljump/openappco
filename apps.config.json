@@ -290,6 +290,25 @@
         "support": "open-dice/support/",
         "privacy": "open-dice/privacy/"
       }
+    },
+    {
+      "slug": "open-beacon",
+      "launchNumber": 11,
+      "issue": 19,
+      "name": "Open Beacon",
+      "tagline": "Find lost earbuds and hearing aids by feel, sound or sight.",
+      "ascId": "6823219881",
+      "bundleId": "com.openbeacon.app",
+      "origin": {
+        "count": 177,
+        "source": "Find Air - My Device Tracker",
+        "url": "https://apps.apple.com/us/app/id1507917112",
+        "quote": "The first thing that happens when you download it is it demands that you buy a membership/subscription for the app to even do its job."
+      },
+      "links": {
+        "support": "open-beacon/support/",
+        "privacy": "open-beacon/privacy/"
+      }
     }
   ]
 }
