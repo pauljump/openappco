@@ -13,7 +13,7 @@ names such as Open Piano, Open Noise, and Open Tally.
 | App | Status |
 | --- | --- |
 | [Open Breath](https://github.com/pauljump/openappco/issues/8) | [Live](https://apps.apple.com/us/app/open-breath-breathing-timer/id6821446626) |
-| [Open Dice](https://github.com/pauljump/openappco/issues/18) | Live |
+| [Open Dice](https://github.com/pauljump/openappco/issues/18) | [Live](https://apps.apple.com/us/app/open-dice-roll-simulate/id6822451773) |
 | [Open Feeds](https://github.com/pauljump/openappco/issues/16) | In review |
 | [Open Flashcards](https://github.com/pauljump/openappco/issues/15) | [Live](https://apps.apple.com/us/app/open-flashcards/id6821626941) |
 | [Open Metronome](https://github.com/pauljump/openappco/issues/14) | In review |
