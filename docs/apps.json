@@ -1,6 +1,21 @@
 {
-  "generated": "2026-10-15T13:28:12.526Z",
+  "generated": "2026-10-15T16:14:16.871Z",
   "apps": [
+    {
+      "issue": 19,
+      "issueUrl": "https://github.com/pauljump/openappco/issues/19",
+      "name": "Open Beacon",
+      "label": "status:in-review",
+      "status": "In review",
+      "stage": "submitted",
+      "ascState": null,
+      "ascChecked": null,
+      "next": "Wait for Apple's review decision.",
+      "likes": 0,
+      "store": null,
+      "hasShot": false,
+      "hasIcon": false
+    },
     {
       "slug": "open-breath",
       "launchNumber": 5,
