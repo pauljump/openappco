@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T19:00:29.373Z",
+  "generated": "2026-10-15T23:00:18.662Z",
   "apps": [
     {
       "slug": "open-beacon",
@@ -188,10 +188,10 @@
       "issueUrl": "https://github.com/pauljump/openappco/issues/14",
       "label": "status:in-review",
       "status": "In review",
-      "stage": "changes",
-      "ascState": "REJECTED",
-      "ascChecked": "2026-10-12",
-      "next": "Address Apple's review feedback for version 1.0.0, then resubmit.",
+      "stage": "submitted",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-15",
+      "next": "Await Apple review of version 1.0.0 (build 9).",
       "likes": 0,
       "store": null,
       "hasShot": true,
