@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16T03:30:38.333Z",
+  "generated": "2026-10-16T04:01:01.149Z",
   "apps": [
     {
       "slug": "open-beacon",
@@ -55,7 +55,7 @@
       "status": "Live",
       "stage": "live",
       "ascState": "WAITING_FOR_REVIEW",
-      "ascChecked": "2026-10-15",
+      "ascChecked": "2026-10-16",
       "next": "Await Apple review of version 1.0.1 (build 10).",
       "likes": 0,
       "store": {
