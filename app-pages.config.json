@@ -545,6 +545,76 @@
           "fix": "What it can't find is on the first screen, before you search."
         }
       ]
+    },
+    {
+      "slug": "open-bubble",
+      "launchNumber": 12,
+      "submittedDate": "2026-10-16",
+      "tinyDescription": "A calm bubble shooter in sessions. See what pops before you shoot.",
+      "fallbackStatus": "Waiting for Review",
+      "fallbackNext": "Wait for Apple's review decision.",
+      "reviewLine": "We read 15,619 App Store reviews of 23 bubble shooters. These complaints kept coming up.",
+      "screenshots": [
+        {
+          "src": "../assets/apps/open-bubble/screens/01-preview.jpg",
+          "alt": "Aiming: a dotted path, a dashed landing square and outlined bubbles that will pop; first session message under the board",
+          "caption": "See what pops before you shoot."
+        },
+        {
+          "src": "../assets/apps/open-bubble/screens/02-ready.jpg",
+          "alt": "Ready for your session? with a Start button",
+          "caption": "A session, with no clock."
+        },
+        {
+          "src": "../assets/apps/open-bubble/screens/03-heart.jpg",
+          "alt": "A heart scene made of bubbles with the shot preview",
+          "caption": "Random scenes, not levels."
+        }
+      ],
+      "video": {
+        "src": "../assets/apps/open-bubble/device-demo.mp4",
+        "poster": "../assets/apps/open-bubble/screens/01-preview.jpg",
+        "label": "133 second walkthrough",
+        "description": "In the iOS Simulator, silent: aim and shoot, undo, swap the next bubble, the last two session messages, the session ending after the last shot, and a new session."
+      },
+      "fixes": [
+        {
+          "quote": "There are full screen ads that are unmuted despite the app being on mute",
+          "source": "Bubble Shooter Rainbow",
+          "sourceUrl": "https://apps.apple.com/us/app/id1504361627",
+          "fix": "No ads. Sound is off unless you turn it on, and it follows the silent switch."
+        },
+        {
+          "quote": "it gives you every color that you don’t need so your wasting hits until you lose",
+          "source": "Bubble Shooter Classic Match",
+          "sourceUrl": "https://apps.apple.com/us/app/id1239356155",
+          "fix": "The bubble you get is always a color still on the board, and the next one is shown."
+        },
+        {
+          "quote": "Too easy to set off a shot when it’s not intended",
+          "source": "Bubble Shooter Classic Match",
+          "sourceUrl": "https://apps.apple.com/us/app/id1239356155",
+          "fix": "Aiming never fires. Only the Shoot button does, after you see where it will land."
+        },
+        {
+          "quote": "any pop up makes it overstimulating",
+          "source": "Bubble Shooter - Panda Pop!",
+          "sourceUrl": "https://apps.apple.com/us/app/id700970012",
+          "fix": "No pop-ups. Three short session messages sit in a fixed line under the board."
+        },
+        {
+          "quote": "A few colours are hard to differentiate if you’re colourblind like I am.",
+          "source": "Shoot Bubbles - Bubble Pop",
+          "sourceUrl": "https://apps.apple.com/us/app/id1596684882",
+          "fix": "Every color has its own printed mark: circle, square, triangle, diamond, cross, star."
+        },
+        {
+          "quote": "Used to love this game but it froze so I had to delete.",
+          "source": "Bubble Mags - bubble shooter",
+          "sourceUrl": "https://apps.apple.com/us/app/id487208855",
+          "fix": "It saves after every shot on your iPhone, so nothing is lost if it closes."
+        }
+      ]
     }
   ]
 }

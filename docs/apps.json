@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16T16:30:18.305Z",
+  "generated": "2026-10-16T16:31:07.779Z",
   "apps": [
     {
       "slug": "open-beacon",
@@ -67,9 +67,24 @@
       "hasIcon": true
     },
     {
+      "slug": "open-bubble",
+      "launchNumber": 12,
       "issue": 20,
-      "issueUrl": "https://github.com/pauljump/openappco/issues/20",
       "name": "Open Bubble",
+      "tagline": "A calm bubble shooter played in sessions, with no score and no losing.",
+      "ascId": "6823675203",
+      "bundleId": "com.openbubble.app",
+      "origin": {
+        "count": 148,
+        "source": "Bubble Shooter Rainbow",
+        "url": "https://apps.apple.com/us/app/id1504361627",
+        "quote": "There are full screen ads that are unmuted despite the app being on mute."
+      },
+      "links": {
+        "support": "open-bubble/support/",
+        "privacy": "open-bubble/privacy/"
+      },
+      "issueUrl": "https://github.com/pauljump/openappco/issues/20",
       "label": "status:in-review",
       "status": "In review",
       "stage": "submitted",
@@ -78,8 +93,8 @@
       "next": "Wait for Apple's review decision.",
       "likes": 0,
       "store": null,
-      "hasShot": false,
-      "hasIcon": false
+      "hasShot": true,
+      "hasIcon": true
     },
     {
       "slug": "open-dice",

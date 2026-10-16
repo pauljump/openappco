@@ -309,6 +309,25 @@
         "support": "open-beacon/support/",
         "privacy": "open-beacon/privacy/"
       }
+    },
+    {
+      "slug": "open-bubble",
+      "launchNumber": 12,
+      "issue": 20,
+      "name": "Open Bubble",
+      "tagline": "A calm bubble shooter played in sessions, with no score and no losing.",
+      "ascId": "6823675203",
+      "bundleId": "com.openbubble.app",
+      "origin": {
+        "count": 148,
+        "source": "Bubble Shooter Rainbow",
+        "url": "https://apps.apple.com/us/app/id1504361627",
+        "quote": "There are full screen ads that are unmuted despite the app being on mute."
+      },
+      "links": {
+        "support": "open-bubble/support/",
+        "privacy": "open-bubble/privacy/"
+      }
     }
   ]
 }
