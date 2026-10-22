@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brush Along | Open AppCo Studio</title>
+<meta name="description" content="A silent two minute toothbrushing guide that floats over the show your child is watching. For iPhone, iPad and Apple TV.">
+<meta property="og:title" content="Brush Along">
+<meta property="og:description" content="A silent two minute toothbrushing guide that floats over the show your child is watching.">
+<meta property="og:image" content="https://openappco.com/assets/apps/brush-along/poster.jpg">
+<link rel="icon" href="../../assets/apps/brush-along/icon.png" type="image/png">
+<link rel="stylesheet" href="brush.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="wordmark" href="https://openappco.com/">Open AppCo <span>Studio</span></a>
+    <nav aria-label="Brush Along"><a href="#demo">Demo</a><a href="support/">Support</a><a href="privacy/">Privacy</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">iPhone · iPad · Apple TV</p>
+        <h1>Two minutes of brushing, floating over the show.</h1>
+        <p class="lead">Brush Along puts a silent brushing guide in a small window over whatever your child is watching. It shows which teeth to brush, which side, and how long is left.</p>
+        <div class="app-id">
+          <img src="../../assets/apps/brush-along/icon.png" alt="Brush Along app icon">
+          <span class="badge" aria-label="Download on the App Store, coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.1 2.5-1.8 3.1-.5 7.6 1.3 10.1.8 1.2 1.8 2.6 3.1 2.5 1.3-.1 1.7-.8 3.2-.8s1.9.8 3.3.8c1.4 0 2.2-1.2 3-2.4 1-1.4 1.4-2.7 1.4-2.8-.1 0-2.6-1-2.6-4.2zM14 5.3c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg><span><small>Download on the</small><b>App Store</b></span></span>
+          <span class="soon">Coming soon</span>
+        </div>
+      </div>
+      <div class="hero-art"><img src="../../assets/apps/brush-along/poster.jpg" alt="The Brush Along guide: the top teeth seen in a mirror, outside surfaces highlighted in gold, an oval brush head, and a countdown"></div>
+    </section>
+
+    <section class="block story">
+      <div class="two">
+        <p class="eyebrow">Why it exists</p>
+        <div>
+          <p>Paul made this for his neurodivergent child, who for a long time would only brush while one particular video was playing. Turning the video off turned brushing into a fight.</p>
+          <p>So the video stays on. Brush Along sits in the corner of the screen and does the teaching: one surface at a time, the same order every night, no scores and no surprise sounds.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="demo" aria-labelledby="demo-title">
+      <p class="eyebrow">Live demo</p>
+      <h2 id="demo-title">This is the real guide from the app.</h2>
+      <p>The cartoon stands in for your child's show. The small window is the actual Brush Along video, playing in the corner the way Picture in Picture does on Apple TV.</p>
+      <div class="tv">
+        <div class="show" aria-hidden="true">
+          <div class="sky"></div><div class="sun"></div><div class="cloud c1"></div><div class="cloud c2"></div>
+          <div class="hill h1"></div><div class="hill h2"></div><div class="pal"></div>
+          <span class="show-label">Your child's show</span>
+        </div>
+        <div class="float">
+          <video id="guide" src="../../assets/apps/brush-along/guide.mp4" poster="../../assets/apps/brush-along/poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Brush Along brushing guide, silent, two minutes with a ten second countdown"></video>
+        </div>
+      </div>
+      <div class="readout" aria-live="polite"><b id="where">Get ready</b><span class="clock" id="clock">2:00</span></div>
+      <ol class="steps" id="steps"></ol>
+      <div class="controls">
+        <button class="btn" id="pip" type="button">Float it on this computer</button>
+        <button class="btn ghost" id="play" type="button">Pause</button>
+        <button class="btn ghost" id="restart" type="button">Start over</button>
+      </div>
+      <p class="note" id="pip-note">Float it, then switch to another tab or app. The guide keeps playing on top.</p>
+    </section>
+
+    <section class="block">
+      <h2>How it works</h2>
+      <p>Works alongside any video app. The guide has no sound, so the show keeps its own.</p>
+      <div class="how">
+        <div class="card">
+          <h3>Apple TV</h3>
+          <ol>
+            <li>Open Brush Along and press Start.</li>
+            <li>Double-click the TV button and pick your video app.</li>
+            <li>Press play. The guide floats in the corner for two minutes, then closes itself.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>iPhone and iPad</h3>
+          <ol>
+            <li>Open Brush Along and tap Try Watch &amp; Brush.</li>
+            <li>Tap the Picture in Picture button on the player.</li>
+            <li>Switch to your video app. The guide stays on top while you watch.</li>
+          </ol>
+          <p>The app also has a narrated full screen coach and a way to practice any single step.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="two">
+        <div><h2>The routine</h2></div>
+        <div>
+          <p>Four quarters of the mouth, 30 seconds each. In every quarter: 12 seconds on the outside, 12 on the inside, 6 on the chewing surfaces. The teeth to brush turn <span class="surface">gold</span>, and the picture is a mirror view, so it matches what your child sees in the bathroom mirror.</p>
+          <p>A grown-up should help and check the back teeth. The timing is a teaching rhythm, not a medical claim, and the animation has not been reviewed by a dentist.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="facts">
+        <div class="card"><h3>Private by design</h3><p>No accounts, ads, analytics or network requests. Everything plays offline on the device.</p></div>
+        <div class="card"><h3>One purchase</h3><p>One purchase covers iPhone, iPad and Apple TV.</p></div>
+        <div class="card"><h3>Made from scratch</h3><p>Original artwork and animation. No characters, footage or logos from anyone else.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© 2026 Paul Jump · <a href="https://openappco.com/">Open AppCo</a></span>
+    <nav aria-label="Help"><a href="support/">Support</a><a href="privacy/">Privacy</a><a href="mailto:studio@openappco.com">studio@openappco.com</a></nav>
+  </footer>
+</div>
+<script>
+(() => {
+  const v = document.getElementById('guide');
+  const quarters = ['Top right', 'Top left', 'Bottom left', 'Bottom right'];
+  const surfaces = ['Outside', 'Inside', 'Chewing'];
+  const starts = [0, 12, 24];
+  const list = document.getElementById('steps');
+  const buttons = [];
+  quarters.forEach((q, qi) => {
+    const li = document.createElement('li');
+    li.innerHTML = '<h3>' + q + '</h3>';
+    surfaces.forEach((s, si) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = s;
+      b.setAttribute('aria-label', 'Jump to ' + q + ', ' + s);
+      b.onclick = () => { v.currentTime = 10 + qi * 30 + starts[si] + 0.05; v.play(); };
+      li.appendChild(b);
+      buttons.push(b);
+    });
+    list.appendChild(li);
+  });
+  const where = document.getElementById('where');
+  const clock = document.getElementById('clock');
+  const play = document.getElementById('play');
+  let last = -2;
+  function update() {
+    const bt = v.currentTime - 10;
+    let idx = -1, label;
+    if (bt < 0) label = 'Get ready';
+    else if (bt >= 120) label = 'Done. Spit out, don’t rinse.';
+    else {
+      const q = Math.min(3, Math.floor(bt / 30)), local = bt - q * 30;
+      const s = local < 12 ? 0 : local < 24 ? 1 : 2;
+      idx = q * 3 + s;
+      label = 'Quarter ' + (q + 1) + ' of 4 · ' + quarters[q] + ' · ' + surfaces[s];
+    }
+    const left = Math.max(0, Math.ceil(120 - Math.max(0, bt)));
+    clock.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0');
+    if (idx !== last) {
+      where.textContent = label;
+      buttons.forEach((b, i) => i === idx ? b.setAttribute('aria-current', 'step') : b.removeAttribute('aria-current'));
+      last = idx;
+    }
+  }
+  v.addEventListener('timeupdate', update);
+  v.addEventListener('play', () => play.textContent = 'Pause');
+  v.addEventListener('pause', () => play.textContent = 'Play');
+  play.onclick = () => v.paused ? v.play() : v.pause();
+  document.getElementById('restart').onclick = () => { v.currentTime = 0; v.play(); };
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) v.removeAttribute('autoplay'), v.pause();
+
+  const pip = document.getElementById('pip');
+  const note = document.getElementById('pip-note');
+  const canStandard = document.pictureInPictureEnabled && !v.disablePictureInPicture;
+  const canWebkit = typeof v.webkitSetPresentationMode === 'function';
+  if (!canStandard && !canWebkit) {
+    pip.disabled = true;
+    note.textContent = 'This browser cannot float video. Try Safari or Chrome to see it on top of another tab.';
+  }
+  pip.onclick = async () => {
+    try {
+      await v.play();
+      if (canStandard) {
+        if (document.pictureInPictureElement) await document.exitPictureInPicture();
+        else await v.requestPictureInPicture();
+      } else {
+        v.webkitSetPresentationMode(v.webkitPresentationMode === 'picture-in-picture' ? 'inline' : 'picture-in-picture');
+      }
+    } catch (e) { note.textContent = 'Your browser did not allow it this time. Press the button again.'; }
+  };
+  v.addEventListener('enterpictureinpicture', () => pip.textContent = 'Bring it back');
+  v.addEventListener('leavepictureinpicture', () => pip.textContent = 'Float it on this computer');
+})();
+</script>
+</body>
+</html>
