@@ -165,7 +165,8 @@
   v.addEventListener('pause', () => play.textContent = 'Play');
   play.onclick = () => v.paused ? v.play() : v.pause();
   document.getElementById('restart').onclick = () => { v.currentTime = 0; v.play(); };
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) v.removeAttribute('autoplay'), v.pause();
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); }
+  else v.play().catch(() => {});
 
   const pip = document.getElementById('pip');
   const note = document.getElementById('pip-note');
