@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T04:00:39.459Z",
+  "generated": "2026-10-25T16:30:30.144Z",
   "apps": [
     {
       "slug": "open-beacon",
@@ -120,7 +120,7 @@
       "stage": "live",
       "ascState": "WAITING_FOR_REVIEW",
       "ascChecked": "2026-10-25",
-      "next": "Await Apple review of version 1.0.1 (build 2).",
+      "next": "Await Apple review of version 1.0.1 (build 3).",
       "likes": 0,
       "store": {
         "url": "https://apps.apple.com/us/app/open-dice-roll-simulate/id6822451773",
