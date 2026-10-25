@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T22:30:20.138Z",
+  "generated": "2026-10-25T04:00:39.459Z",
   "apps": [
     {
       "slug": "open-beacon",
@@ -54,9 +54,9 @@
       "label": "status:live",
       "status": "Live",
       "stage": "live",
-      "ascState": "READY_FOR_SALE",
-      "ascChecked": "2026-10-16",
-      "next": "Live on the App Store. Collect feedback and maintain.",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-25",
+      "next": "Await Apple review of version 1.0.2 (build 11).",
       "likes": 0,
       "store": {
         "url": "https://apps.apple.com/us/app/open-breath-breathing-timer/id6821446626",
@@ -118,9 +118,9 @@
       "label": "status:live",
       "status": "Live",
       "stage": "live",
-      "ascState": "READY_FOR_SALE",
-      "ascChecked": "2026-10-14",
-      "next": "Live on the App Store. Collect feedback and maintain.",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-25",
+      "next": "Await Apple review of version 1.0.1 (build 2).",
       "likes": 0,
       "store": {
         "url": "https://apps.apple.com/us/app/open-dice-roll-simulate/id6822451773",
@@ -184,9 +184,9 @@
       "label": "status:live",
       "status": "Live",
       "stage": "live",
-      "ascState": "READY_FOR_SALE",
-      "ascChecked": "2026-10-12",
-      "next": "Live on the App Store. Collect feedback and maintain.",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-25",
+      "next": "Await Apple review of version 1.0.1 (build 3).",
       "likes": 0,
       "store": {
         "url": "https://apps.apple.com/us/app/open-flashcards/id6821626941",
@@ -313,9 +313,9 @@
       "label": "status:live",
       "status": "Live",
       "stage": "live",
-      "ascState": "READY_FOR_SALE",
-      "ascChecked": "2026-10-13",
-      "next": "Live on the App Store. Collect feedback and maintain.",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-25",
+      "next": "Await Apple review of version 1.0.1 (build 2).",
       "likes": 0,
       "store": {
         "url": "https://apps.apple.com/us/app/open-reader-epub-pdf/id6822322830",
@@ -348,9 +348,9 @@
       "label": "status:live",
       "status": "Live",
       "stage": "live",
-      "ascState": "READY_FOR_SALE",
-      "ascChecked": "2026-10-12",
-      "next": "Live on the App Store. Collect feedback and maintain.",
+      "ascState": "WAITING_FOR_REVIEW",
+      "ascChecked": "2026-10-25",
+      "next": "Await Apple review of version 1.0.2 (build 7).",
       "likes": 0,
       "store": {
         "url": "https://apps.apple.com/us/app/open-tally/id6820183055",
