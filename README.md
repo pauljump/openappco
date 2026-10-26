@@ -15,14 +15,14 @@ names such as Open Piano, Open Noise, and Open Tally.
 | [Open Beacon](https://github.com/pauljump/openappco/issues/19) | In review |
 | [Open Breath](https://github.com/pauljump/openappco/issues/8) | [Live](https://apps.apple.com/us/app/open-breath-breathing-timer/id6821446626) |
 | [Open Bubble](https://github.com/pauljump/openappco/issues/20) | In review |
-| [Open Dice](https://github.com/pauljump/openappco/issues/18) | [Live](https://apps.apple.com/us/app/open-dice-roll-simulate/id6822451773) |
+| [Open Dice](https://github.com/pauljump/openappco/issues/18) | [Live](https://apps.apple.com/us/app/open-dice-roller-simulator/id6822451773) |
 | [Open Feeds](https://github.com/pauljump/openappco/issues/16) | In review |
-| [Open Flashcards](https://github.com/pauljump/openappco/issues/15) | [Live](https://apps.apple.com/us/app/open-flashcards/id6821626941) |
+| [Open Flashcards](https://github.com/pauljump/openappco/issues/15) | [Live](https://apps.apple.com/us/app/open-flashcards-study-cards/id6821626941) |
 | [Open Metronome](https://github.com/pauljump/openappco/issues/14) | In review |
 | [Open Noise](https://github.com/pauljump/openappco/issues/3) | In review |
 | [Open Piano](https://github.com/pauljump/openappco/issues/1) | In review |
 | [Open Reader](https://github.com/pauljump/openappco/issues/17) | [Live](https://apps.apple.com/us/app/open-reader-epub-pdf/id6822322830) |
-| [Open Tally](https://github.com/pauljump/openappco/issues/6) | [Live](https://apps.apple.com/us/app/open-tally/id6820183055) |
+| [Open Tally](https://github.com/pauljump/openappco/issues/6) | [Live](https://apps.apple.com/us/app/open-tally-counter-clicker/id6820183055) |
 | [Open Tuner](https://github.com/pauljump/openappco/issues/4) | In review |
 <!-- apps:end -->
 
