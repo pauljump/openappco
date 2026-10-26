@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T23:30:14.764Z",
+  "generated": "2026-10-26T01:14:41.939Z",
   "apps": [
     {
       "slug": "open-beacon",
@@ -319,8 +319,8 @@
       "likes": 0,
       "store": {
         "url": "https://apps.apple.com/us/app/open-reader-epub-pdf/id6822322830",
-        "version": "1.0.0",
-        "released": "2026-10-13T22:36:43Z"
+        "version": "1.0.1",
+        "released": "2026-10-25T19:48:58Z"
       },
       "hasShot": true,
       "hasIcon": true
