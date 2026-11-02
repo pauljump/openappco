@@ -18,7 +18,7 @@ names such as Open Piano, Open Noise, and Open Tally.
 | [Open Dice](https://github.com/pauljump/openappco/issues/18) | [Live](https://apps.apple.com/us/app/open-dice-roller-simulator/id6822451773) |
 | [Open Feeds](https://github.com/pauljump/openappco/issues/16) | In review |
 | [Open Flashcards](https://github.com/pauljump/openappco/issues/15) | [Live](https://apps.apple.com/us/app/open-flashcards-study-cards/id6821626941) |
-| [Open Metronome](https://github.com/pauljump/openappco/issues/14) | In review |
+| [Open Metronome](https://github.com/pauljump/openappco/issues/14) | [Live](https://apps.apple.com/us/app/open-metronome-tempo-beats/id6821184769) |
 | [Open Noise](https://github.com/pauljump/openappco/issues/3) | In review |
 | [Open Piano](https://github.com/pauljump/openappco/issues/1) | In review |
 | [Open Reader](https://github.com/pauljump/openappco/issues/17) | [Live](https://apps.apple.com/us/app/open-reader-epub-pdf/id6822322830) |
