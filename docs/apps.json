@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T06:00:18.715Z",
+  "generated": "2026-11-02T21:30:17.463Z",
   "apps": [
     {
       "slug": "open-beacon",
@@ -283,14 +283,18 @@
       },
       "opportunity": "opp-5560da664694bafc71b7",
       "issueUrl": "https://github.com/pauljump/openappco/issues/1",
-      "label": "status:in-review",
-      "status": "In review",
-      "stage": "changes",
-      "ascState": "REJECTED",
-      "ascChecked": "2026-10-19",
-      "next": "Address Apple's review feedback for version 1.0.0, then resubmit.",
+      "label": "status:live",
+      "status": "Live",
+      "stage": "live",
+      "ascState": "READY_FOR_SALE",
+      "ascChecked": "2026-11-02",
+      "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": null,
+      "store": {
+        "url": "https://apps.apple.com/us/app/open-piano/id6804585543",
+        "version": "1.0.0",
+        "released": "2026-11-02T21:06:51Z"
+      },
       "hasShot": true,
       "hasIcon": true
     },
