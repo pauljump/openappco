@@ -20,8 +20,28 @@ function pageLink(link, slug) {
   return link.startsWith(`${slug}/`) ? link.slice(slug.length + 1) : `../${link}`;
 }
 
-function statusFor(page, current) {
-  if (current?.store?.url) return 'Live on the App Store';
+// Apple's listing URL. The iTunes lookup can lag a few hours behind release, so a
+// version App Store Connect reports as on sale falls back to the plain id link.
+function storeUrl(meta, current) {
+  if (current?.store?.url) return current.store.url;
+  if (['READY_FOR_SALE', 'READY_FOR_DISTRIBUTION'].includes(current?.ascState) && meta.ascId) return `https://apps.apple.com/us/app/id${meta.ascId}`;
+  return null;
+}
+
+// Search-engine description of a live app (schema.org SoftwareApplication).
+function structuredData(meta, page, url) {
+  const data = {
+    '@context': 'https://schema.org', '@type': 'MobileApplication', name: meta.name,
+    description: page.tinyDescription, operatingSystem: 'iOS', applicationCategory: page.category || 'UtilitiesApplication',
+    url: `https://openappco.com/${page.slug}/`, installUrl: url, image: `https://openappco.com/assets/apps/${page.slug}/icon.png`,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    publisher: { '@type': 'Organization', name: 'Open AppCo', url: 'https://openappco.com/' }
+  };
+  return `<script type="application/ld+json">${JSON.stringify(data).replaceAll('<', '\\u003c')}</script>`;
+}
+
+function statusFor(page, current, live) {
+  if (live) return 'Live on the App Store';
   const labels = {
     WAITING_FOR_REVIEW: 'Waiting for Review', IN_REVIEW: 'In Review',
     PENDING_APPLE_RELEASE: 'Approved by Apple', PENDING_DEVELOPER_RELEASE: 'Approved by Apple',
@@ -83,10 +103,15 @@ function render(page) {
   if (!meta) throw new Error(`Unknown app slug: ${page.slug}`);
   if (meta.launchNumber !== page.launchNumber) throw new Error(`Launch number mismatch for ${page.slug}`);
   const current = statusBySlug.get(page.slug);
-  const status = statusFor(page, current);
-  const isLive = Boolean(current?.store?.url);
+  const store = storeUrl(meta, current);
+  const isLive = Boolean(store);
+  const status = statusFor(page, current, isLive);
   const issueUrl = current?.issueUrl || `https://github.com/pauljump/openappco/issues/${meta.issue}`;
-  const primaryUrl = isLive ? current.store.url : issueUrl;
+  const primaryUrl = isLive ? store : issueUrl;
+  const title = isLive && page.searchTitle ? `${meta.name}: ${page.searchTitle}` : `${meta.name}: ${status}`;
+  const description = isLive ? `${page.tinyDescription} Free for iPhone. No ads, no account, no tracking.`
+    : `${meta.name}: ${status}. Screens, a demo, and the App Store complaints it fixes.`;
+  const liveHead = isLive ? `\n<meta name="apple-itunes-app" content="app-id=${esc(meta.ascId)}">\n${structuredData(meta, page, store)}` : '';
   const primaryText = isLive ? 'Get the app' : 'Follow the review status';
   const checked = current?.ascChecked || page.submittedDate;
   const next = current?.next || page.fallbackNext;
@@ -97,8 +122,9 @@ function render(page) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(meta.name)}: ${esc(status)}</title>
-<meta name="description" content="${esc(meta.name)}: ${esc(status)}. Screens, a demo, and the App Store complaints it fixes.">
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(description)}">
+<link rel="canonical" href="https://openappco.com/${page.slug}/">${liveHead}
 <meta property="og:title" content="${esc(meta.name)}, Open AppCo app #${page.launchNumber}">
 <meta property="og:description" content="${esc(page.tinyDescription)}">
 <meta property="og:image" content="https://openappco.com/assets/apps/${page.slug}/launch-card.png">
@@ -143,4 +169,11 @@ for (const page of pageConfig.apps) {
   mkdirSync(dirname(output), { recursive: true });
   writeFileSync(output, render(page));
 }
-console.log(`Rendered ${pageConfig.apps.length} app pages.`);
+// Sitemap: the home page plus every app page and its support/privacy pages.
+const pages = ['', ...pageConfig.apps.flatMap(page => {
+  const meta = metaBySlug.get(page.slug);
+  return [`${page.slug}/`, ...[meta.links?.support, meta.links?.privacy].filter(link => link && !/^https?:/.test(link))];
+})];
+const urls = [...new Set(pages)].map(path => `  <url><loc>https://openappco.com/${path.replace(/index\.html$/, '')}</loc></url>`).join('\n');
+writeFileSync(resolve(root, 'docs/sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
+console.log(`Rendered ${pageConfig.apps.length} app pages and the sitemap.`);

@@ -2,6 +2,8 @@
   "apps": [
     {
       "slug": "open-piano",
+      "category": "MultimediaApplication",
+      "searchTitle": "Color-coded piano for iPhone, no ads",
       "launchNumber": 1,
       "submittedDate": "2026-10-07",
       "tinyDescription": "Play a real piano, see every note, and record it without an ad covering the keys.",
@@ -25,6 +27,8 @@
     },
     {
       "slug": "open-tally",
+      "category": "UtilitiesApplication",
+      "searchTitle": "Free tally counter and clicker for iPhone",
       "launchNumber": 2,
       "submittedDate": "2026-10-08",
       "tinyDescription": "A tally counter that opens ready to count.",
@@ -79,6 +83,8 @@
     },
     {
       "slug": "open-metronome",
+      "category": "MultimediaApplication",
+      "searchTitle": "Free metronome for music practice, no ads",
       "launchNumber": 4,
       "submittedDate": "2026-10-10",
       "tinyDescription": "Steady time for practice. Nothing pops up over the beat.",
@@ -106,6 +112,8 @@
     },
     {
       "slug": "open-breath",
+      "category": "HealthApplication",
+      "searchTitle": "Box breathing timer for iPhone, no paywall",
       "launchNumber": 5,
       "submittedDate": "2026-10-10",
       "tinyDescription": "Box breathing at your own pace, with no paywall.",
@@ -133,6 +141,8 @@
     },
     {
       "slug": "open-flashcards",
+      "category": "EducationalApplication",
+      "searchTitle": "Free flashcard maker for iPhone",
       "launchNumber": 6,
       "submittedDate": "2026-10-11",
       "tinyDescription": "Make flashcards and study as much as you want. Your text is never rewritten.",
@@ -244,6 +254,8 @@
     },
     {
       "slug": "open-reader",
+      "category": "ReferenceApplication",
+      "searchTitle": "EPUB, PDF and comic reader for iPhone",
       "launchNumber": 8,
       "submittedDate": "2026-10-13",
       "tinyDescription": "Read your own EPUB, PDF and comics. Your books stay files.",
@@ -326,6 +338,8 @@
     },
     {
       "slug": "open-dice",
+      "category": "GameApplication",
+      "searchTitle": "Dice roller for iPhone, no ads",
       "launchNumber": 9,
       "submittedDate": "2026-10-13",
       "tinyDescription": "Just dice. Roll up to 12, hide the total, simulate a million rolls.",
