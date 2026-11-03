@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T23:35:24.770Z",
+  "generated": "2026-11-03T06:53:28.352Z",
   "apps": [
     {
       "slug": "open-beacon",
@@ -290,7 +290,11 @@
       "ascChecked": "2026-11-02",
       "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": null,
+      "store": {
+        "url": "https://apps.apple.com/us/app/open-piano/id6804585543",
+        "version": "1.0.0",
+        "released": "2026-11-02T21:06:51Z"
+      },
       "hasShot": true,
       "hasIcon": true
     },
