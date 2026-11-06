@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T22:03:09.368Z",
+  "generated": "2026-11-06T02:30:15.490Z",
   "apps": [
     {
       "slug": "open-beacon",
@@ -58,7 +58,11 @@
       "ascChecked": "2026-10-25",
       "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": null,
+      "store": {
+        "url": "https://apps.apple.com/us/app/open-breath-breathing-timer/id6821446626",
+        "version": "1.0.2",
+        "released": "2026-10-25T19:48:14Z"
+      },
       "hasShot": true,
       "hasIcon": true
     },
@@ -184,7 +188,11 @@
       "ascChecked": "2026-10-25",
       "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": null,
+      "store": {
+        "url": "https://apps.apple.com/us/app/open-flashcards-study-cards/id6821626941",
+        "version": "1.0.1",
+        "released": "2026-10-25T19:50:44Z"
+      },
       "hasShot": true,
       "hasIcon": true
     },
@@ -282,7 +290,11 @@
       "ascChecked": "2026-11-02",
       "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": null,
+      "store": {
+        "url": "https://apps.apple.com/us/app/open-piano/id6804585543",
+        "version": "1.0.0",
+        "released": "2026-11-02T21:06:51Z"
+      },
       "hasShot": true,
       "hasIcon": true
     },
@@ -348,7 +360,11 @@
       "ascChecked": "2026-10-25",
       "next": "Live on the App Store. Collect feedback and maintain.",
       "likes": 0,
-      "store": null,
+      "store": {
+        "url": "https://apps.apple.com/us/app/open-tally-counter-clicker/id6820183055",
+        "version": "1.0.2",
+        "released": "2026-10-25T19:49:44Z"
+      },
       "hasShot": true,
       "hasIcon": true
     },
