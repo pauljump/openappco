@@ -2,6 +2,19 @@
   "note": "Presentation copy for openappco.com. Status never lives here: GitHub issue labels own it. Only apps submitted to Apple or live are published; what ships next is chosen day-of, privately (see _factory/open-suite/scripts/today.mjs).",
   "apps": [
     {
+      "slug": "prune",
+      "name": "Prune",
+      "tagline": "Review your old posts, keep the good stuff, and make each change yourself.",
+      "bundleId": "com.pauljump.prune",
+      "publication": "development-preview",
+      "price": "Free",
+      "links": {
+        "page": "prune/",
+        "support": "prune/support/",
+        "privacy": "prune/privacy/"
+      }
+    },
+    {
       "slug": "open-piano",
       "launchNumber": 1,
       "issue": 1,
